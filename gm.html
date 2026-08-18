@@ -186,9 +186,9 @@ textarea{resize:vertical;min-height:60px;font-size:12px;line-height:1.5}
 .chip{background:#141E26;border:1px solid var(--soft);border-radius:99px;padding:1px 8px;cursor:pointer;font-size:10px;color:var(--dimmer)}
 .chip:hover{border-color:var(--brass);color:var(--bone)}
 .batcard .s{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--dim);margin-bottom:8px}
-#help,#cxShare,#batM,#rulesOv{position:fixed;inset:0;z-index:50;background:rgba(6,10,14,.8);backdrop-filter:blur(5px);
+#help,#gmask,#cxShare,#batM,#rulesOv{position:fixed;inset:0;z-index:50;background:rgba(6,10,14,.8);backdrop-filter:blur(5px);
  display:none;align-items:center;justify-content:center}
-#help.open,#cxShare.open,#batM.open,#rulesOv.open{display:flex}
+#help.open,#gmask.open,#cxShare.open,#batM.open,#rulesOv.open{display:flex}
 .hcard{background:rgba(15,22,28,.99);border:1px solid var(--line);border-radius:6px;padding:26px 30px;width:520px;max-width:92vw}
 .hcard h2{margin:0 0 14px;font-family:"Cinzel",serif;font-size:20px;font-weight:600}
 .hgrid{display:grid;grid-template-columns:130px 1fr;gap:7px 14px;font-size:13px}
@@ -329,7 +329,8 @@ input[type=file]{display:none}
     <button class="btn" id="bLedger">Ledger</button>
     <button class="btn" id="bRules">Rules</button>
     <button class="btn" id="bHelp">?</button>
-    </div>
+    <button class="btn" id="bGM">GM</button>
+  </div>
 </div>
 
 <div class="hud" id="modes">
@@ -439,7 +440,15 @@ input[type=file]{display:none}
   </div>
 </div></div>
 
-
+<div id="gmask"><div class="hcard" style="width:340px">
+  <h2>GM passphrase</h2>
+  <input type="password" id="gmPass" placeholder="passphrase" autocomplete="off" style="margin-bottom:12px">
+  <div id="gmErr" style="color:#E5A594;font-size:12px;min-height:16px;margin-bottom:6px"></div>
+  <div class="row">
+    <button class="btn" id="gmCancel" style="flex:1">Cancel</button>
+    <button class="btn primary" id="gmGo" style="flex:1">Unlock</button>
+  </div>
+</div></div>
 
 <div id="help"><div class="hcard">
   <h2>Controls</h2>
@@ -1195,7 +1204,8 @@ addEventListener("keydown",e=>{
   if(e.key==="-")setZoom(view.z/1.3);
   if(e.key==="f")focusRealm();
   if(e.key==="/"){e.preventDefault();$("q").focus();}
-    if((e.ctrlKey||e.metaKey)&&e.key==="z"){e.preventDefault();undo();}
+  if(e.key.toLowerCase()==="g")$("bGM").click();
+  if((e.ctrlKey||e.metaKey)&&e.key==="z"){e.preventDefault();undo();}
   if(e.key.toLowerCase()==="r")$("bRelief").click();
   if(e.key.toLowerCase()==="l")$("bLedger").click();
   if(e.key==="?")$("help").classList.toggle("open");
@@ -1772,13 +1782,73 @@ $("bRelief").onclick=()=>{
 $("zIn").onclick=()=>setZoom(view.z*1.35);
 $("zOut").onclick=()=>setZoom(view.z/1.35);
 $("zFit").onclick=focusRealm;
+const GM_HASH="49faaade493be8b6b6164ee67f7e4d101812a5dda970d6ca693dda8b8cf82e4b";
 const store={
   get(k){try{return sessionStorage.getItem(k);}catch(e){return this._m&&this._m[k];}},
   set(k,v){try{sessionStorage.setItem(k,v);}catch(e){(this._m=this._m||{})[k]=v;}}
 };
-
-
-function setGM(on){gm=false;document.body.classList.add("readonly");requestAnimationFrame(layoutChrome);drawLedger();legend();draw();}
+function sha256js(ascii){
+  function rr(v,c){return v>>>c|v<<32-c}
+  const K=[],H=[];let p=2,i=0,c;
+  for(;i<64;p++){c=true;for(let f=2;f*f<=p;f++)if(p%f===0){c=false;break}
+    if(c){if(i<8)H[i]=(Math.pow(p,.5)*4294967296)|0;K[i++]=(Math.pow(p,1/3)*4294967296)|0}}
+  const bytes=new TextEncoder().encode(ascii);
+  let l=bytes.length*8,msg=[...bytes,0x80];
+  while(msg.length%64!==56)msg.push(0);
+  for(let b=56;b>=0;b-=8)msg.push(l/Math.pow(2,b)&255);
+  const h=H.slice();
+  for(let j=0;j<msg.length;j+=64){
+    const w=[],v=h.slice();
+    for(let t=0;t<64;t++){
+      w[t]=t<16?(msg[j+t*4]<<24|msg[j+t*4+1]<<16|msg[j+t*4+2]<<8|msg[j+t*4+3]):
+        (w[t-16]+(rr(w[t-15],7)^rr(w[t-15],18)^w[t-15]>>>3)+w[t-7]+(rr(w[t-2],17)^rr(w[t-2],19)^w[t-2]>>>10))|0;
+      const t1=v[7]+(rr(v[4],6)^rr(v[4],11)^rr(v[4],25))+((v[4]&v[5])^(~v[4]&v[6]))+K[t]+w[t],
+            t2=(rr(v[0],2)^rr(v[0],13)^rr(v[0],22))+((v[0]&v[1])^(v[0]&v[2])^(v[1]&v[2]));
+      v.unshift((t1+t2)|0);v[4]=(v[4]+t1)|0;v.pop();
+    }
+    for(let t=0;t<8;t++)h[t]=(h[t]+v[t])|0;
+  }
+  return h.map(x=>(x>>>0).toString(16).padStart(8,"0")).join("");
+}
+async function sha256(t){
+  try{
+    if(crypto&&crypto.subtle){
+      const b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(t));
+      return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join("");
+    }
+  }catch(e){}
+  return sha256js(t);
+}
+function setGM(on){
+  gm=on;document.body.classList.toggle("readonly",!gm);
+  requestAnimationFrame(layoutChrome);
+  $("bGM").classList.toggle("on",gm);$("bGM").textContent=gm?"GM ✓":"GM";
+  if(!gm){paintFac=null;selArmy=null;reach=null;picked.clear();cv.classList.remove("paint");paintSel();updateSelInfo();}
+  drawLedger();legend();draw();
+}
+$("bGM").onclick=()=>{
+  if(gm){setGM(false);return;}
+  if(store.get("gmOK")==="1"){setGM(true);return;}
+  $("gmErr").textContent="";$("gmPass").value="";
+  $("gmask").classList.add("open");
+  setTimeout(()=>$("gmPass").focus(),40);
+};
+async function gmTry(){
+  const t=$("gmPass").value;
+  if(!t)return;
+  if(await sha256(t)===GM_HASH){
+    store.set("gmOK","1");
+    $("gmask").classList.remove("open");
+    setGM(true);toast("The realm obeys");
+  } else {
+    $("gmErr").textContent="Wrong passphrase.";
+    $("gmPass").select();
+  }
+}
+$("gmGo").onclick=gmTry;
+$("gmPass").onkeydown=e=>{if(e.key==="Enter")gmTry();if(e.key==="Escape")$("gmask").classList.remove("open");};
+$("gmCancel").onclick=()=>$("gmask").classList.remove("open");
+$("gmask").onclick=e=>{if(e.target.id==="gmask")$("gmask").classList.remove("open");};
 function logIt(txt,kind,detail){ S.log.unshift({t:S.turn,d:`${S.season} ${S.year}`,txt,kind:kind||"",detail:detail||null}); }
 const UPKEEP_RATES=[0,.25,.5,.75];
 function armyUpkeep(a){
@@ -2033,7 +2103,7 @@ $("help").onclick=e=>{if(e.target.id==="help")$("help").classList.remove("open")
 $("bSave").onclick=()=>{
   const b=new Blob([JSON.stringify(S,null,1)],{type:"application/json"});
   const a=document.createElement("a");a.href=URL.createObjectURL(b);
-  a.download=`campaign-t${String(S.turn).padStart(2,"0")}.json`;a.click();
+  a.download="campaign.json";a.click();
   toast("Saved");
 };
 /* ---------- one-button publish to GitHub ---------- */

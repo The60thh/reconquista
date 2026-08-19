@@ -572,6 +572,17 @@ function chargeZeal(fid,n,what){
   if((f.zeal||0)<n){toast(`${fid} lacks the Zeal (${n}✦ needed)`);return false;}
   f.zeal-=n;logIt(`${fid} spends ${n}✦ — ${what}`);return true;
 }
+function toggleFort(a){
+  const f=a?F[a.faction]:null;if(!a||!f)return;
+  if(a.fort){snap("abandon fort");a.fort=false;logIt(`${a.name} abandons its fort at ${a.at}`);}
+  else{
+    if(f.treasury<1500){toast(`${a.faction} holds only ${f.treasury.toLocaleString()} — 1,500 needed`);return;}
+    if(!chargeZeal(a.faction,3,`${a.name} entrenches at ${a.at}`))return;
+    snap("entrench");f.treasury-=1500;a.fort=true;
+    logIt(`${a.name} raises a fort at ${a.at} — battles there are fought on the fort map`,"battle");
+  }
+  drawLedger();const p=P[a.at];if(p&&sel===p.id)openProv(p);
+}
 let reach=null, orderMode=false;
 
 const cv=$("cv"), ctx=cv.getContext("2d");
@@ -2030,7 +2041,7 @@ function drawLedger(){
     el.innerHTML=`<div class="t"><span class="sw" style="background:${F[a.faction]?F[a.faction].color:'#777'}"></span>
       <b>${a.name}</b><button class="btn sm" data-jump="${a.at}">→</button></div>
       <div class="m">${a.men.toLocaleString()} men · ${a.holy?"✦ no upkeep":armyUpkeep(a).toLocaleString()+"◈/t"} · ${a.at}${a.order?` · ordered to ${a.order.to}`:""}</div>
-      <div class="row gm" style="margin-top:5px"><button class="btn sm" data-fm="${S.armies.indexOf(a)}" title="1✦ — this host moves one province further this season">Force march · 1✦</button></div>`;
+      <div class="row gm" style="margin-top:5px"><button class="btn sm" data-fm="${S.armies.indexOf(a)}" title="1✦ — this host moves one province further this season">Force march · 1✦</button><button class="btn sm${a.fort?" on":""}" data-ft="${S.armies.indexOf(a)}" title="${a.fort?"Click to abandon the fort":"3✦ + 1,500 florins — battles here are fought on the fort map until the host marches"}">${a.fort?"⛨ Fortified":"Entrench ⛨ · 3✦+1.5k"}</button></div>`;
     hs.appendChild(el);
   });
   hs.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>{
@@ -2044,6 +2055,7 @@ function drawLedger(){
     logIt(`${a.name} force-marches — one province further this season, but weary: if it fights, the enemy picks the ground`);
     drawLedger();
   });
+  hs.querySelectorAll("[data-ft]").forEach(b=>b.onclick=()=>{const a=S.armies[+b.dataset.ft];if(a)toggleFort(a);});
 }
 $("dCap").onclick=()=>{
   if(!gm)return;

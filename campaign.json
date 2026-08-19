@@ -2003,11 +2003,10 @@
   {
    "name": "Host of Córdoba",
    "faction": "Almohads",
-   "men": 2250,
+   "men": 2330,
    "at": "Calatrava",
    "order": null,
    "units": [
-    "mk_alm_t1_arab_horsemen",
     "mk_alm_t1_batana_al_rum",
     "mk_merc_his_t1_farfanes",
     "mk_merc_his_t1_farfanes",
@@ -2026,9 +2025,10 @@
     "mk_alm_t1_dismounted_jund_al_nasara",
     "mk_gran_t1_heavy_andalusian_crossbowmen",
     "mk_gran_t1_heavy_andalusian_crossbowmen",
-    "mk_gran_t1_heavy_andalusian_crossbowmen"
+    "mk_gran_t1_heavy_andalusian_crossbowmen",
+    "mk_gran_t1_mozarab_jund"
    ],
-   "upkeep": 5256
+   "upkeep": 5246
   }
  ],
  "log": [

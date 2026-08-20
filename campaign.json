@@ -1933,13 +1933,32 @@
   {
    "name": "Host of Zaragoza",
    "faction": "Aragon",
-   "men": 80,
+   "men": 2430,
    "at": "Zaragoza",
    "order": null,
    "units": [
-    "mk_ara_t1_king_bodyguard"
+    "mk_ara_t1_king_bodyguard",
+    "mk_ara_t1_caballeros",
+    "mk_ara_t1_fidalgos",
+    "mk_ara_t1_peones_spearmen",
+    "mk_ara_t1_peones_spearmen",
+    "mk_ara_t1_peones_spearmen",
+    "mk_ara_t1_peones_spearmen",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_sergeant_crossbowmen",
+    "mk_ara_t1_sergeant_crossbowmen",
+    "mk_ara_t1_sergeant_crossbowmen",
+    "mk_eur_t1_catapult",
+    "mk_ara_t1_mounted_crossbowmen",
+    "mk_ara_t1_mounted_crossbowmen"
    ],
-   "upkeep": 438
+   "upkeep": 4796
   },
   {
    "name": "Host of Sevilla",
@@ -2093,6 +2112,13 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring 1200",
+   "txt": "Portugal mustered a planned host at Zaragoza (20 regiments)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring 1200",

@@ -1931,17 +1931,6 @@
    "upkeep": 396
   },
   {
-   "name": "Host of León",
-   "faction": "León",
-   "men": 70,
-   "at": "León",
-   "order": null,
-   "units": [
-    "mk_cas_t1_caballeros"
-   ],
-   "upkeep": 396
-  },
-  {
    "name": "Host of Zaragoza",
    "faction": "Aragon",
    "men": 80,
@@ -2016,7 +2005,7 @@
    "name": "Host of Coimbra",
    "faction": "Portugal",
    "men": 2440,
-   "at": "Bragança",
+   "at": "Castelo Branco",
    "order": null,
    "units": [
     "mk_por_t1_king_bodyguards",
@@ -2071,9 +2060,53 @@
     "mk_cas_t1_order_knights_dismounted"
    ],
    "upkeep": 4780
+  },
+  {
+   "name": "Host of León",
+   "faction": "León",
+   "men": 2390,
+   "at": "León",
+   "order": null,
+   "units": [
+    "mk_cas_t1_general_bodyguard",
+    "mk_cas_t1_order_knights",
+    "mk_cas_t1_order_crossbows",
+    "mk_cas_t1_mounted_crossbowmen",
+    "mk_eur_t1_catapult",
+    "mk_cas_t1_crossbow_militia",
+    "mk_cas_t1_peones_spearmen",
+    "mk_cas_t1_peones_spearmen",
+    "mk_cas_t1_peones_de_elite",
+    "mk_cas_t1_peones_de_elite",
+    "mk_cas_t1_monteros_de_espinosa",
+    "mk_cas_t1_monteros_de_espinosa",
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_cas_t1_peones",
+    "mk_cas_t1_peones",
+    "mk_cas_t1_crossbowmen",
+    "mk_cas_t1_crossbowmen",
+    "mk_cas_t1_caballeros"
+   ],
+   "upkeep": 4626
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring 1200",
+   "txt": "Host of Coimbra moved Bragança → Castelo Branco",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring 1200",
+   "txt": "León mustered a planned host at León (20 regiments)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring 1200",

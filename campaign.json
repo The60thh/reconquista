@@ -27,7 +27,7 @@
    "id": "Portugal",
    "name": "Portugal",
    "color": "#285C96",
-   "treasury": 5000,
+   "treasury": 200,
    "capital": "Coimbra",
    "zeal": 0
   },
@@ -868,7 +868,9 @@
    "siege": null,
    "elev": 92,
    "occ": null,
-   "bld": [],
+   "bld": [
+    "market"
+   ],
    "upg": null,
    "raid": null
   },
@@ -1317,7 +1319,9 @@
    "siege": null,
    "elev": 70,
    "occ": null,
-   "bld": [],
+   "bld": [
+    "church"
+   ],
    "upg": null,
    "raid": null
   },
@@ -2070,6 +2074,20 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring 1200",
+   "txt": "Portugal raises a Church / Mosque at Lisbon (2,400 florins)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring 1200",
+   "txt": "Portugal raises a Market at Porto (2,400 florins)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring 1200",

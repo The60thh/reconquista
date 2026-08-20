@@ -11,7 +11,7 @@
    "id": "Castile",
    "name": "Castile",
    "color": "#A82626",
-   "treasury": 5000,
+   "treasury": 0,
    "capital": "Toledo",
    "zeal": 0
   },
@@ -401,7 +401,9 @@
    "siege": null,
    "elev": 1010,
    "occ": null,
-   "bld": [],
+   "bld": [
+    "muster"
+   ],
    "upg": null,
    "raid": null
   },
@@ -1933,32 +1935,13 @@
   {
    "name": "Host of Zaragoza",
    "faction": "Aragon",
-   "men": 2430,
+   "men": 80,
    "at": "Zaragoza",
    "order": null,
    "units": [
-    "mk_ara_t1_king_bodyguard",
-    "mk_ara_t1_caballeros",
-    "mk_ara_t1_fidalgos",
-    "mk_ara_t1_peones_spearmen",
-    "mk_ara_t1_peones_spearmen",
-    "mk_ara_t1_peones_spearmen",
-    "mk_ara_t1_peones_spearmen",
-    "mk_ara_t1_dismounted_caballeros",
-    "mk_ara_t1_dismounted_caballeros",
-    "mk_ara_t1_dismounted_caballeros",
-    "mk_ara_t1_dismounted_caballeros",
-    "mk_ara_t1_dismounted_caballeros",
-    "mk_ara_t1_dismounted_caballeros",
-    "mk_ara_t1_dismounted_caballeros",
-    "mk_ara_t1_sergeant_crossbowmen",
-    "mk_ara_t1_sergeant_crossbowmen",
-    "mk_ara_t1_sergeant_crossbowmen",
-    "mk_eur_t1_catapult",
-    "mk_ara_t1_mounted_crossbowmen",
-    "mk_ara_t1_mounted_crossbowmen"
+    "mk_ara_t1_king_bodyguard"
    ],
-   "upkeep": 4796
+   "upkeep": 438
   },
   {
    "name": "Host of Sevilla",
@@ -2115,7 +2098,7 @@
   {
    "t": 1,
    "d": "Spring 1200",
-   "txt": "Portugal mustered a planned host at Zaragoza (20 regiments)",
+   "txt": "Castile raises a Muster Ground at Burgos (5,000 florins)",
    "kind": "",
    "detail": null
   },

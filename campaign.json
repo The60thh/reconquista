@@ -1938,17 +1938,6 @@
    "upkeep": 396
   },
   {
-   "name": "Host of Coimbra",
-   "faction": "Portugal",
-   "men": 70,
-   "at": "Coimbra",
-   "order": null,
-   "units": [
-    "mk_por_t1_cavaleiros"
-   ],
-   "upkeep": 396
-  },
-  {
    "name": "Host of Zaragoza",
    "faction": "Aragon",
    "men": 80,
@@ -1958,17 +1947,6 @@
     "mk_ara_t1_king_bodyguard"
    ],
    "upkeep": 438
-  },
-  {
-   "name": "Host of Pamplona",
-   "faction": "Navarre",
-   "men": 130,
-   "at": "Pamplona",
-   "order": null,
-   "units": [
-    "mk_nav_t1_fletxers"
-   ],
-   "upkeep": 215
   },
   {
    "name": "Host of Sevilla",
@@ -2029,9 +2007,104 @@
     "mk_gran_t1_mozarab_jund"
    ],
    "upkeep": 5246
+  },
+  {
+   "name": "Host of Coimbra",
+   "faction": "Portugal",
+   "men": 2440,
+   "at": "Coimbra",
+   "order": null,
+   "units": [
+    "mk_por_t1_king_bodyguards",
+    "mk_eur_t1_catapult",
+    "mk_cas_t1_order_knights",
+    "mk_cas_t1_order_knights",
+    "mk_por_t1_milicia_concelhia",
+    "mk_por_t1_milicia_concelhia",
+    "mk_por_t1_milicia_concelhia",
+    "mk_por_t1_milicia_concelhia",
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_por_t1_besteiros_de_cavalo",
+    "mk_por_t1_besteiros_de_cavalo",
+    "mk_por_t1_cavaleiros_apeados",
+    "mk_por_t1_cavaleiros_apeados",
+    "mk_por_t1_besteiros",
+    "mk_por_t1_besteiros",
+    "mk_por_t1_cavaleiros_apeados",
+    "mk_cas_t1_order_knights_dismounted"
+   ],
+   "upkeep": 5147
+  },
+  {
+   "name": "Host of Pamplona",
+   "faction": "Navarre",
+   "men": 2460,
+   "at": "Pamplona",
+   "order": null,
+   "units": [
+    "mk_merc_fre_t1_routiers_guisarmiers",
+    "mk_merc_fre_t1_routiers_guisarmiers",
+    "mk_merc_fre_t1_routiers_guisarmiers",
+    "mk_merc_fre_t1_routiers_guisarmiers",
+    "mk_cas_t1_order_knights",
+    "mk_cas_t1_order_knights",
+    "mk_nav_t1_vasque_skirmisher_cavalry",
+    "mk_nav_t1_vasque_skirmisher_cavalry",
+    "mk_eur_t1_trebuchet",
+    "mk_nav_t1_kings_bodyguard",
+    "mk_nav_t1_fletxers",
+    "mk_nav_t1_fletxers",
+    "mk_nav_t1_fletxers",
+    "mk_nav_t1_fletxers",
+    "mk_nav_t1_caballeros_spearmen",
+    "mk_nav_t1_caballeros_spearmen",
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_cas_t1_order_knights_dismounted"
+   ],
+   "upkeep": 4780
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring 1200",
+   "txt": "Host of Pamplona moved Zaragoza → Pamplona",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring 1200",
+   "txt": "Host of Pamplona moved Pamplona → Zaragoza",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring 1200",
+   "txt": "Navarre mustered a planned host at Pamplona (20 regiments)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring 1200",
+   "txt": "Host of Coimbra moved Coimbra → León",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring 1200",
+   "txt": "Portugal mustered a planned host at Coimbra (20 regiments)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring 1200",

@@ -2012,7 +2012,7 @@
    "name": "Host of Coimbra",
    "faction": "Portugal",
    "men": 2440,
-   "at": "Coimbra",
+   "at": "Bragança",
    "order": null,
    "units": [
     "mk_por_t1_king_bodyguards",
@@ -2070,6 +2070,20 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring 1200",
+   "txt": "Host of Coimbra moved Coimbra → Bragança",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring 1200",
+   "txt": "Portugal mustered a planned host at León (8 regiments)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring 1200",

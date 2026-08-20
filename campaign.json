@@ -2096,6 +2096,13 @@
   {
    "t": 1,
    "d": "Spring 1200",
+   "txt": "Castile and Portugal swear alliance",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring 1200",
    "txt": "Host of Coimbra moved Bragança → Castelo Branco",
    "kind": "",
    "detail": null
@@ -10150,7 +10157,9 @@
  "hmax": 4167,
  "allowance": 3,
  "truces": {},
- "allies": [],
+ "allies": [
+  "Castile|Portugal"
+ ],
  "order": [
   "Almohads",
   "Portugal",

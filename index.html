@@ -126,6 +126,19 @@ textarea{resize:vertical;min-height:60px;font-size:12px;line-height:1.5}
 .aroster .ru{display:flex;justify-content:space-between;gap:10px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;padding:2px 0}
 .aroster .ru .un{color:var(--bone)}
 .aroster .ru .us{color:var(--dimmer);white-space:nowrap}
+.chev{display:inline-flex;gap:1px;margin-left:5px;vertical-align:middle}
+.chev svg{display:block}
+.btn.xs{padding:1px 6px;font-size:10px;line-height:1.4}
+.chevbtns{margin-left:6px;display:inline-flex;gap:3px}
+#cxXp{display:none;padding:8px 14px 3px;border-bottom:1px solid var(--soft);max-height:104px;overflow-y:auto}
+#cxXp.on{display:block}
+.xchip{display:inline-flex;align-items:center;gap:6px;background:#141E26;border:1px solid var(--soft);border-radius:4px;padding:3px 8px;margin:0 5px 5px 0;font-size:11px;color:var(--bone);font-family:"IBM Plex Mono",monospace}
+.xchip .chev{margin-left:0}
+.xchip .x0{color:var(--dimmer);font-size:9.5px;letter-spacing:.4px}
+.xb{background:#0F171E;border:1px solid var(--soft);border-radius:3px;color:var(--dim);width:19px;height:19px;line-height:1;cursor:pointer;font-size:12px;padding:0}
+.xb:hover{border-color:var(--brass);color:var(--bone)}
+.xrow{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:4px}
+.xrow .n{font-size:11px;color:var(--bone)}
 .warn{background:rgba(179,84,63,.14);border:1px solid rgba(179,84,63,.5);border-radius:3px;padding:8px 10px;font-size:12px;color:#E5A594}
 
 #ledger{position:fixed;top:66px;left:10px;bottom:10px;width:352px;z-index:12;background:rgba(13,20,26,.975);
@@ -186,9 +199,9 @@ textarea{resize:vertical;min-height:60px;font-size:12px;line-height:1.5}
 .chip{background:#141E26;border:1px solid var(--soft);border-radius:99px;padding:1px 8px;cursor:pointer;font-size:10px;color:var(--dimmer)}
 .chip:hover{border-color:var(--brass);color:var(--bone)}
 .batcard .s{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--dim);margin-bottom:8px}
-#help,#cxShare,#batM,#rulesOv{position:fixed;inset:0;z-index:50;background:rgba(6,10,14,.8);backdrop-filter:blur(5px);
+#help,#cxShare,#batM,#rulesOv,#tmapOv{position:fixed;inset:0;z-index:50;background:rgba(6,10,14,.8);backdrop-filter:blur(5px);
  display:none;align-items:center;justify-content:center}
-#help.open,#cxShare.open,#batM.open,#rulesOv.open{display:flex}
+#help.open,#cxShare.open,#batM.open,#rulesOv.open,#tmapOv.open{display:flex}
 .hcard{background:rgba(15,22,28,.99);border:1px solid var(--line);border-radius:6px;padding:26px 30px;width:520px;max-width:92vw}
 .hcard h2{margin:0 0 14px;font-family:"Cinzel",serif;font-size:20px;font-weight:600}
 .hgrid{display:grid;grid-template-columns:130px 1fr;gap:7px 14px;font-size:13px}
@@ -326,6 +339,8 @@ input[type=file]{display:none}
     <button class="btn gm" id="bLoad">Load</button>
     <input type="file" id="fLoad" accept=".json,application/json">
     <button class="btn gm" id="bPng">Export</button>
+    <button class="btn" id="bTmap" title="How the map stood at every turn">Turn map</button>
+    <button class="btn" id="bDisc" title="Campaign Discord" style="padding:6px 9px"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" style="display:block"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.058a.082.082 0 0 0 .031.056 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.094.252-.192.372-.291a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.009c.12.099.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></button>
     <button class="btn" id="bLedger">Ledger</button>
     <button class="btn" id="bRules">Rules</button>
     <button class="btn" id="bHelp">?</button>
@@ -389,6 +404,18 @@ input[type=file]{display:none}
   </div>
 </div></div>
 
+<div id="tmapOv"><div class="hcard" style="width:1060px;max-width:96vw;max-height:92vh;display:flex;flex-direction:column;gap:8px">
+  <div class="row" style="justify-content:space-between;align-items:center">
+    <b id="tmLbl" style="font-family:'Cinzel',serif;color:var(--bone)">—</b>
+    <div class="row" style="gap:6px">
+      <button class="btn sm" id="tmPrev">◂</button>
+      <select id="tmSel" class="btn sm" style="max-width:300px"></select>
+      <button class="btn sm" id="tmNext">▸</button>
+      <button class="btn sm" id="tmClose">✕</button>
+    </div>
+  </div>
+  <div style="flex:1;overflow:auto;text-align:center"><img id="tmImg" alt="" style="max-width:100%;border:1px solid var(--soft);border-radius:6px"></div>
+</div></div>
 <div id="rulesOv"><div class="hcard" style="width:640px;max-width:95vw;max-height:88vh;display:flex;flex-direction:column">
   <div id="rulesBody" style="flex:1;overflow-y:auto;padding-right:8px">
 <h2>Reconquista 1200 AD</h2>
@@ -398,9 +425,13 @@ input[type=file]{display:none}
 <h3>Movement</h3>
 <p>Entering a province costs its terrain — <b>plains 1 · hills 2 · mountains 3</b> — plus 1 to cross a river at one of the <b>ten great fords</b> (marked ≈; no other river gates a march). A <b>Road</b> province costs 1, its ford bridged. Each host has <b>3 points a season</b>. Entering a province held by an enemy host ends your movement. In enemy lands a host marches at most <b>one province</b> a season. <b>Force March (1✦):</b> one extra point, but weary — if the host fights this season, the enemy picks the battlefield.</p>
 <h3>Armies</h3>
-<p>Muster from the Codex (press <b>C</b>) at your settlements, paying unit costs in florins. <b>Cap: 1 + provinces ÷ 4</b>, rounded down; every host beyond your <b>first</b> needs its own <b>Muster Ground</b>. Upkeep each season: costliest host <b>free</b>, 2nd <b>25%</b>, 3rd <b>50%</b>, 4th <b>75%</b>, further <b>100%</b>.</p>
+<p>Muster from the Codex (press <b>C</b>) at your settlements, paying unit costs in florins — <b>at once, on your turn</b>. Income arrives only at season's end. <b>Cap: 1 + provinces ÷ 4</b>, rounded down; every host beyond your <b>first</b> needs its own <b>Muster Ground</b>. Upkeep each season: costliest host <b>free</b>, 2nd <b>25%</b>, 3rd <b>50%</b>, 4th <b>75%</b>, further <b>100%</b>.<br><b>Composition — each host may contain at most:</b> 4 pike infantry · 5 missile infantry (archers, crossbows, slingers, skirmishers) · 2 shock/hybrid cavalry, the general's bodyguard does not count · 2 missile cavalry · 1 artillery. The GM refuses a muster that breaks a limit.</p>
 <h3>Battles</h3>
-<p>Hostile hosts sharing a province: the GM <b>stages a battle</b>, it is fought in Attila, and the fallen regiments are struck from the rolls by name. The beaten withdraw. <b>Ransom (1✦):</b> the loser pays 2,000 florins — or refuses, and the insult grants the victor +2✦.</p>
+<p>Hostile hosts sharing a province: the GM <b>stages a battle</b>. It is fought in Attila. The GM records the victor and strikes each fallen regiment from the rolls by name.</p>
+<p><b>The map</b> matches the province's terrain. An entrenched host fights on the <b>fort map</b>. If a force-marched host fights, its enemy chooses the map.</p>
+<p><b>Sides:</b> all hosts of one realm in the province fight as one side. An allied host in the same province may join — its ruler decides. A field battle cannot be refused. A <b>draw</b> is a defender's victory: the attacker withdraws.</p>
+<p><b>Defeat:</b> each beaten host withdraws to an adjacent friendly province — its ruler picks which. If no adjacent friendly province exists, the host is <b>destroyed</b>. A host that loses all its regiments is destroyed.</p>
+<p><b>Ransom (1✦):</b> after the victory is recorded, the victor may demand ransom. The loser pays 2,000 florins, or refuses — a refusal grants the victor +2✦.</p>
 <h3>Settlements &amp; Sieges</h3>
 <p>Villages and towns fall by <b>occupation</b> — striped, annexed at season's end (<b>Zealous Annex 1✦</b>: at once). Fortified cities must be <b>besieged</b>: small holds <b>3 seasons</b>, large <b>4</b>, +1 with a Port or Granary. First season builds the engines; assault any season after. A host inside may sally. Garrison budgets, spent by the GM in the battle: <b>town 2,500 · small city 5,000 · large city 7,500</b>.</p>
 <h3>Money</h3>
@@ -419,15 +450,17 @@ input[type=file]{display:none}
 <tr><td>Small → large city</td><td>30,000</td><td>one season · the great city</td></tr>
 </table>
 <h3>Zeal ✦ &nbsp;<span style="text-transform:none;letter-spacing:0;color:var(--dim)">+1 a season · +1 per church or mosque · bank of 6</span></h3>
-<div class="zrow"><span class="zc">1✦</span><span>Force March · Zealous Annex · Ransom · Declare War (waived when the GM grants cause)</span></div>
+<div class="zrow"><span class="zc">1✦</span><span>Force March · Zealous Annex · Ransom · Declare War — free with GM-granted cause · <b>2✦</b> against a realm of the same faith</span></div>
 <div class="zrow"><span class="zc">2✦</span><span>Sabotage a siege (its clock gains a season) · Raid — the province pays <i>you</i> next season</span></div>
 <div class="zrow"><span class="zc">3✦</span><span>+ 1,500 florins — Bribe the Gates: the siege clock loses a season</span></div>
 <div class="zrow"><span class="zc">3✦</span><span>+ 1,500 florins — Entrench: the host raises a fort — battles there are fought on the fort map until it marches on</span></div>
 <div class="zrow"><span class="zc">6✦</span><span><b>Crusade / Jihad</b> — a free host above the cap, no upkeep; it goes home the day the war ends</span></div>
-<p style="color:var(--dim)">A realm that loses its capital gains <b>+2✦</b> — outrage feeds the faith.</p>
+<p style="color:var(--dim)">A realm that loses its capital gains <b>+2✦</b>, and the GM selects its new capital.</p>
 <p style="color:var(--dim)">Breaking a truce or betraying an ally: <b>−3✦</b> and infamy in the chronicle — treachery costs three lawful wars.</p>
 <h3>Diplomacy</h3>
-<p>War, peace, truce and alliance are declared through the GM and chronicled. A truce runs <b>two seasons</b> and lapses on its own.</p>
+<p>War, peace, truce and alliance are declared through the GM and chronicled. A truce runs <b>two seasons</b> and lapses on its own. Official talks happen on <b>Discord</b>: ask the GM, and the GM opens a private channel for the two realms.</p>
+<h3>Victory</h3>
+<p>You win when you conquer the capitals of <b>three</b> other realms.</p>
 </div>
   <button class="btn primary wide" id="rulesClose" style="margin-top:14px;flex:0 0 auto">Close</button>
 </div></div>
@@ -562,11 +595,13 @@ const BLD={
  muster:{n:"Muster Ground",cost:5000,tip:"+1 army"},
  road:{n:"Road",cost:3000,tip:"Province costs 1 to enter · river penalty waived · not in mountains"},
  port:{n:"Port",cost:4000,tip:"+600 florins/season · siege lasts +1 turn"},
- granary:{n:"Granary",cost:2500,tip:"Siege lasts +1 turn"}
+ granary:{n:"Granary",cost:2500,tip:"Siege lasts +1 turn"},
+ synagogue:{n:"Synagogue",cost:-2500,tip:"The community pays 2,500 for its charter · +5% realm income/season · max 2 per realm · your Zeal ceiling −1 while it stands · −1✦ on chartering · the city holds one season fewer under siege"}
 };
 const UPG={1:{cost:15000,n:"town"},2:{cost:20000,n:"fortified city (small)"},3:{cost:30000,n:"fortified city (large)"}};
 const effMove=p=>p.bld&&p.bld.includes("road")?1:p.move;
-const holdout=p=>(p.tier===3?4:3)+(p.bld.includes("port")?1:0)+(p.bld.includes("granary")?1:0);
+const holdout=p=>Math.max(1,(p.tier===3?4:3)+(p.bld.includes("port")?1:0)+(p.bld.includes("granary")?1:0)-(p.bld.includes("synagogue")?1:0));
+function zealCap(fid){return Math.max(0,6-S.provinces.filter(p=>p.playable&&p.owner===fid&&p.bld.includes("synagogue")).length);}
 function chargeZeal(fid,n,what){
   const f=F[fid];if(!f)return false;
   if((f.zeal||0)<n){toast(`${fid} lacks the Zeal (${n}✦ needed)`);return false;}
@@ -1287,6 +1322,26 @@ function openProv(p){
   $("dNote").value=p.note||"";$("dNoteRO").textContent=p.note||"—";
   drawerArmies(p);
 }
+function facIncomeCalc(fid){
+  const rows=[];let total=0;
+  for(const p of S.provinces){
+    if(!p.playable||p.occ)continue;
+    const v=p.value+(p.bld.includes("market")?300:0)+(p.bld.includes("port")?600:0);
+    if(p.owner===fid){
+      if(p.raid&&F[p.raid.by]){rows.push({id:p.id,v:0,note:`raided — ${p.raid.by} takes ${v.toLocaleString()}`});continue;}
+      const bits=p.coastal?[(p.value-300)+"◈ · sea trade +300"]:[p.value+"◈"];
+      if(p.bld.includes("market"))bits.push("Market +300");
+      if(p.bld.includes("port"))bits.push("Port +600");
+      rows.push({id:p.id,v,note:bits.join(" · ")});total+=v;
+    } else if(p.raid&&p.raid.by===fid){
+      rows.push({id:"⚑ raid on "+p.id,v,note:"their revenue, seized"});total+=v;
+    }
+  }
+  const syn=S.provinces.filter(p=>p.playable&&!p.occ&&p.owner===fid&&p.bld.includes("synagogue")).length;
+  if(syn&&total){const bonus=Math.round(total*0.05*syn);rows.push({id:`⚖ Synagogues ×${syn}`,v:bonus,note:`+${5*syn}% of all revenue`});total+=bonus;}
+  rows.sort((a,b)=>b.v-a.v);
+  return {rows,total};
+}
 function openRealm(fid){
   const f=F[fid]; if(!f)return;
   sel=null;paintSel();
@@ -1297,7 +1352,7 @@ function openRealm(fid){
   $("dName").textContent=f.name;
   $("dSub").textContent=`capital: ${f.capital||"—"}`;
   const held=S.provinces.filter(p=>p.owner===fid);
-  const inc=held.reduce((a,p)=>a+(p.occ?0:p.value),0);
+  const ib=facIncomeCalc(fid);const inc=ib.total;
   const hosts=S.armies.filter(a=>a.faction===fid);
   const men=hosts.reduce((a,x)=>a+x.men,0);
   const others=S.factions.filter(x=>x.id!==fid);
@@ -1315,7 +1370,8 @@ function openRealm(fid){
     <div class="sect">
       <span class="lbl">Assessment</span>
       <div class="kv"><b>Provinces</b><span>${held.length}</span></div>
-      <div class="kv"><b>Income / turn</b><span>${inc.toLocaleString()}◈</span></div>
+      <div class="kv" id="incRow" style="cursor:pointer" title="Click for the sources"><b>Income / turn <span style="color:var(--dimmer)">▸</span></b><span>${inc.toLocaleString()}◈</span></div>
+      <div class="aroster" id="incBrk">${ib.rows.map(r=>`<div class="ru"><span class="un">${r.id}</span><span class="us">${r.note}${r.v?` = ${r.v.toLocaleString()}`:""}</span></div>`).join("")||'<div class="ru"><span class="us">No revenue.</span></div>'}</div>
       <div class="kv"><b>Upkeep / turn</b><span>${(()=>{const ds=hosts.map(armyUpkeep).sort((x,y)=>y-x);let u=0;ds.forEach((x,i)=>u+=Math.round(x*(i<UPKEEP_RATES.length?UPKEEP_RATES[i]:1)));return u.toLocaleString();})()}◈</span></div>
       <div class="kv"><b>Zeal</b><span class="gm" style="padding:0"><input type="number" id="rZeal" value="${f.zeal||0}" min="0" max="6" style="width:60px;text-align:right"></span><span style="display:${gm?"none":"inline"}">${f.zeal||0} ✦</span></div>
       <div class="kv"><b>Hosts</b><span>${hosts.length} · ${men.toLocaleString()} men</span></div>
@@ -1368,10 +1424,11 @@ function openRealm(fid){
         <div class="m">${a.men.toLocaleString()} men · ${a.at}${a.order?` · ordered to ${a.order.to}`:""}</div></div>`).join("")
       :'<div style="color:var(--dimmer);font-size:12px">None raised.</div>'}
     </div>`;
+  const ir=rb.querySelector("#incRow");if(ir)ir.onclick=()=>{const b=rb.querySelector("#incBrk");if(b)b.classList.toggle("open");};
   const nm=rb.querySelector("#rName");if(nm)nm.onchange=()=>{f.name=nm.value;buildSelects();legend();drawLedger();openRealm(fid);};
   const cl=rb.querySelector("#rCol");if(cl)cl.oninput=()=>{f.color=cl.value;paintMap();legend();};
   const tr=rb.querySelector("#rTre");if(tr)tr.onchange=()=>{f.treasury=+tr.value||0;legend();};
-  const rz=rb.querySelector("#rZeal");if(rz)rz.onchange=()=>{f.zeal=Math.max(0,Math.min(6,+rz.value||0));};
+  const rz=rb.querySelector("#rZeal");if(rz)rz.onchange=()=>{f.zeal=Math.max(0,Math.min(zealCap(fid),+rz.value||0));};
   const gg=rb.querySelector("#rGiftGo");if(gg)gg.onclick=()=>{
     const to=rb.querySelector("#rGiftTo").value, amt=Math.max(0,+rb.querySelector("#rGiftAmt").value||0);
     if(!amt){toast("Name a sum");return;}
@@ -1475,6 +1532,19 @@ function drawerArmies(p){
   });
   const re=()=>{openProv(p);draw();};
   box.querySelectorAll("[data-insp]").forEach(b=>b.onclick=()=>window.inspectArmy&&window.inspectArmy(S.armies[+b.dataset.insp]));
+  box.querySelectorAll("[data-chv]").forEach(b=>b.onclick=e=>{
+    e.stopPropagation();
+    if(!gm)return;
+    const pr=b.dataset.chv.split("|"),a=S.armies[+pr[0]];
+    if(!a)return;ensureXp(a);
+    const k=pr[1],r=+pr[2],d=+pr[3];
+    const i=a.units.findIndex((uk,ix)=>uk===k&&((a.xp[ix]||0)===r));
+    if(i<0)return;
+    const nr=Math.max(0,Math.min(9,r+d));
+    if(nr===r)return;
+    snap("chevron");a.xp[i]=nr;
+    openProv(P[a.at]);window.openRosterFor&&window.openRosterFor(a);
+  });
   box.querySelectorAll("[data-fort]").forEach(b=>b.onclick=()=>{
     const a=S.armies[+b.dataset.fort];if(!a)return;
     const f=F[a.faction];if(!f)return;
@@ -1533,14 +1603,18 @@ function renderWorksBox(p){
       if(key==="road"&&p.terrain==="mountain")continue;
       if(key==="port"&&(!p.coastal||p.tier<1))continue;
       if(key==="muster"&&p.tier<1)continue;
+      if(key==="synagogue"&&p.tier<2)continue;
+      if(key==="synagogue"&&p.expelled)continue;
+      if(key==="synagogue"&&p.owner&&S.provinces.filter(q=>q.owner===p.owner&&q.bld.includes("synagogue")).length>=2)continue;
       if(key==="church"&&p.owner&&S.provinces.filter(q=>q.owner===p.owner&&q.bld.includes("church")).length>=2)continue;
-      rows.push(`<button class="btn sm" data-bb="${key}" style="flex:1 1 46%" title="${BLD[key].tip}">${BLD[key].n} · ${(BLD[key].cost/1000).toFixed(1)}k</button>`);
+      rows.push(`<button class="btn sm" data-bb="${key}" style="flex:1 1 46%" title="${BLD[key].tip}">${BLD[key].n} · ${BLD[key].cost<0?"+"+(-BLD[key].cost/1000).toFixed(1)+"k":(BLD[key].cost/1000).toFixed(1)+"k"}</button>`);
     }
     if(p.tier<3&&!p.upg){
       const t=p.tier+1;
       rows.push(`<button class="btn sm primary" data-bu="${t}" style="flex:1 1 100%">Upgrade to ${UPG[t].n} · ${(UPG[t].cost/1000).toFixed(0)}k · 1 turn</button>`);
     }
     if(rows.length)h+=`<div class="row" style="flex-wrap:wrap;gap:5px;margin-top:8px">${rows.join("")}</div>`;
+    if(p.bld.includes("synagogue"))h+=`<div class="row" style="margin-top:6px"><button class="btn sm" data-bexp="1" style="flex:1" title="Pay 1,500 for the upheaval · +1✦ as the zealots rejoice · your Zeal ceiling is restored · this city may never charter another">Expel the community · 1,500 · +1✦</button></div>`;
     if(owner)h+=`<div class="hint" style="margin-top:5px">${owner.name} holds ${owner.treasury.toLocaleString()} florins.</div>`;
   }
   box.innerHTML=h;
@@ -1550,12 +1624,26 @@ function renderWorksBox(p){
     if(f.treasury<cost){toast(`${f.name} holds only ${f.treasury.toLocaleString()} of ${cost.toLocaleString()}`);return false;}
     f.treasury-=cost;return true;
   };
+  box.querySelectorAll("[data-bexp]").forEach(b=>b.onclick=()=>{
+    const f=F[p.owner];if(!f)return;
+    snap("expel");
+    if(f.treasury<1500){toast(`${p.owner} holds only ${f.treasury.toLocaleString()} — 1,500 needed`);undoStack.pop();$("bUndo").disabled=!undoStack.length;return;}
+    f.treasury-=1500;
+    p.bld=p.bld.filter(k=>k!=="synagogue");
+    p.expelled=true;
+    f.zeal=Math.min(zealCap(p.owner),(f.zeal||0)+1);
+    logIt(`${p.owner} expels the community of ${p.id} — the synagogue is torn down, the zealots rejoice (+1✦)`,"battle");
+    legend();drawLedger();openProv(p);
+  });
   box.querySelectorAll("[data-bb]").forEach(b=>b.onclick=()=>{
     const key=b.dataset.bb;
     snap("build "+key);
     if(!pay(BLD[key].cost)){undoStack.pop();$("bUndo").disabled=!undoStack.length;return;}
     p.bld.push(key);
-    logIt(`${p.owner} raises a ${BLD[key].n} at ${p.id} (${BLD[key].cost.toLocaleString()} florins)`);
+    if(key==="synagogue"){
+      const zf=F[p.owner];if(zf){zf.zeal=Math.max(0,(zf.zeal||0)-1);zf.zeal=Math.min(zf.zeal,zealCap(p.owner));}
+      logIt(`${p.owner} charters a Synagogue at ${p.id} — the community pays 2,500 florins; the crown spends 1✦ of standing`);
+    } else logIt(`${p.owner} raises a ${BLD[key].n} at ${p.id} (${BLD[key].cost.toLocaleString()} florins)`);
     legend();drawLedger();openProv(p);
   });
   box.querySelectorAll("[data-bu]").forEach(b=>b.onclick=()=>{
@@ -1712,7 +1800,7 @@ function legend(){
   $("legTitle").textContent="Realms";$("bAddFac").style.display="";
   b.innerHTML=S.factions.map(f=>{
     const held=S.provinces.filter(p=>p.owner===f.id);
-    const inc=held.reduce((a,p)=>a+(p.occ?0:p.value),0);
+    const inc=facIncomeCalc(f.id).total;
     const men=S.armies.filter(a=>a.faction===f.id).reduce((a,x)=>a+x.men,0);
     const inbound=S.provinces.filter(p=>p.occ&&p.occ.by===f.id).length;
     return `<div class="frow${paintFac===f.id?" on":""}" data-f="${f.id}">
@@ -1837,6 +1925,7 @@ function stageBattle(pid){
 
 $("bTurn").onclick=()=>{
   snap("next realm");
+  turnSnapshot(`${F[S.order[S.active]]?F[S.order[S.active]].name:S.order[S.active]} · ${S.season} ${S.year} · turn ${S.turn}`);
   S.active++;
   if(S.active<S.order.length){
     stats();drawLedger();
@@ -1891,6 +1980,14 @@ $("bTurn").onclick=()=>{
     else if(p.raid) p.raid=null;
   }
   for(const f of S.factions){
+    const syn=S.provinces.filter(p=>p.playable&&!p.occ&&p.owner===f.id&&p.bld.includes("synagogue")).length;
+    if(syn&&gain[f.id]){
+      const bonus=Math.round(gain[f.id]*0.05*syn);
+      gain[f.id]+=bonus;
+      events.push(`${f.id}'s synagogues yield ${bonus.toLocaleString()} florins (+${5*syn}%)`);
+    }
+  }
+  for(const f of S.factions){
     const dues=S.armies.filter(a=>a.faction===f.id).map(armyUpkeep).sort((a,b)=>b-a);
     let upkeep=0;
     dues.forEach((u,i)=>upkeep+=Math.round(u*(i<UPKEEP_RATES.length?UPKEEP_RATES[i]:1)));
@@ -1900,7 +1997,7 @@ $("bTurn").onclick=()=>{
       f.treasury=0;
     }
     const churches=S.provinces.filter(p=>p.owner===f.id&&!p.occ&&p.bld.includes("church")).length;
-    f.zeal=Math.min(6,(f.zeal||0)+1+churches);
+    f.zeal=Math.min(zealCap(f.id),(f.zeal||0)+1+churches);
     if(upkeep>0)logIt(`${f.name}: +${(gain[f.id]||0).toLocaleString()} income, −${upkeep.toLocaleString()} upkeep`);
   }
 
@@ -2068,7 +2165,30 @@ $("dCap").onclick=()=>{
   logIt(`${f.name} moves its seat: ${old} → ${p.id}`);
   paintMap();legend();draw();drawLedger();openProv(p);
 };
-$("bRules").onclick=()=>$("rulesOv").classList.add("open");
+$("bDisc").onclick=()=>window.open("https://discord.gg/K33kcZztf","_blank");
+let tmIdx=0;
+function tmShow(i){
+  const L=S.turnlog||[];if(!L.length)return;
+  tmIdx=Math.max(0,Math.min(L.length-1,i));
+  const e=L[tmIdx];
+  $("tmLbl").textContent=e.label;
+  $("tmImg").src=e.img;
+  $("tmSel").value=String(tmIdx);
+  $("tmPrev").disabled=tmIdx===0;$("tmNext").disabled=tmIdx===L.length-1;
+}
+$("bTmap").onclick=()=>{
+  const L=S.turnlog||[];
+  if(!L.length){toast("No turn maps yet — the log records each turn from now on");return;}
+  $("tmSel").innerHTML=L.map((e,i)=>`<option value="${i}">${e.label}</option>`).join("");
+  $("tmapOv").classList.add("open");
+  tmShow(L.length-1);
+};
+$("tmPrev").onclick=()=>tmShow(tmIdx-1);
+$("tmNext").onclick=()=>tmShow(tmIdx+1);
+$("tmSel").onchange=e=>tmShow(+e.target.value);
+$("tmClose").onclick=()=>$("tmapOv").classList.remove("open");
+$("tmapOv").onclick=e=>{if(e.target.id==="tmapOv")$("tmapOv").classList.remove("open");};
+$("bRules").onclick=()=>window.open("https://docs.google.com/document/d/1XBb8NIjby04YL67B1-toi9XQsHnMsh743cGKpEvTIHI/preview","_blank");
 $("rulesClose").onclick=()=>$("rulesOv").classList.remove("open");
 $("rulesOv").onclick=e=>{if(e.target.id==="rulesOv")$("rulesOv").classList.remove("open");};
 $("bHelp").onclick=()=>$("help").classList.add("open");
@@ -2141,7 +2261,7 @@ $("fLoad").onchange=e=>{
   }).catch(()=>toast("That file could not be read"));
   e.target.value="";
 };
-$("bPng").onclick=()=>{
+function renderFullMap(){
   const c=document.createElement("canvas");c.width=S.w;c.height=S.h;
   const x=c.getContext("2d");x.drawImage(mapCan,0,0);
   const sv={...view};view={x:0,y:0,z:1};
@@ -2179,9 +2299,23 @@ $("bPng").onclick=()=>{
     });
   }
   view=sv;
-  c.toBlob(b=>{const a=document.createElement("a");a.href=URL.createObjectURL(b);
+  return c;
+}
+$("bPng").onclick=()=>{
+  renderFullMap().toBlob(b=>{const a=document.createElement("a");a.href=URL.createObjectURL(b);
     a.download=`turn-${String(S.turn).padStart(2,"0")}.png`;a.click();toast("Turn map exported");});
 };
+function turnSnapshot(label){
+  try{
+    const c=renderFullMap();
+    const w=980,h=Math.round(c.height*w/c.width);
+    const d=document.createElement("canvas");d.width=w;d.height=h;
+    d.getContext("2d").drawImage(c,0,0,w,h);
+    S.turnlog=S.turnlog||[];
+    S.turnlog.push({t:S.turn,label,img:d.toDataURL("image/jpeg",0.66)});
+    while(S.turnlog.length>40)S.turnlog.shift();
+  }catch(e){}
+}
 </script>
 
 <div id="codex">
@@ -2210,7 +2344,7 @@ $("bPng").onclick=()=>{
   <div id="cxFoot">
     <span class="cxslots" id="cxSlots"></span>
     <span class="tot" id="cxTots"></span>
-    <span class="note">gold totals are for your ledger — the ◈ treasury is untouched</span>
+    <span class="note">plans are free to draft — when the GM musters, the treasury is charged at once</span>
     <span style="flex:1"></span>
     <button class="btn" id="cxCopy">Copy for GM</button>
     <button class="btn primary" id="cxDone">Done mustering</button>
@@ -2264,11 +2398,15 @@ function cxList(){
     :((+b[cxSort]||0)-(+a[cxSort]||0)||(a.name||"").localeCompare(b.name||"")));
 }
 function countIn(k){const src=cxArmy||cxInspect;return src&&src.units?src.units.filter(x=>x===k).length:0;}
+function countRank(k,r){const src=cxArmy||cxInspect;if(!src||!Array.isArray(src.units))return 0;
+  if(!Array.isArray(src.xp))return r===0?src.units.filter(x=>x===k).length:0;
+  let c=0;src.units.forEach((uk,i)=>{if(uk===k&&((src.xp[i]||0)===r))c++;});return c;}
 
 /* ---------- grid ---------- */
-function cxCard(u){
+
+function cxCard(u,rank){
   const ic=CODEX_ICONS[u.unit_key];
-  const n=countIn(u.unit_key);
+  const n=(cxArmy&&!cxArmy._plan)?countRank(u.unit_key,0):countIn(u.unit_key);
   const full=cxArmy&&cxArmy.units.length>=CAPU;
   return `<div class="cxcard${cxSel===u.unit_key?" sel":""}" data-cxk="${esc(u.unit_key)}">
     <div class="prt">${ic?`<img loading="lazy" src="${ic}">`:""}<span class="cost">${u.cost}g</span></div>
@@ -2279,17 +2417,32 @@ function cxCard(u){
       <div><div class="v">${u.melee_defence??"–"}</div><div class="k">Def</div></div>
       <div><div class="v">${u.armour_value??"–"}</div><div class="k">Arm</div></div>
     </div>
-    ${cxArmy?`<div class="mrow"><button data-cxrm="${esc(u.unit_key)}" ${n?"":"disabled"}>−</button>
+    ${rank>=1?`<div class="xrow"><button class="xb gm" data-cxv="${esc(u.unit_key)}|${rank}|-1" title="One regiment loses a chevron">−</button><span class="n">${countRank(u.unit_key,rank)}×</span>${chevMark(rank)}<button class="xb gm" data-cxv="${esc(u.unit_key)}|${rank}|1" title="One regiment gains a chevron">+</button></div>`
+  :cxArmy?`<div class="mrow"><button data-cxrm="${esc(u.unit_key)}" ${n?"":"disabled"}>−</button>
       <span class="n">${n||""}</span>
-      <button data-cxad="${esc(u.unit_key)}" ${full?"disabled":""}>+</button></div>`:cxInspect?`<div class="mrow"><span class="n" style="flex:1;text-align:center">${n}× in host · ${((u.men||0)*n).toLocaleString()} men</span></div>`:""}
+      <button data-cxad="${esc(u.unit_key)}" ${full?"disabled":""}>+</button></div>${(!cxArmy._plan&&n)?`<div class="xrow"><span class="n">${n}×</span><span class="x0">◦</span><button class="xb gm" data-cxv="${esc(u.unit_key)}|0|1" title="One regiment gains a chevron">+</button></div>`:""}`
+  :cxInspect?`<div class="xrow"><span class="n">${countRank(u.unit_key,0)}×</span><span class="x0">◦</span></div>`:""}
   </div>`;
 }
+
 function cxRender(){
   const list=cxList();
-  $("cxGrid").innerHTML=list.map(cxCard).join("")||'<div style="color:var(--dimmer);padding:30px;font-size:13px">No unit answers that call.</div>';
+  const _a=(cxArmy&&!cxArmy._plan)?cxArmy:cxInspect;
+  let ents;
+  if(_a&&Array.isArray(_a.units)){ensureXp(_a);
+    ents=[];
+    for(const u of list){
+      const ranks=[...new Set(_a.units.map((k,i)=>k===u.unit_key?(_a.xp[i]||0):null).filter(x=>x!==null&&x>0))].sort((x,y)=>x-y);
+      if(cxInspect){if(countRank(u.unit_key,0)>0)ents.push({u,rank:0});}
+      else ents.push({u,rank:null});
+      ranks.forEach(r=>ents.push({u,rank:r}));
+    }
+  } else ents=list.map(u=>({u,rank:null}));
+  const _g=$("cxGrid");const _st=_g.scrollTop;_g.innerHTML=ents.map(en=>cxCard(en.u,en.rank)).join("")||'<div style="color:var(--dimmer);padding:30px;font-size:13px">No unit answers that call.</div>';
   $("cxCount").textContent=list.length+" / "+CX.units.length+" units";
   document.querySelectorAll("#cxRealms .cxchip").forEach(c=>c.classList.toggle("on",c.dataset.r===cxRealm));
   cxFoot();
+  _g.scrollTop=_st;
 }
 function cxFoot(){
   if(!cxArmy)return;
@@ -2431,7 +2584,7 @@ window.openBattleModal=function(bi){
           h+=`<div class="hint" style="margin-bottom:5px">Click the regiments that were lost:</div><div>`;
           a.units.forEach((k,ui)=>{
             const u=cxBy[k],isDead=dead.get(a).has(ui);
-            h+=`<span class="uchip${isDead?" dead":""}" data-u="${ai}:${ui}">${esc(u?u.name:k)}<i style="opacity:.6;font-style:normal">${u?u.men:"?"}</i></span>`;
+            h+=`<span class="uchip${isDead?" dead":""}" data-u="${ai}:${ui}">${esc(u?u.name:k)}${chevMark((a.xp||[])[ui]||0)}<i style="opacity:.6;font-style:normal">${u?u.men:"?"}</i></span>`;
           });
           h+=`</div>`;
         } else {
@@ -2472,7 +2625,7 @@ window.openBattleModal=function(bi){
         const idx=[...dead.get(a)].sort((x,y)=>y-x);
         if(idx.length){
           const names=idx.map(i=>{const u=cxBy[a.units[i]];return u?u.name:a.units[i];});
-          idx.forEach(i=>a.units.splice(i,1));
+          idx.forEach(i=>{a.units.splice(i,1);if(Array.isArray(a.xp))a.xp.splice(i,1);});
           syncMen(a);
           notes.push(`${a.name} lost ${idx.length} regiment${idx.length===1?"":"s"} (${names.slice(0,3).join(", ")}${names.length>3?"…":""})`);
         }
@@ -2498,7 +2651,7 @@ window.openBattleModal=function(bi){
           vf.zeal-=1;
           if(ransom==="paid"&&lf){const take=Math.min(2000,lf.treasury);lf.treasury-=take;vf.treasury+=take;
             notes.push(`${loser} paid ${take.toLocaleString()} in ransom`);}
-          if(ransom==="refused"){vf.zeal=Math.min(6,vf.zeal+2);
+          if(ransom==="refused"){vf.zeal=Math.min(zealCap(victor),vf.zeal+2);
             notes.push(`${loser} refused ransom — ${victor} gains 2✦ from the insult`);}
         } else notes.push("Ransom demanded but the victor lacked the Zeal");
       }
@@ -2566,10 +2719,14 @@ function parsePlan(txt){
 function musterPlan(res){
   const at=(sel&&P[sel])?sel:(F[res.fid].capital||((S.provinces.find(p=>p.owner===res.fid)||{}).id));
   if(!at){toast(res.fid+" holds no ground to muster on");return;}
+  const bill=res.keys.reduce((t,k)=>t+((cxBy[k]&&cxBy[k].cost)||0),0);
+  const ff=F[res.fid];
+  if(ff.treasury<bill){toast(`${res.fid} cannot pay for this plan — ${bill.toLocaleString()} needed, ${ff.treasury.toLocaleString()} held`);return;}
   snap("muster from plan");
-  const a={name:"Host of "+at,faction:res.fid,men:0,at,order:null,units:res.keys.slice()};
+  ff.treasury-=bill;
+  const a={name:"Host of "+at,faction:res.fid,men:0,at,order:null,units:res.keys.slice(),xp:res.keys.map(()=>0)};
   syncMen(a);S.armies.push(a);
-  logIt(`${res.fid} mustered a planned host at ${at} (${res.keys.length} regiments)`);
+  logIt(`${res.fid} mustered a planned host at ${at} (${res.keys.length} regiments · ${bill.toLocaleString()} florins)`);
   $("cxShare").classList.remove("open");
   closeCodex();legend();drawLedger();draw();
   const p=P[at];if(p){goTo(p);openProv(p);}
@@ -2623,17 +2780,41 @@ $("cxCls").onchange=function(){cxCls=this.value;cxRender();};
 $("cxSort").onchange=function(){cxSort=this.value;cxRender();};
 cx.addEventListener("click",e=>{
   const r=e.target.closest(".cxchip");if(r){cxRealm=cxRealm===r.dataset.r?"":r.dataset.r;cxRender();return;}
+  const xv=e.target.closest("[data-cxv]");
+  if(xv){e.stopPropagation();
+    if(!gm)return;
+    const pr=xv.dataset.cxv.split("|"),key=pr[0],rr=+pr[1],d=+pr[2];
+    const a=(cxArmy&&!cxArmy._plan)?cxArmy:cxInspect;
+    if(!a||!Array.isArray(a.units))return;
+    ensureXp(a);
+    const i=a.units.findIndex((uk,ix)=>uk===key&&((a.xp[ix]||0)===rr));
+    if(i<0)return;
+    const nr=Math.max(0,Math.min(9,rr+d));
+    if(nr===rr)return;
+    snap("chevron");a.xp[i]=nr;cxRender();return;
+  }
   const ad=e.target.closest("[data-cxad]");
   if(ad){e.stopPropagation();
     if(!cxArmy||(!gm&&!cxArmy._plan))return;
     if(cxArmy.units.length>=CAPU){toast("An army may field only "+CAPU+" units");return;}
-    if(!cxArmy._plan)snap("muster");
-    cxArmy.units.push(ad.dataset.cxad);syncMen(cxArmy);cxRender();if(!cxArmy._plan)draw();return;}
+    if(!cxArmy._plan){
+      const uu=cxBy[ad.dataset.cxad],ff=F[cxArmy.faction];
+      if(uu&&ff){if(ff.treasury<(uu.cost||0)){toast(`${cxArmy.faction} holds only ${ff.treasury.toLocaleString()} — ${uu.cost} needed`);return;}
+        snap("muster");ff.treasury-=(uu.cost||0);drawLedger();}
+      else snap("muster");
+    }
+    cxArmy.units.push(ad.dataset.cxad);if(!cxArmy._plan)ensureXp(cxArmy);syncMen(cxArmy);cxRender();if(!cxArmy._plan)draw();return;}
   const rm=e.target.closest("[data-cxrm]");
   if(rm){e.stopPropagation();
     if(!cxArmy||(!gm&&!cxArmy._plan))return;
-    const i=cxArmy.units.lastIndexOf(rm.dataset.cxrm);
-    if(i>-1){if(!cxArmy._plan)snap("muster");cxArmy.units.splice(i,1);syncMen(cxArmy);cxRender();if(!cxArmy._plan)draw();}return;}
+    let i=-1;
+    if(!cxArmy._plan&&Array.isArray(cxArmy.xp)){for(let j=cxArmy.units.length-1;j>=0;j--){if(cxArmy.units[j]===rm.dataset.cxrm&&((cxArmy.xp[j]||0)===0)){i=j;break;}}}
+    else i=cxArmy.units.lastIndexOf(rm.dataset.cxrm);
+    if(i>-1){
+      if(!cxArmy._plan){snap("muster");
+        const uu=cxBy[rm.dataset.cxrm],ff=F[cxArmy.faction];
+        if(uu&&ff){ff.treasury+=(uu.cost||0);drawLedger();}}
+      if(!cxArmy._plan&&Array.isArray(cxArmy.xp))cxArmy.xp.splice(i,1);cxArmy.units.splice(i,1);syncMen(cxArmy);cxRender();if(!cxArmy._plan)draw();}return;}
   const card=e.target.closest(".cxcard");if(card)cxDetail(card.dataset.cxk);
 });
 addEventListener("keydown",e=>{
@@ -2660,12 +2841,22 @@ $("bRaise").onclick=()=>{
 };
 
 /* ---------- province drawer armies (composition-aware) ---------- */
+function ensureXp(a){if(!Array.isArray(a.units))return;if(!Array.isArray(a.xp))a.xp=a.units.map(()=>0);while(a.xp.length<a.units.length)a.xp.push(0);if(a.xp.length>a.units.length)a.xp.length=a.units.length;}
+function chevMark(r){r=+r||0;if(r<1)return "";
+  const band=r<=3?"#B08D57":r<=6?"#C6CBD4":"#E8C34A";
+  const n=((r-1)%3)+1,H=6+(n-1)*4;
+  let p="";for(let i=0;i<n;i++)p+=`<path d="M1.5 ${5+i*4} L5 ${1.5+i*4} L8.5 ${5+i*4}" fill="none" stroke="${band}" stroke-width="2" stroke-linecap="round"/>`;
+  return `<span class="chev" title="Experience ${r}"><svg viewBox="0 0 10 ${H}" width="11" height="${H+1}">${p}</svg></span>`;
+}
 function rosterHTML(a){
-  const c={};(a.units||[]).forEach(k=>c[k]=(c[k]||0)+1);
-  const rows=Object.keys(c).map(k=>{
-    const u=cxBy[k],n=c[k];
-    if(!u)return `<div class="ru"><span class="un">${k}</span></div>`;
-    return `<div class="ru"><span class="un">${n>1?n+"× ":""}${u.name}</span><span class="us">${u.class_name||""} · ${(u.men*n).toLocaleString()} men</span></div>`;
+  ensureXp(a);
+  const g={};
+  (a.units||[]).forEach((k,i)=>{const r=(a.xp&&a.xp[i])||0;const id=k+"|"+r;(g[id]=g[id]||{k,r,n:0}).n++;});
+  const ai=S.armies.indexOf(a);
+  const rows=Object.values(g).map(({k,r,n})=>{
+    const u=cxBy[k],nm=u?u.name:k;
+    const gmc=`<span class="gm chevbtns"><button class="btn xs" data-chv="${ai}|${k}|${r}|-1" title="One regiment of this rank loses a chevron">−</button><button class="btn xs" data-chv="${ai}|${k}|${r}|1" title="One regiment of this rank gains a chevron">+</button></span>`;
+    return `<div class="ru"><span class="un">${n>1?n+"× ":""}${nm}${chevMark(r)}</span><span class="us">${u?(u.class_name||"")+" · "+((u.men||0)*n).toLocaleString()+" men":""}${gmc}</span></div>`;
   }).join("");
   return rows||'<div class="ru"><span class="us">Empty rolls.</span></div>';
 }
@@ -2709,6 +2900,19 @@ drawerArmies=function(p){
   box.querySelectorAll("[data-nm]").forEach(s=>s.onchange=()=>{S.armies[+s.dataset.nm].name=s.value;re();});
   box.querySelectorAll("[data-mus]").forEach(b=>b.onclick=()=>openMuster(S.armies[+b.dataset.mus]));
   box.querySelectorAll("[data-insp]").forEach(b=>b.onclick=()=>window.inspectArmy&&window.inspectArmy(S.armies[+b.dataset.insp]));
+  box.querySelectorAll("[data-chv]").forEach(b=>b.onclick=e=>{
+    e.stopPropagation();
+    if(!gm)return;
+    const pr=b.dataset.chv.split("|"),a=S.armies[+pr[0]];
+    if(!a)return;ensureXp(a);
+    const k=pr[1],r=+pr[2],d=+pr[3];
+    const i=a.units.findIndex((uk,ix)=>uk===k&&((a.xp[ix]||0)===r));
+    if(i<0)return;
+    const nr=Math.max(0,Math.min(9,r+d));
+    if(nr===r)return;
+    snap("chevron");a.xp[i]=nr;
+    openProv(P[a.at]);window.openRosterFor&&window.openRosterFor(a);
+  });
   box.querySelectorAll("[data-fort]").forEach(b=>b.onclick=()=>{
     const a=S.armies[+b.dataset.fort];if(!a)return;
     const f=F[a.faction];if(!f)return;

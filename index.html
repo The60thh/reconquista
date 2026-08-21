@@ -598,7 +598,7 @@ const BLD={
  granary:{n:"Granary",cost:2500,tip:"Siege lasts +1 turn"},
  synagogue:{n:"Synagogue",cost:-2500,tip:"The community pays 2,500 for its charter · +5% realm income/season · max 2 per realm · your Zeal ceiling −1 while it stands · −1✦ on chartering · the city holds one season fewer under siege"}
 };
-const UPG={1:{cost:15000,n:"town"},2:{cost:20000,n:"fortified city (small)"},3:{cost:30000,n:"fortified city (large)"}};
+const UPG={1:{cost:7500,n:"town"},2:{cost:12500,n:"fortified city (small)"},3:{cost:15000,n:"fortified city (large)"}};
 const effMove=p=>p.bld&&p.bld.includes("road")?1:p.move;
 const holdout=p=>Math.max(1,(p.tier===3?4:3)+(p.bld.includes("port")?1:0)+(p.bld.includes("granary")?1:0)-(p.bld.includes("synagogue")?1:0));
 function zealCap(fid){return Math.max(0,6-S.provinces.filter(p=>p.playable&&p.owner===fid&&p.bld.includes("synagogue")).length);}
@@ -2166,23 +2166,25 @@ $("dCap").onclick=()=>{
   paintMap();legend();draw();drawLedger();openProv(p);
 };
 $("bDisc").onclick=()=>window.open("https://discord.gg/K33kcZztf","_blank");
-let tmIdx=0;
+let tmIdx=0;const tmCache={};
 function tmShow(i){
   const L=S.turnlog||[];if(!L.length)return;
   tmIdx=Math.max(0,Math.min(L.length-1,i));
   const e=L[tmIdx];
   $("tmLbl").textContent=e.label;
-  $("tmImg").src=e.img;
+  $("tmImg").src=e.img?e.img:(tmCache[tmIdx]=tmCache[tmIdx]||renderSnap(e.snap));
   $("tmSel").value=String(tmIdx);
   $("tmPrev").disabled=tmIdx===0;$("tmNext").disabled=tmIdx===L.length-1;
 }
 $("bTmap").onclick=()=>{
-  const L=S.turnlog||[];
-  if(!L.length){toast("No turn maps yet — the log records each turn from now on");return;}
+  seedTurnlog();
+  const L=S.turnlog;
+  for(const k in tmCache)delete tmCache[k];
   $("tmSel").innerHTML=L.map((e,i)=>`<option value="${i}">${e.label}</option>`).join("");
   $("tmapOv").classList.add("open");
   tmShow(L.length-1);
 };
+
 $("tmPrev").onclick=()=>tmShow(tmIdx-1);
 $("tmNext").onclick=()=>tmShow(tmIdx+1);
 $("tmSel").onchange=e=>tmShow(+e.target.value);
@@ -2305,15 +2307,37 @@ $("bPng").onclick=()=>{
   renderFullMap().toBlob(b=>{const a=document.createElement("a");a.href=URL.createObjectURL(b);
     a.download=`turn-${String(S.turn).padStart(2,"0")}.png`;a.click();toast("Turn map exported");});
 };
+function stateSnap(){
+  const prov={};
+  for(const p of S.provinces){if(!p.playable)continue;
+    prov[p.id]=[p.owner||"",p.occ&&p.occ.by||"",p.siege&&p.siege.by||"",p.tier];}
+  return {prov,armies:S.armies.map(a=>[a.name,a.faction,a.at,a.men|0,a.fort?1:0])};
+}
+function applySnap(sn){
+  const savedA=S.armies,savedP={};
+  for(const p of S.provinces){if(!p.playable)continue;
+    savedP[p.id]=[p.owner,p.occ,p.siege,p.tier];
+    const e=sn.prov[p.id];if(!e)continue;
+    p.owner=e[0]||null;p.occ=e[1]?{by:e[1]}:null;p.siege=e[2]?{by:e[2],turns:0}:null;p.tier=e[3];}
+  S.armies=sn.armies.map(r=>({name:r[0],faction:r[1],at:r[2],men:r[3],fort:!!r[4]}));
+  return ()=>{for(const p of S.provinces){const v=savedP[p.id];if(!v)continue;p.owner=v[0];p.occ=v[1];p.siege=v[2];p.tier=v[3];}S.armies=savedA;};
+}
+function renderSnap(sn){
+  const restore=applySnap(sn);let url="";
+  try{paintMap();url=renderFullMap().toDataURL("image/png");}
+  finally{restore();paintMap();draw();}
+  return url;
+}
+const START_SNAP={"prov":{"Santiago":["León","","",0],"Lugo":["León","","",0],"Asturias":["León","","",0],"Cantabria":["Castile","","",0],"Biscay":["Navarre","","",0],"Álava":["Navarre","","",0],"Guipúzcoa":["Navarre","","",0],"Pontevedra":["León","","",0],"León":["León","","",2],"Palencia":["Castile","","",0],"Burgos":["Castile","","",1],"Pamplona":["Navarre","","",2],"Andorra":["Aragon","","",0],"Orense":["León","","",0],"Rioja":["Castile","","",0],"Huesca":["Aragon","","",0],"Lleida":["Aragon","","",0],"Girona":["Aragon","","",0],"Braga":["Portugal","","",0],"Bragança":["Portugal","","",0],"Zamora":["León","","",0],"Valladolid":["Castile","","",0],"Soria":["Castile","","",0],"Zaragoza":["Aragon","","",3],"Barcelona":["Aragon","","",2],"Porto":["Portugal","","",0],"Salamanca":["León","","",0],"Segovia":["Castile","","",0],"Guadalajara":["Castile","","",0],"Tarragona":["Aragon","","",0],"Coimbra":["Portugal","","",2],"Viseu":["Portugal","","",0],"Ávila":["Castile","","",0],"Madrid":["Castile","","",0],"Teruel":["Aragon","","",0],"Castellón":["Almohads","","",0],"Castelo Branco":["Portugal","","",0],"Cáceres":["Almohads","","",0],"Toledo":["Castile","","",3],"Cuenca":["Castile","","",0],"Lisbon":["Portugal","","",2],"Santarém":["Portugal","","",0],"Valencia":["Almohads","","",2],"Évora":["Portugal","","",0],"Badajoz":["Almohads","","",1],"Calatrava":["Almohads","","",0],"Albacete":["Almohads","","",0],"Alicante":["Almohads","","",0],"Beja":["Almohads","","",0],"Huelva":["Almohads","","",0],"Córdoba":["Almohads","","",3],"Jaén":["Almohads","","",0],"Murcia":["Almohads","","",1],"Algarve":["Almohads","","",0],"Sevilla":["Almohads","","",3],"Granada":["Almohads","","",1],"Almería":["Almohads","","",0],"Cádiz":["Almohads","","",0],"Málaga":["Almohads","","",0]},"armies":[["Host of Toledo","Castile","Toledo",70,0],["Host of León","León","León",70,0],["Host of Coimbra","Portugal","Coimbra",70,0],["Host of Zaragoza","Aragon","Zaragoza",80,0],["Host of Pamplona","Navarre","Pamplona",130,0],["Host of Sevilla","Almohads","Sevilla",80,0],["Host of Córdoba","Almohads","Córdoba",80,0]]};
+function seedTurnlog(){
+  S.turnlog=S.turnlog||[];
+  if(!S.turnlog.some(e=>e&&e.seed))S.turnlog.unshift({t:0,seed:1,label:"Campaign start · Spring 1200",snap:START_SNAP});
+}
 function turnSnapshot(label){
   try{
-    const c=renderFullMap();
-    const w=980,h=Math.round(c.height*w/c.width);
-    const d=document.createElement("canvas");d.width=w;d.height=h;
-    d.getContext("2d").drawImage(c,0,0,w,h);
-    S.turnlog=S.turnlog||[];
-    S.turnlog.push({t:S.turn,label,img:d.toDataURL("image/jpeg",0.66)});
-    while(S.turnlog.length>40)S.turnlog.shift();
+    seedTurnlog();
+    S.turnlog.push({t:S.turn,label,snap:stateSnap()});
+    while(S.turnlog.length>200)S.turnlog.splice(1,1);
   }catch(e){}
 }
 </script>

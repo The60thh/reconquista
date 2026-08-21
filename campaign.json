@@ -2189,6 +2189,13 @@
   {
    "t": 2,
    "d": "Summer 1200",
+   "txt": "Navarre and León swear alliance",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer 1200",
    "txt": "Summer 1200 opens — the round begins with Almohads.",
    "kind": "turn",
    "detail": null
@@ -10314,7 +10321,8 @@
  "allowance": 3,
  "truces": {},
  "allies": [
-  "Castile|Portugal"
+  "Castile|Portugal",
+  "León|Navarre"
  ],
  "order": [
   "Almohads",

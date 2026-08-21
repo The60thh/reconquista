@@ -1927,24 +1927,62 @@
   {
    "name": "Host of Toledo",
    "faction": "Castile",
-   "men": 70,
+   "men": 2330,
    "at": "Toledo",
    "order": null,
    "units": [
-    "mk_cas_t1_caballeros"
+    "mk_cas_t1_caballeros",
+    "mk_cas_t1_king_bodyguard",
+    "mk_cas_t1_dismounted_caballeros",
+    "mk_cas_t1_dismounted_caballeros",
+    "mk_cas_t1_monteros_de_espinosa",
+    "mk_cas_t1_monteros_de_espinosa",
+    "mk_cas_t1_dismounted_caballeros",
+    "mk_cas_t1_dismounted_caballeros",
+    "mk_cas_t1_mounted_crossbowmen",
+    "mk_cas_t1_mounted_crossbowmen",
+    "mk_cas_t1_crossbowmen",
+    "mk_cas_t1_crossbowmen",
+    "mk_cas_t1_crossbowmen",
+    "mk_cas_t1_hidalgos",
+    "mk_eur_t1_catapult",
+    "mk_cas_t1_peones_spearmen",
+    "mk_cas_t1_peones_spearmen",
+    "mk_cas_t1_peones_spearmen",
+    "mk_cas_t1_monteros_de_espinosa",
+    "mk_cas_t1_monteros_de_espinosa"
    ],
-   "upkeep": 396
+   "upkeep": 4803
   },
   {
    "name": "Host of Zaragoza",
    "faction": "Aragon",
-   "men": 80,
+   "men": 2410,
    "at": "Zaragoza",
    "order": null,
    "units": [
-    "mk_ara_t1_king_bodyguard"
+    "mk_ara_t1_king_bodyguard",
+    "mk_eur_t1_catapult",
+    "mk_ara_t1_peones_spearmen",
+    "mk_ara_t1_peones_spearmen",
+    "mk_ara_t1_peones_spearmen",
+    "mk_ara_t1_caballeros",
+    "mk_ara_t1_fidalgos",
+    "mk_ara_t1_sergeant_crossbowmen",
+    "mk_ara_t1_sergeant_crossbowmen",
+    "mk_ara_t1_sergeant_crossbowmen",
+    "mk_ara_t1_mounted_crossbowmen",
+    "mk_ara_t1_mounted_crossbowmen",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_dismounted_caballeros"
    ],
-   "upkeep": 438
+   "upkeep": 4892
   },
   {
    "name": "Host of Sevilla",
@@ -10194,7 +10232,7 @@
   "León",
   "Navarre"
  ],
- "active": 2,
+ "active": 4,
  "wars": [],
  "battles": [],
  "fought": {}

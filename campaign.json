@@ -35,7 +35,7 @@
    "id": "Aragon",
    "name": "Aragon",
    "color": "#D69E2C",
-   "treasury": 5000,
+   "treasury": 200,
    "capital": "Zaragoza",
    "zeal": 0
   },
@@ -842,7 +842,10 @@
    "siege": null,
    "elev": 518,
    "occ": null,
-   "bld": [],
+   "bld": [
+    "market",
+    "church"
+   ],
    "upg": null,
    "raid": null
   },
@@ -2095,6 +2098,20 @@
   }
  ],
  "log": [
+  {
+   "t": 1,
+   "d": "Spring 1200",
+   "txt": "Aragon raises a Church / Mosque at Barcelona (2,400 florins)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 1,
+   "d": "Spring 1200",
+   "txt": "Aragon raises a Market at Barcelona (2,400 florins)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 1,
    "d": "Spring 1200",

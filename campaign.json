@@ -35,7 +35,7 @@
    "id": "Aragon",
    "name": "Aragon",
    "color": "#D69E2C",
-   "treasury": 10900,
+   "treasury": 909,
    "capital": "Zaragoza",
    "zeal": 0
   },
@@ -2272,9 +2272,70 @@
     0,
     0
    ]
+  },
+  {
+   "name": "Host of Barcelona",
+   "faction": "Aragon",
+   "men": 1720,
+   "at": "Barcelona",
+   "order": null,
+   "units": [
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_jinetes",
+    "mk_ara_t1_jinetes",
+    "mk_ara_t1_general_bodyguard",
+    "mk_ara_t1_militia_crossbowmen",
+    "mk_ara_t1_caballeros",
+    "mk_ara_t1_caballeros",
+    "mk_ara_t1_militia_spearmen",
+    "mk_ara_t1_militia_spearmen",
+    "mk_ara_t1_peones_spearmen",
+    "mk_ara_t1_peones_spearmen",
+    "mk_ara_t1_militia_crossbowmen",
+    "mk_ara_t1_peones_spearmen"
+   ],
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "upkeep": 2995
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer 1200",
+   "txt": "Host of Barcelona moved Barcelona → Tarragona",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer 1200",
+   "txt": "Aragon mustered a planned host at Barcelona (14 regiments · 9,991 florins)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer 1200",
+   "txt": "Aragon raised a host at Barcelona",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer 1200",

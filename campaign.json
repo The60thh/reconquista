@@ -11,9 +11,9 @@
    "id": "Castile",
    "name": "Castile",
    "color": "#A82626",
-   "treasury": 5700,
+   "treasury": 7700,
    "capital": "Toledo",
-   "zeal": 1
+   "zeal": 0
   },
   {
    "id": "León",
@@ -51,7 +51,7 @@
    "id": "Almohads",
    "name": "Almohads",
    "color": "#2E683E",
-   "treasury": 2104,
+   "treasury": 104,
    "capital": "Sevilla",
    "zeal": 0
   }
@@ -1940,15 +1940,13 @@
   {
    "name": "Host of Toledo",
    "faction": "Castile",
-   "men": 2390,
+   "men": 2130,
    "at": "Toledo",
    "order": null,
    "units": [
     "mk_cas_t1_caballeros",
     "mk_cas_t1_king_bodyguard",
     "mk_cas_t1_dismounted_caballeros",
-    "mk_cas_t1_dismounted_caballeros",
-    "mk_cas_t1_monteros_de_espinosa",
     "mk_cas_t1_dismounted_caballeros",
     "mk_cas_t1_dismounted_caballeros",
     "mk_cas_t1_mounted_crossbowmen",
@@ -1965,28 +1963,26 @@
     "mk_cas_t1_dismounted_caballeros",
     "mk_cas_t1_dismounted_caballeros"
    ],
-   "upkeep": 4899,
+   "upkeep": 4433,
    "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1
    ]
   },
   {
@@ -2096,50 +2092,16 @@
   {
    "name": "Host of Córdoba",
    "faction": "Almohads",
-   "men": 2330,
-   "at": "Toledo",
+   "men": 410,
+   "at": "Badajoz",
    "order": null,
    "units": [
-    "mk_alm_t1_batana_al_rum",
-    "mk_merc_his_t1_farfanes",
-    "mk_merc_his_t1_farfanes",
-    "mk_mus_t1_catapult",
     "mk_gran_t1_mozarab_jund",
-    "mk_gran_t1_mozarab_jund",
-    "mk_gran_t1_mozarab_jund",
-    "mk_gran_t1_mozarab_jund",
-    "mk_gran_t1_andalusian_mounted_crossbowmen",
-    "mk_gran_t1_andalusian_mounted_crossbowmen",
     "mk_alm_t1_dismounted_jund_al_nasara",
-    "mk_alm_t1_dismounted_jund_al_nasara",
-    "mk_alm_t1_dismounted_jund_al_nasara",
-    "mk_alm_t1_dismounted_jund_al_nasara",
-    "mk_alm_t1_dismounted_jund_al_nasara",
-    "mk_alm_t1_dismounted_jund_al_nasara",
-    "mk_gran_t1_heavy_andalusian_crossbowmen",
-    "mk_gran_t1_heavy_andalusian_crossbowmen",
-    "mk_gran_t1_heavy_andalusian_crossbowmen",
-    "mk_gran_t1_mozarab_jund"
+    "mk_gran_t1_heavy_andalusian_crossbowmen"
    ],
-   "upkeep": 5246,
+   "upkeep": 714,
    "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     0,
     0,
     0
@@ -2303,6 +2265,20 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer 1200",
+   "txt": "Castile won the Battle of Toledo",
+   "kind": "battle",
+   "detail": "Host of Toledo lost 2 regiments (Dismounted Caballeros (Early), Monteros de Espinosa (Early)) · Host of Córdoba lost 17 regiments (Must'arab al-Jund, Jarkhiyyah Mudara'un al-Andalusi (Early), Jarkhiyyah Mudara'un al-Andalusi (Early)…) · Host of Córdoba withdrew to Badajoz · Almohads paid 2,000 in ransom"
+  },
+  {
+   "t": 2,
+   "d": "Summer 1200",
+   "txt": "Battle of Toledo staged — Castile vs Almohads",
+   "kind": "battle",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer 1200",
@@ -10510,7 +10486,9 @@
   "Almohads|Castile"
  ],
  "battles": [],
- "fought": {},
+ "fought": {
+  "Toledo": 1
+ },
  "turnlog": [
   {
    "t": 0,

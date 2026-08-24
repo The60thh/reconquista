@@ -2092,16 +2092,24 @@
   {
    "name": "Host of Córdoba",
    "faction": "Almohads",
-   "men": 410,
+   "men": 780,
    "at": "Badajoz",
    "order": null,
    "units": [
     "mk_gran_t1_mozarab_jund",
     "mk_alm_t1_dismounted_jund_al_nasara",
-    "mk_gran_t1_heavy_andalusian_crossbowmen"
+    "mk_gran_t1_heavy_andalusian_crossbowmen",
+    "mk_gran_t1_heavy_andalusian_crossbowmen",
+    "mk_gran_t1_andalusian_mounted_crossbowmen",
+    "mk_mus_t1_catapult",
+    "mk_alm_t1_dismounted_jund_al_nasara"
    ],
-   "upkeep": 714,
+   "upkeep": 1665,
    "xp": [
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0

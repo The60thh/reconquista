@@ -2225,7 +2225,7 @@
    "name": "Host of León",
    "faction": "León",
    "men": 2390,
-   "at": "León",
+   "at": "Zamora",
    "order": null,
    "units": [
     "mk_cas_t1_general_bodyguard",
@@ -2315,6 +2315,13 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer 1200",
+   "txt": "Host of León moved León → Zamora",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer 1200",

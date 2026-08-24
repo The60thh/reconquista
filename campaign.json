@@ -1940,7 +1940,7 @@
   {
    "name": "Host of Toledo",
    "faction": "Castile",
-   "men": 2330,
+   "men": 2390,
    "at": "Toledo",
    "order": null,
    "units": [
@@ -1948,7 +1948,6 @@
     "mk_cas_t1_king_bodyguard",
     "mk_cas_t1_dismounted_caballeros",
     "mk_cas_t1_dismounted_caballeros",
-    "mk_cas_t1_monteros_de_espinosa",
     "mk_cas_t1_monteros_de_espinosa",
     "mk_cas_t1_dismounted_caballeros",
     "mk_cas_t1_dismounted_caballeros",
@@ -1962,10 +1961,11 @@
     "mk_cas_t1_peones_spearmen",
     "mk_cas_t1_peones_spearmen",
     "mk_cas_t1_peones_spearmen",
-    "mk_cas_t1_monteros_de_espinosa",
-    "mk_cas_t1_monteros_de_espinosa"
+    "mk_cas_t1_dismounted_caballeros",
+    "mk_cas_t1_dismounted_caballeros",
+    "mk_cas_t1_dismounted_caballeros"
    ],
-   "upkeep": 4803,
+   "upkeep": 4899,
    "xp": [
     0,
     0,

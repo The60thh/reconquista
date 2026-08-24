@@ -35,9 +35,9 @@
    "id": "Aragon",
    "name": "Aragon",
    "color": "#D69E2C",
-   "treasury": 5900,
+   "treasury": 10900,
    "capital": "Zaragoza",
-   "zeal": 2
+   "zeal": 0
   },
   {
    "id": "Navarre",
@@ -820,7 +820,8 @@
    "occ": null,
    "bld": [
     "market",
-    "muster"
+    "muster",
+    "synagogue"
    ],
    "upg": null,
    "raid": null
@@ -850,7 +851,8 @@
    "occ": null,
    "bld": [
     "market",
-    "church"
+    "church",
+    "synagogue"
    ],
    "upg": null,
    "raid": null
@@ -2273,6 +2275,20 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer 1200",
+   "txt": "Aragon charters a Synagogue at Barcelona — the community pays 2,500 florins; the crown spends 1✦ of standing",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer 1200",
+   "txt": "Aragon charters a Synagogue at Zaragoza — the community pays 2,500 florins; the crown spends 1✦ of standing",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer 1200",

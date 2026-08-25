@@ -2347,25 +2347,18 @@
   {
    "name": "Host of Valencia",
    "faction": "Almohads",
-   "men": 2000,
+   "men": 950,
    "at": "Valencia",
    "order": null,
    "units": [
     "mk_alm_t1_qaid_bodyguards",
-    "mk_alm_t1_hushud",
-    "mk_alm_t1_hushud",
-    "mk_alm_t1_hushud",
-    "mk_alm_t1_hushud",
-    "mk_alm_t1_hushud",
-    "mk_alm_t1_hushud",
-    "mk_alm_t1_hushud",
-    "mk_alm_t1_hushud",
-    "mk_alm_t1_hushud",
-    "mk_alm_t1_hushud",
-    "mk_alm_t1_hushud",
-    "mk_alm_t1_hushud"
+    "mk_gran_t1_mozarab_jund",
+    "mk_gran_t1_mozarab_jund",
+    "mk_gran_t1_mozarab_jund",
+    "mk_alm_t1_maghrebi_rumat",
+    "mk_alm_t1_maghrebi_rumat",
+    "mk_alm_t1_hushud_rumat"
    ],
-   "upkeep": 1593,
    "xp": [
     0,
     0,
@@ -2373,17 +2366,19 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     0
-   ]
+   ],
+   "upkeep": 1560
   }
  ],
  "log": [
+  {
+   "t": 3,
+   "d": "Autumn 1200",
+   "txt": "Almohads mustered a planned host at Valencia (7 regiments · 5,201 florins)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 3,
    "d": "Autumn 1200",

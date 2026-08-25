@@ -43,7 +43,7 @@
    "id": "Navarre",
    "name": "Navarre",
    "color": "#C65C20",
-   "treasury": 5200,
+   "treasury": 400,
    "capital": "Pamplona",
    "zeal": 2
   },
@@ -224,7 +224,9 @@
    "siege": null,
    "elev": 631,
    "occ": null,
-   "bld": [],
+   "bld": [
+    "market"
+   ],
    "upg": null,
    "raid": null
   },
@@ -253,7 +255,9 @@
    "siege": null,
    "elev": 1152,
    "occ": null,
-   "bld": [],
+   "bld": [
+    "market"
+   ],
    "upg": null,
    "raid": null
   },
@@ -2173,7 +2177,7 @@
    "name": "Host of Pamplona",
    "faction": "Navarre",
    "men": 2460,
-   "at": "Pamplona",
+   "at": "Rioja",
    "order": null,
    "units": [
     "mk_merc_fre_t1_routiers_guisarmiers",
@@ -2315,6 +2319,27 @@
   }
  ],
  "log": [
+  {
+   "t": 2,
+   "d": "Summer 1200",
+   "txt": "Navarre raises a Market at Biscay (2,400 florins)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer 1200",
+   "txt": "Navarre raises a Market at Álava (2,400 florins)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 2,
+   "d": "Summer 1200",
+   "txt": "Host of Pamplona moved Pamplona → Rioja",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 2,
    "d": "Summer 1200",

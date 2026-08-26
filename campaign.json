@@ -11,7 +11,7 @@
    "id": "Castile",
    "name": "Castile",
    "color": "#A82626",
-   "treasury": 13295,
+   "treasury": 43,
    "capital": "Toledo",
    "zeal": 1
   },
@@ -2369,13 +2369,64 @@
     0
    ],
    "upkeep": 1560
+  },
+  {
+   "name": "Host of Toledo",
+   "faction": "Castile",
+   "men": 1940,
+   "at": "Toledo",
+   "order": null,
+   "units": [
+    "mk_cas_t1_monteros_de_espinosa",
+    "mk_cas_t1_dismounted_caballeros",
+    "mk_cas_t1_dismounted_caballeros",
+    "mk_cas_t1_dismounted_caballeros",
+    "mk_cas_t1_dismounted_caballeros",
+    "mk_cas_t1_dismounted_caballeros",
+    "mk_cas_t1_general_bodyguard",
+    "mk_merc_his_t1_farfanes",
+    "mk_merc_his_t1_farfanes",
+    "mk_cas_t1_mounted_crossbowmen",
+    "mk_cas_t1_mounted_crossbowmen",
+    "mk_cas_t1_crossbowmen",
+    "mk_cas_t1_crossbowmen",
+    "mk_cas_t1_peones_spearmen",
+    "mk_cas_t1_peones_spearmen",
+    "mk_cas_t1_peones_spearmen"
+   ],
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "upkeep": 3973
   }
  ],
  "log": [
   {
    "t": 3,
    "d": "Autumn 1200",
-   "txt": "Aragon and Navarre swear alliance",
+   "txt": "Castile mustered a planned host at Toledo (16 regiments · 13,252 florins)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn 1200",
+   "txt": "Castile raised a host at Toledo",
    "kind": "",
    "detail": null
   },
@@ -10711,8 +10762,7 @@
  "truces": {},
  "allies": [
   "Castile|Portugal",
-  "León|Navarre",
-  "Aragon|Navarre"
+  "León|Navarre"
  ],
  "order": [
   "Almohads",

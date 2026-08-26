@@ -2375,6 +2375,13 @@
   {
    "t": 3,
    "d": "Autumn 1200",
+   "txt": "Aragon and Navarre swear alliance",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 3,
+   "d": "Autumn 1200",
    "txt": "Almohads mustered a planned host at Valencia (7 regiments · 5,201 florins)",
    "kind": "",
    "detail": null
@@ -10704,7 +10711,8 @@
  "truces": {},
  "allies": [
   "Castile|Portugal",
-  "León|Navarre"
+  "León|Navarre",
+  "Aragon|Navarre"
  ],
  "order": [
   "Almohads",

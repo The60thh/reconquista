@@ -51,7 +51,7 @@
    "id": "Almohads",
    "name": "Almohads",
    "color": "#2E683E",
-   "treasury": 11645,
+   "treasury": 268,
    "capital": "Sevilla",
    "zeal": 6
   }
@@ -2048,7 +2048,7 @@
    "name": "Host of Sevilla",
    "faction": "Almohads",
    "men": 2290,
-   "at": "Calatrava",
+   "at": "Córdoba",
    "order": null,
    "units": [
     "mk_alm_t1_shaykh_dismounted_retainers",
@@ -2359,7 +2359,7 @@
   {
    "name": "Host of Valencia",
    "faction": "Almohads",
-   "men": 950,
+   "men": 1750,
    "at": "Valencia",
    "order": null,
    "units": [
@@ -2369,7 +2369,12 @@
     "mk_gran_t1_mozarab_jund",
     "mk_alm_t1_maghrebi_rumat",
     "mk_alm_t1_maghrebi_rumat",
-    "mk_alm_t1_hushud_rumat"
+    "mk_alm_t1_hushud_rumat",
+    "mk_alm_t1_hushud",
+    "mk_alm_t1_hushud",
+    "mk_alm_t1_hushud",
+    "mk_alm_t1_hushud",
+    "mk_alm_t1_hushud"
    ],
    "xp": [
     0,
@@ -2378,9 +2383,14 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 1560
+   "upkeep": 2060
   },
   {
    "name": "Host of Toledo",
@@ -2451,9 +2461,82 @@
     0
    ],
    "upkeep": 1167
+  },
+  {
+   "name": "Host of Badajoz",
+   "faction": "Almohads",
+   "men": 2700,
+   "at": "Badajoz",
+   "order": null,
+   "units": [
+    "mk_alm_t1_qaid_bodyguards",
+    "mk_alm_t1_tuareg_camel_riders",
+    "mk_alm_t1_tuareg_camel_riders",
+    "mk_mar_t1_zenata_skirmish_cavalry",
+    "mk_mar_t1_zenata_skirmish_cavalry",
+    "mk_alm_t1_hushud",
+    "mk_alm_t1_hushud",
+    "mk_alm_t1_hushud",
+    "mk_alm_t1_hushud",
+    "mk_alm_t1_hushud",
+    "mk_alm_t1_hushud",
+    "mk_alm_t1_hushud",
+    "mk_alm_t1_hushud",
+    "mk_alm_t1_hushud",
+    "mk_alm_t1_hushud",
+    "mk_alm_t1_maghrebi_tribesmen",
+    "mk_alm_t1_maghrebi_tribesmen",
+    "mk_alm_t1_maghrebi_tribesmen",
+    "mk_alm_t1_maghrebi_tribesmen",
+    "mk_alm_t1_maghrebi_tribesmen"
+   ],
+   "upkeep": 2912,
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "Host of Sevilla moved Calatrava → Córdoba",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "Almohads raised a host at Badajoz",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "Almohads raised a host at Córdoba",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter 1200",

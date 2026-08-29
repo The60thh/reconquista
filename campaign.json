@@ -19,7 +19,7 @@
    "id": "León",
    "name": "León",
    "color": "#683682",
-   "treasury": 14600,
+   "treasury": 8600,
    "capital": "León",
    "zeal": 6
   },
@@ -732,7 +732,9 @@
    "siege": null,
    "elev": 825,
    "occ": null,
-   "bld": [],
+   "bld": [
+    "road"
+   ],
    "upg": null,
    "raid": null
   },
@@ -921,7 +923,9 @@
    "siege": null,
    "elev": 752,
    "occ": null,
-   "bld": [],
+   "bld": [
+    "road"
+   ],
    "upg": null,
    "raid": null
   },
@@ -2267,7 +2271,7 @@
    "name": "Host of León",
    "faction": "León",
    "men": 2390,
-   "at": "Salamanca",
+   "at": "Cáceres",
    "order": null,
    "units": [
     "mk_cas_t1_general_bodyguard",
@@ -2563,6 +2567,27 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "León raises a Road at Salamanca (3,000 florins)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "León raises a Road at Zamora (3,000 florins)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "Host of León moved Salamanca → Cáceres",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter 1200",

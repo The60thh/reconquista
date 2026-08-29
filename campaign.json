@@ -1240,7 +1240,7 @@
    "value": 300,
    "move": 2,
    "garrison": 0,
-   "owner": "Castile",
+   "owner": "León",
    "adj": [
     "Badajoz",
     "Castelo Branco",
@@ -2567,6 +2567,20 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "León annexed Cáceres from Castile",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "León occupied Cáceres (held by Castile)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter 1200",

@@ -35,7 +35,7 @@
    "id": "Aragon",
    "name": "Aragon",
    "color": "#D69E2C",
-   "treasury": 8507,
+   "treasury": 1007,
    "capital": "Zaragoza",
    "zeal": 4
   },
@@ -827,7 +827,8 @@
    "bld": [
     "market",
     "muster",
-    "synagogue"
+    "synagogue",
+    "church"
    ],
    "upg": null,
    "raid": null
@@ -858,7 +859,8 @@
    "bld": [
     "market",
     "church",
-    "synagogue"
+    "synagogue",
+    "muster"
    ],
    "upg": null,
    "raid": null
@@ -2561,6 +2563,20 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "Aragon raises a Muster Ground at Barcelona (5,000 florins)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "Aragon raises a Church / Mosque at Zaragoza (2,400 florins)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter 1200",

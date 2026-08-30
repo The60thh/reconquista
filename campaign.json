@@ -51,7 +51,7 @@
    "id": "Almohads",
    "name": "Almohads",
    "color": "#2E683E",
-   "treasury": 8597,
+   "treasury": 94,
    "capital": "Sevilla",
    "zeal": 9
   }
@@ -1817,7 +1817,8 @@
    "elev": 2117,
    "occ": null,
    "bld": [
-    "church"
+    "church",
+    "muster"
    ],
    "upg": null,
    "raid": null
@@ -2063,7 +2064,7 @@
    "name": "Host of Sevilla",
    "faction": "Almohads",
    "men": 2290,
-   "at": "Córdoba",
+   "at": "Beja",
    "order": null,
    "units": [
     "mk_alm_t1_shaykh_dismounted_retainers",
@@ -2115,7 +2116,7 @@
    "name": "Host of Córdoba",
    "faction": "Almohads",
    "men": 2420,
-   "at": "Badajoz",
+   "at": "Beja",
    "order": null,
    "units": [
     "mk_gran_t1_mozarab_jund",
@@ -2374,7 +2375,7 @@
   {
    "name": "Host of Valencia",
    "faction": "Almohads",
-   "men": 1750,
+   "men": 2410,
    "at": "Valencia",
    "order": null,
    "units": [
@@ -2388,6 +2389,11 @@
     "mk_alm_t1_hushud",
     "mk_alm_t1_hushud",
     "mk_alm_t1_hushud",
+    "mk_alm_t1_hushud",
+    "mk_alm_t1_hushud",
+    "mk_alm_t1_jund_al_nasara",
+    "mk_gran_t1_mozarab_jund",
+    "mk_alm_t1_dismounted_jund_al_nasara",
     "mk_alm_t1_hushud",
     "mk_alm_t1_hushud"
    ],
@@ -2403,9 +2409,14 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 2060
+   "upkeep": 3111
   },
   {
    "name": "Host of Toledo",
@@ -2499,7 +2510,7 @@
    "name": "Host of Badajoz",
    "faction": "Almohads",
    "men": 2700,
-   "at": "Badajoz",
+   "at": "Sevilla",
    "order": null,
    "units": [
     "mk_alm_t1_qaid_bodyguards",
@@ -2581,6 +2592,174 @@
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Badajoz moved Cáceres → Sevilla",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Sevilla moved Cáceres → Beja",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Córdoba moved Cáceres → Beja",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Sevilla moved Beja → Cáceres",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Córdoba moved Beja → Cáceres",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Badajoz moved Sevilla → Cáceres",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Badajoz moved Badajoz → Sevilla",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Sevilla moved Córdoba → Beja",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Córdoba moved Badajoz → Beja",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Sevilla moved Beja → Córdoba",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Córdoba moved Beja → Badajoz",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Badajoz moved Sevilla → Badajoz",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Badajoz moved Badajoz → Sevilla",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Sevilla moved Córdoba → Beja",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Córdoba moved Badajoz → Beja",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Córdoba moved Beja → Badajoz",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Badajoz moved Sevilla → Badajoz",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Córdoba moved Badajoz → Beja",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Badajoz moved Badajoz → Sevilla",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Córdoba moved Beja → Badajoz",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Almohads raises a Muster Ground at Granada (5,000 florins)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Badajoz moved Beja → Badajoz",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Badajoz moved Badajoz → Beja",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Córdoba moved Badajoz → Beja",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring 1201",

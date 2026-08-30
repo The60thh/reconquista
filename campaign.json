@@ -27,9 +27,9 @@
    "id": "Portugal",
    "name": "Portugal",
    "color": "#285C96",
-   "treasury": 6800,
+   "treasury": 167,
    "capital": "Coimbra",
-   "zeal": 10
+   "zeal": 0
   },
   {
    "id": "Aragon",
@@ -2151,16 +2151,28 @@
   {
    "name": "Host of Coimbra",
    "faction": "Portugal",
-   "men": 460,
-   "at": "Évora",
+   "men": 1090,
+   "at": "Lisbon",
    "order": null,
    "units": [
     "mk_por_t1_milicia_concelhia",
     "mk_por_t1_milicia_concelhia",
-    "mk_cas_t1_order_knights_dismounted"
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_por_t1_king_bodyguards",
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_cas_t1_order_knights",
+    "mk_cas_t1_order_knights",
+    "mk_por_t1_fundeiros"
    ],
-   "upkeep": 602,
+   "upkeep": 2589,
    "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0
@@ -2539,9 +2551,89 @@
     0,
     0
    ]
+  },
+  {
+   "name": "Host of Lisbon",
+   "faction": "Portugal",
+   "men": 2420,
+   "at": "Lisbon",
+   "order": null,
+   "units": [
+    "mk_por_t1_general_bodyguards",
+    "mk_cas_t1_order_knights",
+    "mk_cas_t1_order_knights",
+    "mk_eur_t1_trebuchet",
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_por_t1_fundeiros",
+    "mk_por_t1_fundeiros",
+    "mk_por_t1_besteiros",
+    "mk_por_t1_besteiros",
+    "mk_por_t1_besteiros_de_cavalo",
+    "mk_por_t1_besteiros_de_cavalo",
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_por_t1_milicia_concelhia",
+    "mk_por_t1_milicia_concelhia",
+    "mk_por_t1_milicia_concelhia",
+    "mk_por_t1_milicia_concelhia"
+   ],
+   "upkeep": 5008,
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Coimbra moved Évora → Lisbon",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Lisbon moved Santarém → Lisbon",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Lisbon moved Lisbon → Santarém",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Portugal raised a host at Lisbon",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring 1201",

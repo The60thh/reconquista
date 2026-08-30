@@ -2570,6 +2570,20 @@
   {
    "t": 4,
    "d": "Winter 1200",
+   "txt": "Aragon and León swear alliance",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "Navarre and Aragon swear alliance",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter 1200",
    "txt": "Navarre declared war on Castile",
    "kind": "battle",
    "detail": null
@@ -11207,7 +11221,9 @@
  "truces": {},
  "allies": [
   "Castile|Portugal",
-  "León|Navarre"
+  "León|Navarre",
+  "Aragon|Navarre",
+  "Aragon|León"
  ],
  "order": [
   "Almohads",

@@ -2570,6 +2570,20 @@
   {
    "t": 4,
    "d": "Winter 1200",
+   "txt": "Portugal declared war on Almohads",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "Portugal spends 1✦ to declare war on Almohads",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter 1200",
    "txt": "Aragon and León swear alliance",
    "kind": "",
    "detail": null
@@ -11236,7 +11250,8 @@
  "active": 5,
  "wars": [
   "Almohads|Castile",
-  "Castile|Navarre"
+  "Castile|Navarre",
+  "Almohads|Portugal"
  ],
  "battles": [],
  "fought": {

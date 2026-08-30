@@ -45,7 +45,7 @@
    "color": "#C65C20",
    "treasury": 3410,
    "capital": "Pamplona",
-   "zeal": 6
+   "zeal": 5
   },
   {
    "id": "Almohads",
@@ -783,7 +783,7 @@
    "value": 300,
    "move": 2,
    "garrison": 0,
-   "owner": "Castile",
+   "owner": "Navarre",
    "adj": [
     "Burgos",
     "Guadalajara",
@@ -2219,7 +2219,7 @@
    "name": "Host of Pamplona",
    "faction": "Navarre",
    "men": 2460,
-   "at": "Guadalajara",
+   "at": "Soria",
    "order": null,
    "units": [
     "mk_merc_fre_t1_routiers_guisarmiers",
@@ -2459,7 +2459,7 @@
    "name": "Host of Pamplona",
    "faction": "Navarre",
    "men": 980,
-   "at": "Pamplona",
+   "at": "Burgos",
    "order": null,
    "units": [
     "mk_merc_fre_t1_gascon_bideaux",
@@ -2567,6 +2567,55 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "Navarre annexed Soria from Castile",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "Host of Pamplona moved Soria → Burgos",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "Host of Pamplona moved Burgos → Soria",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "Host of Pamplona moved Soria → Rioja",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "Host of Pamplona moved Soria → Álava",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "Host of Pamplona moved Pamplona → Burgos",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "Host of Pamplona moved Guadalajara → Soria",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter 1200",

@@ -45,7 +45,7 @@
    "color": "#C65C20",
    "treasury": 3410,
    "capital": "Pamplona",
-   "zeal": 5
+   "zeal": 3
   },
   {
    "id": "Almohads",
@@ -2567,6 +2567,20 @@
   }
  ],
  "log": [
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "Navarre declared war on Castile",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 4,
+   "d": "Winter 1200",
+   "txt": "Navarre spends 1✦ to declare war on Castile",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 4,
    "d": "Winter 1200",
@@ -11205,7 +11219,8 @@
  ],
  "active": 5,
  "wars": [
-  "Almohads|Castile"
+  "Almohads|Castile",
+  "Castile|Navarre"
  ],
  "battles": [],
  "fought": {

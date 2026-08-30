@@ -2595,6 +2595,20 @@
   {
    "t": 5,
    "d": "Spring 1201",
+   "txt": "Host of Coimbra moved Badajoz → Beja",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Coimbra moved Beja → Badajoz",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
    "txt": "Host of Badajoz moved Cáceres → Sevilla",
    "kind": "",
    "detail": null

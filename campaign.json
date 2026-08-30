@@ -27,7 +27,7 @@
    "id": "Portugal",
    "name": "Portugal",
    "color": "#285C96",
-   "treasury": 21507,
+   "treasury": 6800,
    "capital": "Coimbra",
    "zeal": 10
   },
@@ -51,7 +51,7 @@
    "id": "Almohads",
    "name": "Almohads",
    "color": "#2E683E",
-   "treasury": 4580,
+   "treasury": 137,
    "capital": "Sevilla",
    "zeal": 9
   }

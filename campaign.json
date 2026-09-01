@@ -37,7 +37,7 @@
    "color": "#D69E2C",
    "treasury": 184,
    "capital": "Zaragoza",
-   "zeal": 7
+   "zeal": 6
   },
   {
    "id": "Navarre",
@@ -984,7 +984,9 @@
    ],
    "siege": null,
    "elev": 608,
-   "occ": null,
+   "occ": {
+    "by": "Aragon"
+   },
    "bld": [],
    "upg": null,
    "raid": null
@@ -2638,6 +2640,27 @@
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Aragon occupied Guadalajara (held by Castile)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Aragon declared war on Castile",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Aragon spends 1✦ to declare war on Castile",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring 1201",
@@ -11651,7 +11674,8 @@
  "wars": [
   "Almohads|Castile",
   "Castile|Navarre",
-  "Almohads|Portugal"
+  "Almohads|Portugal",
+  "Aragon|Castile"
  ],
  "battles": [],
  "fought": {

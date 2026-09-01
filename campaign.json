@@ -35,7 +35,7 @@
    "id": "Aragon",
    "name": "Aragon",
    "color": "#D69E2C",
-   "treasury": 6288,
+   "treasury": 184,
    "capital": "Zaragoza",
    "zeal": 7
   },
@@ -2012,7 +2012,7 @@
    "name": "Host of Zaragoza",
    "faction": "Aragon",
    "men": 2410,
-   "at": "Zaragoza",
+   "at": "Burgos",
    "order": null,
    "units": [
     "mk_ara_t1_king_bodyguard",
@@ -2286,7 +2286,7 @@
    "name": "Host of Barcelona",
    "faction": "Aragon",
    "men": 2560,
-   "at": "Teruel",
+   "at": "Guadalajara",
    "order": null,
    "units": [
     "mk_ara_t1_dismounted_caballeros",
@@ -2603,9 +2603,69 @@
     0,
     0
    ]
+  },
+  {
+   "name": "Host of Zaragoza",
+   "faction": "Aragon",
+   "men": 1300,
+   "at": "Zaragoza",
+   "order": null,
+   "units": [
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_militia_crossbowmen",
+    "mk_ara_t1_militia_crossbowmen",
+    "mk_ara_t1_militia_spearmen",
+    "mk_ara_t1_militia_spearmen",
+    "mk_ara_t1_caballeros_villanos",
+    "mk_ara_t1_caballeros_villanos"
+   ],
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "upkeep": 1830
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Aragon mustered a planned host at Zaragoza (10 regiments · 6,104 florins)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Aragon raised a host at Zaragoza",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Barcelona moved Teruel → Guadalajara",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Zaragoza moved Zaragoza → Burgos",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring 1201",

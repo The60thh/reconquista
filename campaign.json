@@ -1960,7 +1960,7 @@
    "name": "Host of Toledo",
    "faction": "Castile",
    "men": 2410,
-   "at": "Cáceres",
+   "at": "Valladolid",
    "order": null,
    "units": [
     "mk_cas_t1_caballeros",
@@ -2384,7 +2384,7 @@
    "name": "Host of Toledo",
    "faction": "Castile",
    "men": 2220,
-   "at": "Cáceres",
+   "at": "Valladolid",
    "order": null,
    "units": [
     "mk_cas_t1_monteros_de_espinosa",
@@ -2606,6 +2606,20 @@
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Toledo moved Cáceres → Valladolid",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Toledo moved Cáceres → Valladolid",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring 1201",

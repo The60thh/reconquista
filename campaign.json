@@ -37,7 +37,7 @@
    "color": "#D69E2C",
    "treasury": 184,
    "capital": "Zaragoza",
-   "zeal": 6
+   "zeal": 5
   },
   {
    "id": "Navarre",
@@ -973,7 +973,7 @@
    "value": 300,
    "move": 1,
    "garrison": 0,
-   "owner": "Castile",
+   "owner": "Aragon",
    "adj": [
     "Cuenca",
     "Madrid",
@@ -984,9 +984,7 @@
    ],
    "siege": null,
    "elev": 608,
-   "occ": {
-    "by": "Aragon"
-   },
+   "occ": null,
    "bld": [],
    "upg": null,
    "raid": null
@@ -2640,6 +2638,20 @@
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Aragon annexes Guadalajara at once, borne on fervour",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Aragon spends 1✦ — zealous annexation of Guadalajara",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring 1201",

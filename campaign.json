@@ -2012,7 +2012,7 @@
    "name": "Host of Zaragoza",
    "faction": "Aragon",
    "men": 2410,
-   "at": "Burgos",
+   "at": "Guadalajara",
    "order": null,
    "units": [
     "mk_ara_t1_king_bodyguard",
@@ -2638,6 +2638,13 @@
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of Zaragoza moved Burgos → Guadalajara",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring 1201",

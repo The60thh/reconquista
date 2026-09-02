@@ -2885,7 +2885,8 @@ cx.addEventListener("click",e=>{
   if(ad){e.stopPropagation();
     if(!cxArmy||(!gm&&!cxArmy._plan))return;
     if(cxArmy.units.length>=CAPU){toast("An army may field only "+CAPU+" units");return;}
-    if(!cxArmy._plan){
+    if(!cxArmy._plan&&cxArmy.holy){snap("muster");}   /* sworn host: free */
+    else if(!cxArmy._plan){
       const uu=cxBy[ad.dataset.cxad],ff=F[cxArmy.faction];
       if(uu&&ff){if(ff.treasury<(uu.cost||0)){toast(`${cxArmy.faction} holds only ${ff.treasury.toLocaleString()} — ${uu.cost} needed`);return;}
         snap("muster");ff.treasury-=(uu.cost||0);drawLedger();}
@@ -2900,8 +2901,9 @@ cx.addEventListener("click",e=>{
     else i=cxArmy.units.lastIndexOf(rm.dataset.cxrm);
     if(i>-1){
       if(!cxArmy._plan){snap("muster");
-        const uu=cxBy[rm.dataset.cxrm],ff=F[cxArmy.faction];
-        if(uu&&ff){ff.treasury+=(uu.cost||0);drawLedger();}}
+        if(!cxArmy.holy){   /* no refund on a host that cost nothing */
+          const uu=cxBy[rm.dataset.cxrm],ff=F[cxArmy.faction];
+          if(uu&&ff){ff.treasury+=(uu.cost||0);drawLedger();}}}
       if(!cxArmy._plan&&Array.isArray(cxArmy.xp))cxArmy.xp.splice(i,1);cxArmy.units.splice(i,1);syncMen(cxArmy);cxRender();if(!cxArmy._plan)draw();}return;}
   const card=e.target.closest(".cxcard");if(card)cxDetail(card.dataset.cxk);
 });

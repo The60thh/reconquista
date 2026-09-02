@@ -19,7 +19,7 @@
    "id": "León",
    "name": "León",
    "color": "#683682",
-   "treasury": 13700,
+   "treasury": 0,
    "capital": "León",
    "zeal": 8
   },
@@ -110,8 +110,13 @@
    "siege": null,
    "elev": 77,
    "occ": null,
-   "bld": [],
-   "upg": null,
+   "bld": [
+    "church"
+   ],
+   "upg": {
+    "to": 1,
+    "left": 1
+   },
    "raid": null
   },
   {
@@ -2234,7 +2239,7 @@
    "name": "Host of León",
    "faction": "León",
    "men": 2390,
-   "at": "Cáceres",
+   "at": "Salamanca",
    "order": null,
    "units": [
     "mk_cas_t1_general_bodyguard",
@@ -2638,6 +2643,34 @@
   }
  ],
  "log": [
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "León raises a Church / Mosque at Santiago (2,400 florins)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "León begins raising Santiago to a town (7,500 florins)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of León moved Zamora → Salamanca",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 5,
+   "d": "Spring 1201",
+   "txt": "Host of León moved Cáceres → Zamora",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 5,
    "d": "Spring 1201",

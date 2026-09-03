@@ -2066,7 +2066,7 @@
    "name": "Host of Sevilla",
    "faction": "Almohads",
    "men": 2280,
-   "at": "Évora",
+   "at": "Badajoz",
    "order": null,
    "units": [
     "mk_alm_t1_shaykh_dismounted_retainers",
@@ -2118,7 +2118,7 @@
    "name": "Host of Córdoba",
    "faction": "Almohads",
    "men": 2380,
-   "at": "Évora",
+   "at": "Badajoz",
    "order": null,
    "units": [
     "mk_gran_t1_mozarab_jund",
@@ -2508,7 +2508,7 @@
    "name": "Host of Badajoz",
    "faction": "Almohads",
    "men": 2700,
-   "at": "Évora",
+   "at": "Badajoz",
    "order": null,
    "units": [
     "mk_alm_t1_qaid_bodyguards",
@@ -2728,6 +2728,27 @@
   }
  ],
  "log": [
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Sevilla moved Évora → Badajoz",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Córdoba moved Évora → Badajoz",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Badajoz moved Évora → Badajoz",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 6,
    "d": "Summer 1201",

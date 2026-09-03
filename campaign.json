@@ -51,9 +51,9 @@
    "id": "Almohads",
    "name": "Almohads",
    "color": "#2E683E",
-   "treasury": 8725,
+   "treasury": 593,
    "capital": "Sevilla",
-   "zeal": 10
+   "zeal": 0
   }
  ],
  "provinces": [
@@ -2065,8 +2065,8 @@
   {
    "name": "Host of Sevilla",
    "faction": "Almohads",
-   "men": 2210,
-   "at": "Beja",
+   "men": 2280,
+   "at": "Évora",
    "order": null,
    "units": [
     "mk_alm_t1_shaykh_dismounted_retainers",
@@ -2087,9 +2087,10 @@
     "mk_gran_t1_heavy_andalusian_crossbowmen",
     "mk_gran_t1_heavy_andalusian_crossbowmen",
     "mk_gran_t1_heavy_andalusian_crossbowmen",
-    "mk_mus_t1_trebuchet"
+    "mk_mus_t1_trebuchet",
+    "mk_alm_t1_ghuzz_horse_archers"
    ],
-   "upkeep": 4948,
+   "upkeep": 5185,
    "xp": [
     1,
     1,
@@ -2109,14 +2110,15 @@
     1,
     1,
     1,
-    1
+    1,
+    0
    ]
   },
   {
    "name": "Host of Córdoba",
    "faction": "Almohads",
-   "men": 1580,
-   "at": "Beja",
+   "men": 2380,
+   "at": "Évora",
    "order": null,
    "units": [
     "mk_gran_t1_mozarab_jund",
@@ -2131,9 +2133,16 @@
     "mk_alm_t1_maghrebi_tribesmen",
     "mk_alm_t1_maghrebi_tribesmen",
     "mk_alm_t1_jund_swordsmen",
-    "mk_alm_t1_jund_swordsmen"
+    "mk_alm_t1_jund_swordsmen",
+    "mk_gran_t1_mozarab_jund",
+    "mk_gran_t1_andalusian_mounted_crossbowmen",
+    "mk_alm_t1_abid_al_makhzan",
+    "mk_alm_t1_abid_al_makhzan",
+    "mk_alm_t1_arab_horsemen",
+    "mk_alm_t1_arab_horsemen",
+    "mk_alm_t1_dismounted_jund_al_nasara"
    ],
-   "upkeep": 2770,
+   "upkeep": 4273,
    "xp": [
     1,
     1,
@@ -2147,7 +2156,14 @@
     1,
     1,
     1,
-    1
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
    ]
   },
   {
@@ -2339,7 +2355,7 @@
   {
    "name": "Host of Valencia",
    "faction": "Almohads",
-   "men": 2410,
+   "men": 2650,
    "at": "Valencia",
    "order": null,
    "units": [
@@ -2359,7 +2375,10 @@
     "mk_gran_t1_mozarab_jund",
     "mk_alm_t1_dismounted_jund_al_nasara",
     "mk_alm_t1_hushud",
-    "mk_alm_t1_hushud"
+    "mk_alm_t1_hushud",
+    "mk_alm_t1_tuareg_camel_riders",
+    "mk_alm_t1_dismounted_jund_al_nasara",
+    "mk_mus_t1_trebuchet"
    ],
    "xp": [
     0,
@@ -2378,9 +2397,12 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 3111
+   "upkeep": 3810
   },
   {
    "name": "Host of Toledo",
@@ -2486,7 +2508,7 @@
    "name": "Host of Badajoz",
    "faction": "Almohads",
    "men": 2700,
-   "at": "Sevilla",
+   "at": "Évora",
    "order": null,
    "units": [
     "mk_alm_t1_qaid_bodyguards",
@@ -2650,9 +2672,146 @@
     0
    ],
    "upkeep": 5008
+  },
+  {
+   "name": "Jihad of Almohads",
+   "faction": "Almohads",
+   "men": 2340,
+   "at": "Córdoba",
+   "order": null,
+   "holy": true,
+   "units": [
+    "mk_alm_t1_batana_al_rum",
+    "mk_mus_t1_trebuchet",
+    "mk_merc_his_t1_farfanes",
+    "mk_merc_his_t1_farfanes",
+    "mk_gran_t1_andalusian_mounted_crossbowmen",
+    "mk_gran_t1_andalusian_mounted_crossbowmen",
+    "mk_alm_t1_abid_skirmishers",
+    "mk_alm_t1_abid_skirmishers",
+    "mk_gran_t1_mozarab_jund",
+    "mk_gran_t1_mozarab_jund",
+    "mk_gran_t1_mozarab_jund",
+    "mk_gran_t1_mozarab_jund",
+    "mk_alm_t1_shaykh_dismounted_retainers",
+    "mk_alm_t1_shaykh_dismounted_retainers",
+    "mk_alm_t1_dismounted_jund_al_nasara",
+    "mk_alm_t1_dismounted_jund_al_nasara",
+    "mk_alm_t1_maghrebi_rumat",
+    "mk_alm_t1_maghrebi_rumat",
+    "mk_alm_t1_dismounted_jund_al_nasara",
+    "mk_gran_t1_mozarab_jund"
+   ],
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "upkeep": 4965
   }
  ],
  "log": [
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Sevilla moved Beja → Évora",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Córdoba moved Beja → Évora",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Badajoz moved Sevilla → Évora",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Jihad of Almohads moved Sevilla → Córdoba",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "JIHAD — the faithful of Almohads muster at Sevilla. No upkeep, above the cap; they go home at war's end.",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Almohads spends 10✦ — Jihad proclaimed",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Almohads raised a host at Badajoz",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Valencia moved Cuenca → Valencia",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Almohads raised a host at Valencia",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Valencia moved Valencia → Cuenca",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Badajoz moved Évora → Sevilla",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Badajoz moved Sevilla → Évora",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 6,
    "d": "Summer 1201",
@@ -11809,7 +11968,7 @@
   "León",
   "Navarre"
  ],
- "active": 0,
+ "active": 1,
  "wars": [
   "Almohads|Castile",
   "Castile|Navarre",
@@ -23661,6 +23820,482 @@
       "Portugal",
       "Lisbon",
       2420,
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "t": 6,
+   "label": "Almohads · Summer 1201 · turn 6",
+   "snap": {
+    "prov": {
+     "Santiago": [
+      "León",
+      "",
+      "",
+      1
+     ],
+     "Lugo": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Asturias": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Cantabria": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Biscay": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Álava": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Guipúzcoa": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Pontevedra": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "León": [
+      "León",
+      "",
+      "",
+      2
+     ],
+     "Palencia": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Burgos": [
+      "Navarre",
+      "",
+      "",
+      1
+     ],
+     "Pamplona": [
+      "Navarre",
+      "",
+      "",
+      2
+     ],
+     "Andorra": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Orense": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Rioja": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Huesca": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Lleida": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Girona": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Braga": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Bragança": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Zamora": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Valladolid": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Soria": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Zaragoza": [
+      "Aragon",
+      "",
+      "",
+      3
+     ],
+     "Barcelona": [
+      "Aragon",
+      "",
+      "",
+      2
+     ],
+     "Porto": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Salamanca": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Segovia": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Guadalajara": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Tarragona": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Coimbra": [
+      "Portugal",
+      "",
+      "",
+      2
+     ],
+     "Viseu": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Ávila": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Madrid": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Teruel": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Castellón": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Castelo Branco": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Cáceres": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Toledo": [
+      "Castile",
+      "",
+      "",
+      3
+     ],
+     "Cuenca": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Lisbon": [
+      "Portugal",
+      "",
+      "",
+      2
+     ],
+     "Santarém": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Valencia": [
+      "Almohads",
+      "",
+      "",
+      2
+     ],
+     "Évora": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Badajoz": [
+      "Almohads",
+      "",
+      "",
+      1
+     ],
+     "Calatrava": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Albacete": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Alicante": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Beja": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Huelva": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Córdoba": [
+      "Almohads",
+      "",
+      "",
+      3
+     ],
+     "Jaén": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Murcia": [
+      "Almohads",
+      "",
+      "",
+      1
+     ],
+     "Algarve": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Sevilla": [
+      "Almohads",
+      "",
+      "",
+      3
+     ],
+     "Granada": [
+      "Almohads",
+      "",
+      "",
+      1
+     ],
+     "Almería": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Cádiz": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Málaga": [
+      "Almohads",
+      "",
+      "",
+      0
+     ]
+    },
+    "armies": [
+     [
+      "Host of Toledo",
+      "Castile",
+      "Valladolid",
+      2410,
+      0
+     ],
+     [
+      "Host of Zaragoza",
+      "Aragon",
+      "Guadalajara",
+      2410,
+      0
+     ],
+     [
+      "Host of Sevilla",
+      "Almohads",
+      "Évora",
+      2280,
+      0
+     ],
+     [
+      "Host of Córdoba",
+      "Almohads",
+      "Évora",
+      2380,
+      0
+     ],
+     [
+      "Host of Coimbra",
+      "Portugal",
+      "Lisbon",
+      1090,
+      0
+     ],
+     [
+      "Host of Pamplona",
+      "Navarre",
+      "Burgos",
+      2460,
+      0
+     ],
+     [
+      "Host of León",
+      "León",
+      "Salamanca",
+      2390,
+      0
+     ],
+     [
+      "Host of Barcelona",
+      "Aragon",
+      "Guadalajara",
+      2560,
+      0
+     ],
+     [
+      "Host of Valencia",
+      "Almohads",
+      "Valencia",
+      2650,
+      0
+     ],
+     [
+      "Host of Toledo",
+      "Castile",
+      "Valladolid",
+      2220,
+      0
+     ],
+     [
+      "Host of Pamplona",
+      "Navarre",
+      "Burgos",
+      2690,
+      0
+     ],
+     [
+      "Host of Badajoz",
+      "Almohads",
+      "Évora",
+      2700,
+      0
+     ],
+     [
+      "Second Host of Coimbra",
+      "Portugal",
+      "Lisbon",
+      1340,
+      0
+     ],
+     [
+      "Host of Zaragoza",
+      "Aragon",
+      "Zaragoza",
+      1300,
+      0
+     ],
+     [
+      "Crusader Host of Portugal",
+      "Portugal",
+      "Lisbon",
+      2420,
+      0
+     ],
+     [
+      "Jihad of Almohads",
+      "Almohads",
+      "Córdoba",
+      2340,
       0
      ]
     ]

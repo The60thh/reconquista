@@ -2170,7 +2170,7 @@
    "name": "Host of Coimbra",
    "faction": "Portugal",
    "men": 1090,
-   "at": "Lisbon",
+   "at": "Badajoz",
    "order": null,
    "units": [
     "mk_por_t1_milicia_concelhia",
@@ -2560,7 +2560,7 @@
    "name": "Second Host of Coimbra",
    "faction": "Portugal",
    "men": 1340,
-   "at": "Lisbon",
+   "at": "Badajoz",
    "order": null,
    "units": [
     "mk_por_t1_king_bodyguards",
@@ -2624,7 +2624,7 @@
    "name": "Crusader Host of Portugal",
    "faction": "Portugal",
    "men": 2420,
-   "at": "Lisbon",
+   "at": "Badajoz",
    "order": null,
    "holy": true,
    "units": [
@@ -2728,6 +2728,27 @@
   }
  ],
  "log": [
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Coimbra moved Lisbon → Badajoz",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Second Host of Coimbra moved Lisbon → Badajoz",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Crusader Host of Portugal moved Lisbon → Badajoz",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 6,
    "d": "Summer 1201",

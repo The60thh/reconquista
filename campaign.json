@@ -2176,12 +2176,12 @@
     "mk_por_t1_milicia_concelhia",
     "mk_por_t1_milicia_concelhia",
     "mk_cas_t1_order_knights_dismounted",
-    "mk_por_t1_king_bodyguards",
     "mk_cas_t1_order_knights_dismounted",
     "mk_cas_t1_order_knights_dismounted",
     "mk_cas_t1_order_knights",
     "mk_cas_t1_order_knights",
-    "mk_por_t1_fundeiros"
+    "mk_por_t1_fundeiros",
+    "mk_por_t1_general_bodyguards"
    ],
    "upkeep": 2589,
    "xp": [

@@ -2170,7 +2170,7 @@
    "name": "Host of Coimbra",
    "faction": "Portugal",
    "men": 1090,
-   "at": "Badajoz",
+   "at": "Évora",
    "order": null,
    "units": [
     "mk_por_t1_milicia_concelhia",
@@ -2560,7 +2560,7 @@
    "name": "Second Host of Coimbra",
    "faction": "Portugal",
    "men": 1340,
-   "at": "Badajoz",
+   "at": "Évora",
    "order": null,
    "units": [
     "mk_por_t1_king_bodyguards",
@@ -2623,13 +2623,11 @@
   {
    "name": "Crusader Host of Portugal",
    "faction": "Portugal",
-   "men": 2420,
-   "at": "Badajoz",
+   "men": 2160,
+   "at": "Évora",
    "order": null,
    "holy": true,
    "units": [
-    "mk_por_t1_besteiros",
-    "mk_por_t1_besteiros",
     "mk_por_t1_besteiros_de_cavalo",
     "mk_por_t1_besteiros_de_cavalo",
     "mk_por_t1_fundeiros",
@@ -2667,11 +2665,9 @@
     0,
     0,
     0,
-    0,
-    0,
     0
    ],
-   "upkeep": 5008
+   "upkeep": 4584
   },
   {
    "name": "Jihad of Almohads",
@@ -2728,6 +2724,27 @@
   }
  ],
  "log": [
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Second Host of Coimbra moved Badajoz → Évora",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Crusader Host of Portugal moved Badajoz → Évora",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Coimbra moved Badajoz → Évora",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 6,
    "d": "Summer 1201",

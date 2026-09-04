@@ -13,7 +13,7 @@
    "color": "#A82626",
    "treasury": 2427,
    "capital": "Toledo",
-   "zeal": 5
+   "zeal": 4
   },
   {
    "id": "León",
@@ -37,7 +37,7 @@
    "color": "#D69E2C",
    "treasury": 1552,
    "capital": "Zaragoza",
-   "zeal": 5
+   "zeal": 6
   },
   {
    "id": "Navarre",
@@ -1185,7 +1185,7 @@
    "value": 600,
    "move": 1,
    "garrison": 0,
-   "owner": "Almohads",
+   "owner": "Aragon",
    "adj": [
     "Tarragona",
     "Teruel",
@@ -2014,7 +2014,7 @@
    "name": "Host of Zaragoza",
    "faction": "Aragon",
    "men": 2410,
-   "at": "Toledo",
+   "at": "Castellón",
    "order": null,
    "units": [
     "mk_ara_t1_king_bodyguard",
@@ -2268,7 +2268,7 @@
    "name": "Host of Barcelona",
    "faction": "Aragon",
    "men": 2560,
-   "at": "Toledo",
+   "at": "Castellón",
    "order": null,
    "units": [
     "mk_ara_t1_dismounted_caballeros",
@@ -2632,6 +2632,118 @@
   }
  ],
  "log": [
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Aragon annexed Castellón from Almohads",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Aragon declared war on Almohads",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Aragon spends 1✦ to declare war on Almohads",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Zaragoza moved Valencia → Castellón",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Barcelona moved Teruel → Castellón",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Barcelona moved Valencia → Teruel",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Zaragoza moved Guadalajara → Valencia",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Barcelona moved Guadalajara → Valencia",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Zaragoza moved Toledo → Guadalajara",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Barcelona moved Toledo → Guadalajara",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Zaragoza moved Guadalajara → Toledo",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Barcelona moved Guadalajara → Toledo",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Zaragoza moved Toledo → Guadalajara",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Barcelona moved Toledo → Guadalajara",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of León moved Zamora → Salamanca",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of León moved Salamanca → Zamora",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 6,
    "d": "Summer 1201",
@@ -12085,7 +12197,8 @@
   "Almohads|Castile",
   "Castile|Navarre",
   "Almohads|Portugal",
-  "Aragon|Castile"
+  "Aragon|Castile",
+  "Almohads|Aragon"
  ],
  "battles": [],
  "fought": {

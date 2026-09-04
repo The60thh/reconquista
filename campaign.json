@@ -27,7 +27,7 @@
    "id": "Portugal",
    "name": "Portugal",
    "color": "#285C96",
-   "treasury": 5570,
+   "treasury": 20162,
    "capital": "Coimbra",
    "zeal": 3
   },
@@ -2169,30 +2169,14 @@
   {
    "name": "Host of Coimbra",
    "faction": "Portugal",
-   "men": 1090,
+   "men": 140,
    "at": "Évora",
    "order": null,
    "units": [
-    "mk_por_t1_milicia_concelhia",
-    "mk_por_t1_milicia_concelhia",
-    "mk_cas_t1_order_knights_dismounted",
-    "mk_cas_t1_order_knights_dismounted",
-    "mk_cas_t1_order_knights_dismounted",
-    "mk_cas_t1_order_knights",
-    "mk_cas_t1_order_knights",
-    "mk_por_t1_fundeiros",
-    "mk_por_t1_general_bodyguards"
+    "mk_cas_t1_order_knights_dismounted"
    ],
-   "upkeep": 2589,
+   "upkeep": 276,
    "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     0
    ]
   },
@@ -2559,31 +2543,15 @@
   {
    "name": "Second Host of Coimbra",
    "faction": "Portugal",
-   "men": 1340,
+   "men": 320,
    "at": "Évora",
    "order": null,
    "units": [
-    "mk_por_t1_king_bodyguards",
-    "mk_cas_t1_order_knights",
-    "mk_cas_t1_order_knights",
     "mk_por_t1_milicia_concelhia",
-    "mk_por_t1_milicia_concelhia",
-    "mk_por_t1_milicia_concelhia",
-    "mk_por_t1_milicia_concelhia",
-    "mk_por_t1_milicia_concelhia",
-    "mk_por_t1_milicia_concelhia",
-    "mk_por_t1_peoes_de_dardo"
+    "mk_por_t1_milicia_concelhia"
    ],
-   "upkeep": 2388,
+   "upkeep": 326,
    "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     0,
     0
    ]
@@ -2623,51 +2591,21 @@
   {
    "name": "Crusader Host of Portugal",
    "faction": "Portugal",
-   "men": 2160,
+   "men": 400,
    "at": "Évora",
    "order": null,
    "holy": true,
    "units": [
-    "mk_por_t1_besteiros_de_cavalo",
-    "mk_por_t1_besteiros_de_cavalo",
-    "mk_por_t1_fundeiros",
-    "mk_por_t1_fundeiros",
     "mk_por_t1_general_bodyguards",
     "mk_por_t1_milicia_concelhia",
-    "mk_por_t1_milicia_concelhia",
-    "mk_por_t1_milicia_concelhia",
-    "mk_por_t1_milicia_concelhia",
-    "mk_cas_t1_order_knights_dismounted",
-    "mk_cas_t1_order_knights_dismounted",
-    "mk_cas_t1_order_knights_dismounted",
-    "mk_cas_t1_order_knights_dismounted",
-    "mk_cas_t1_order_knights_dismounted",
-    "mk_cas_t1_order_knights_dismounted",
-    "mk_cas_t1_order_knights",
-    "mk_cas_t1_order_knights",
-    "mk_eur_t1_trebuchet"
+    "mk_por_t1_milicia_concelhia"
    ],
    "xp": [
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     0
    ],
-   "upkeep": 4584
+   "upkeep": 764
   },
   {
    "name": "Jihad of Almohads",

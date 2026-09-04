@@ -19,7 +19,7 @@
    "id": "León",
    "name": "León",
    "color": "#683682",
-   "treasury": 0,
+   "treasury": 214,
    "capital": "León",
    "zeal": 9
   },
@@ -2217,7 +2217,7 @@
   {
    "name": "Host of León",
    "faction": "León",
-   "men": 2390,
+   "men": 2430,
    "at": "Badajoz",
    "order": null,
    "units": [
@@ -2232,7 +2232,6 @@
     "mk_cas_t1_peones_de_elite",
     "mk_cas_t1_peones_de_elite",
     "mk_cas_t1_monteros_de_espinosa",
-    "mk_cas_t1_monteros_de_espinosa",
     "mk_cas_t1_order_knights_dismounted",
     "mk_cas_t1_order_knights_dismounted",
     "mk_cas_t1_order_knights_dismounted",
@@ -2240,9 +2239,10 @@
     "mk_cas_t1_peones",
     "mk_cas_t1_crossbowmen",
     "mk_cas_t1_crossbowmen",
-    "mk_cas_t1_caballeros"
+    "mk_cas_t1_caballeros",
+    "mk_cas_t1_peones_spearmen"
    ],
-   "upkeep": 4626,
+   "upkeep": 4562,
    "xp": [
     0,
     0,

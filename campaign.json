@@ -11,7 +11,7 @@
    "id": "Castile",
    "name": "Castile",
    "color": "#A82626",
-   "treasury": 8486,
+   "treasury": 2427,
    "capital": "Toledo",
    "zeal": 4
   },
@@ -27,7 +27,7 @@
    "id": "Portugal",
    "name": "Portugal",
    "color": "#285C96",
-   "treasury": 20162,
+   "treasury": 5800,
    "capital": "Coimbra",
    "zeal": 3
   },
@@ -45,13 +45,13 @@
    "color": "#C65C20",
    "treasury": 4202,
    "capital": "Pamplona",
-   "zeal": 6
+   "zeal": 0
   },
   {
    "id": "Almohads",
    "name": "Almohads",
    "color": "#2E683E",
-   "treasury": 16562,
+   "treasury": 137,
    "capital": "Sevilla",
    "zeal": 0
   }
@@ -2601,9 +2601,50 @@
     0
    ],
    "upkeep": 4965
+  },
+  {
+   "name": "Host of Toledo",
+   "faction": "Castile",
+   "men": 400,
+   "at": "Toledo",
+   "order": null,
+   "units": [
+    "mk_cas_t1_general_bodyguard",
+    "mk_cas_t1_almogavar_scouts",
+    "mk_cas_t1_almogavar_scouts",
+    "mk_cas_t1_spear_militia"
+   ],
+   "upkeep": 918,
+   "xp": [
+    0,
+    0,
+    0,
+    0
+   ]
   }
  ],
  "log": [
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Toledo moved Madrid → Toledo",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Toledo moved Toledo → Madrid",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Castile raised a host at Toledo",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 6,
    "d": "Summer 1201",

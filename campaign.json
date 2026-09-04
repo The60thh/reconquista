@@ -2637,6 +2637,13 @@
   {
    "t": 6,
    "d": "Summer 1201",
+   "txt": "Battle of Badajoz staged — Castile vs Almohads vs León",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
    "txt": "León raises a Road at Cáceres (3,000 florins)",
    "kind": "",
    "detail": null
@@ -12216,7 +12223,24 @@
   "Aragon|Castile",
   "Almohads|Aragon"
  ],
- "battles": [],
+ "battles": [
+  {
+   "at": "Badajoz",
+   "sides": [
+    "Castile",
+    "Almohads",
+    "León"
+   ],
+   "name": "Battle of Badajoz",
+   "date": "Summer 1201",
+   "turn": 6,
+   "men": {
+    "Castile": 4630,
+    "Almohads": 3610,
+    "León": 2390
+   }
+  }
+ ],
  "fought": {
   "Toledo": 1
  },

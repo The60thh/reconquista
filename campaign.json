@@ -54,6 +54,15 @@
    "treasury": 137,
    "capital": "Sevilla",
    "zeal": 0
+  },
+  {
+   "id": "Marinid Sultanate",
+   "name": "Marinid Sultanate",
+   "color": "#793c27",
+   "treasury": 341,
+   "capital": null,
+   "zeal": 0,
+   "flag": "marinids"
   }
  ],
  "provinces": [
@@ -1879,7 +1888,9 @@
    ],
    "siege": null,
    "elev": 449,
-   "occ": null,
+   "occ": {
+    "by": "Marinid Sultanate"
+   },
    "bld": [],
    "upg": null,
    "raid": null
@@ -2459,9 +2470,103 @@
     0,
     0
    ]
+  },
+  {
+   "name": "Host of Cádiz",
+   "faction": "Marinid Sultanate",
+   "men": 1420,
+   "at": "Cádiz",
+   "order": null,
+   "units": [
+    "mk_alm_t1_nobat_al_djandariya",
+    "mk_alm_t1_dismounted_jund_al_nasara",
+    "mk_alm_t1_dismounted_jund_al_nasara",
+    "mk_alm_t1_dismounted_jund_al_nasara",
+    "mk_alm_t1_saqaliba_jund",
+    "mk_alm_t1_saqaliba_jund",
+    "mk_alm_t1_saqaliba_jund",
+    "mk_alm_t1_dismounted_jund_al_nasara",
+    "mk_alm_t1_dismounted_jund_al_nasara",
+    "mk_alm_t1_batana_al_rum",
+    "mk_alm_t1_batana_al_rum",
+    "mk_mus_t1_trebuchet",
+    "mk_alm_t1_dismounted_jund_al_nasara"
+   ],
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "upkeep": 3642
   }
  ],
  "log": [
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Marinid Sultanate mustered a planned host at Cádiz (13 regiments · 12,159 florins)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Almohads raised a host at Cádiz",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Marinid Sultanate occupied Cádiz (held by Almohads)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Almohads annexed Cádiz from Marinid Sultanate",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Marinid Sultanate mustered a planned host at Cádiz (13 regiments · 12,076 florins)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Marinid Sultanate raised a host at Cádiz",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Marinid Sultanate annexed Cádiz from Almohads",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Almohads raised a host at Cádiz",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 6,
    "d": "Summer 1201",
@@ -12090,7 +12195,8 @@
   "Castile",
   "Aragon",
   "León",
-  "Navarre"
+  "Navarre",
+  "Marinid Sultanate"
  ],
  "active": 5,
  "wars": [

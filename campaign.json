@@ -1,8 +1,8 @@
 {
  "title": "Reconquista 1200 AD",
- "turn": 6,
+ "turn": 7,
  "year": 1201,
- "season": "Summer",
+ "season": "Autumn",
  "w": 3400,
  "h": 1910,
  "sea": "#1a334a",
@@ -11,57 +11,57 @@
    "id": "Castile",
    "name": "Castile",
    "color": "#A82626",
-   "treasury": 2427,
+   "treasury": 5031,
    "capital": "Toledo",
-   "zeal": 4
+   "zeal": 5
   },
   {
    "id": "León",
    "name": "León",
    "color": "#683682",
-   "treasury": 214,
+   "treasury": 6214,
    "capital": "León",
-   "zeal": 9
+   "zeal": 10
   },
   {
    "id": "Portugal",
    "name": "Portugal",
    "color": "#285C96",
-   "treasury": 5800,
+   "treasury": 11731,
    "capital": "Coimbra",
-   "zeal": 3
+   "zeal": 6
   },
   {
    "id": "Aragon",
    "name": "Aragon",
    "color": "#D69E2C",
-   "treasury": 1552,
+   "treasury": 6410,
    "capital": "Zaragoza",
-   "zeal": 6
+   "zeal": 8
   },
   {
    "id": "Navarre",
    "name": "Navarre",
    "color": "#C65C20",
-   "treasury": 4202,
+   "treasury": 8796,
    "capital": "Pamplona",
-   "zeal": 0
+   "zeal": 2
   },
   {
    "id": "Almohads",
    "name": "Almohads",
    "color": "#2E683E",
-   "treasury": 137,
+   "treasury": 11237,
    "capital": "Sevilla",
-   "zeal": 0
+   "zeal": 3
   },
   {
    "id": "Marinid Sultanate",
    "name": "Marinid Sultanate",
    "color": "#793c27",
-   "treasury": 0,
+   "treasury": 600,
    "capital": null,
-   "zeal": 0,
+   "zeal": 1,
    "flag": "marinids"
   }
  ],
@@ -197,7 +197,7 @@
    "value": 600,
    "move": 3,
    "garrison": 0,
-   "owner": "Castile",
+   "owner": "Navarre",
    "adj": [
     "Asturias",
     "Biscay",
@@ -207,9 +207,7 @@
    ],
    "siege": null,
    "elev": 1187,
-   "occ": {
-    "by": "Navarre"
-   },
+   "occ": null,
    "bld": [],
    "upg": null,
    "raid": null
@@ -560,7 +558,7 @@
    "value": 300,
    "move": 2,
    "garrison": 0,
-   "owner": "Castile",
+   "owner": "Navarre",
    "adj": [
     "Burgos",
     "Pamplona",
@@ -570,9 +568,7 @@
    ],
    "siege": null,
    "elev": 1255,
-   "occ": {
-    "by": "Navarre"
-   },
+   "occ": null,
    "bld": [],
    "upg": null,
    "raid": null
@@ -2525,6 +2521,83 @@
   }
  ],
  "log": [
+  {
+   "t": 7,
+   "d": "Autumn 1201",
+   "txt": "Marinid Sultanate occupied Cádiz (held by Almohads)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn 1201",
+   "txt": "Almohads annexed Cádiz from Marinid Sultanate",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn 1201",
+   "txt": "Aragon's synagogues yield 660 florins (+10%)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn 1201",
+   "txt": "Marinid Sultanate annexed Cádiz from Almohads",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn 1201",
+   "txt": "Navarre annexed Rioja from Castile",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn 1201",
+   "txt": "Navarre annexed Cantabria from Castile",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn 1201",
+   "txt": "Autumn 1201 opens — the round begins with Almohads.",
+   "kind": "turn",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Navarre: +5,400 income, −806 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Aragon: +7,260 income, −2,402 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Portugal: +6,000 income, −69 upkeep",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Castile: +3,600 income, −996 upkeep",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 6,
    "d": "Summer 1201",
@@ -26933,9 +27006,2821 @@
      ]
     ]
    }
+  },
+  {
+   "t": 6,
+   "label": "Almohads · Summer 1201 · turn 6",
+   "snap": {
+    "prov": {
+     "Santiago": [
+      "León",
+      "",
+      "",
+      1
+     ],
+     "Lugo": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Asturias": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Cantabria": [
+      "Castile",
+      "Navarre",
+      "",
+      0
+     ],
+     "Biscay": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Álava": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Guipúzcoa": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Pontevedra": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "León": [
+      "León",
+      "",
+      "",
+      2
+     ],
+     "Palencia": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Burgos": [
+      "Navarre",
+      "",
+      "",
+      1
+     ],
+     "Pamplona": [
+      "Navarre",
+      "",
+      "",
+      2
+     ],
+     "Andorra": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Orense": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Rioja": [
+      "Castile",
+      "Navarre",
+      "",
+      0
+     ],
+     "Huesca": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Lleida": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Girona": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Braga": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Bragança": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Zamora": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Valladolid": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Soria": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Zaragoza": [
+      "Aragon",
+      "",
+      "",
+      3
+     ],
+     "Barcelona": [
+      "Aragon",
+      "",
+      "",
+      2
+     ],
+     "Porto": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Salamanca": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Segovia": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Guadalajara": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Tarragona": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Coimbra": [
+      "Portugal",
+      "",
+      "",
+      2
+     ],
+     "Viseu": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Ávila": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Madrid": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Teruel": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Castellón": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Castelo Branco": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Cáceres": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Toledo": [
+      "Castile",
+      "",
+      "",
+      3
+     ],
+     "Cuenca": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Lisbon": [
+      "Portugal",
+      "",
+      "",
+      2
+     ],
+     "Santarém": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Valencia": [
+      "Almohads",
+      "",
+      "",
+      2
+     ],
+     "Évora": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Badajoz": [
+      "León",
+      "",
+      "",
+      1
+     ],
+     "Calatrava": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Albacete": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Alicante": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Beja": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Huelva": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Córdoba": [
+      "Almohads",
+      "",
+      "",
+      3
+     ],
+     "Jaén": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Murcia": [
+      "Almohads",
+      "",
+      "",
+      1
+     ],
+     "Algarve": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Sevilla": [
+      "Almohads",
+      "",
+      "",
+      3
+     ],
+     "Granada": [
+      "Almohads",
+      "",
+      "",
+      1
+     ],
+     "Almería": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Cádiz": [
+      "Almohads",
+      "Marinid Sultanate",
+      "",
+      0
+     ],
+     "Málaga": [
+      "Almohads",
+      "",
+      "",
+      0
+     ]
+    },
+    "armies": [
+     [
+      "Host of Toledo",
+      "Castile",
+      "Badajoz",
+      850,
+      0
+     ],
+     [
+      "Host of Zaragoza",
+      "Aragon",
+      "Castellón",
+      2410,
+      0
+     ],
+     [
+      "Host of Coimbra",
+      "Portugal",
+      "Évora",
+      140,
+      0
+     ],
+     [
+      "Host of Pamplona",
+      "Navarre",
+      "Cantabria",
+      2460,
+      0
+     ],
+     [
+      "Host of León",
+      "León",
+      "Badajoz",
+      260,
+      0
+     ],
+     [
+      "Host of Barcelona",
+      "Aragon",
+      "Castellón",
+      2560,
+      0
+     ],
+     [
+      "Host of Valencia",
+      "Almohads",
+      "Valencia",
+      2650,
+      0
+     ],
+     [
+      "Host of Toledo",
+      "Castile",
+      "Badajoz",
+      960,
+      0
+     ],
+     [
+      "Host of Pamplona",
+      "Navarre",
+      "Rioja",
+      2690,
+      0
+     ],
+     [
+      "Second Host of Coimbra",
+      "Portugal",
+      "Évora",
+      320,
+      0
+     ],
+     [
+      "Host of Zaragoza",
+      "Aragon",
+      "Zaragoza",
+      1860,
+      0
+     ],
+     [
+      "Crusader Host of Portugal",
+      "Portugal",
+      "Évora",
+      400,
+      0
+     ],
+     [
+      "Jihad of Almohads",
+      "Almohads",
+      "Córdoba",
+      2340,
+      0
+     ],
+     [
+      "Host of Toledo",
+      "Castile",
+      "Toledo",
+      400,
+      0
+     ],
+     [
+      "Host of Cádiz",
+      "Marinid Sultanate",
+      "Cádiz",
+      2220,
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "t": 6,
+   "label": "Portugal · Summer 1201 · turn 6",
+   "snap": {
+    "prov": {
+     "Santiago": [
+      "León",
+      "",
+      "",
+      1
+     ],
+     "Lugo": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Asturias": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Cantabria": [
+      "Castile",
+      "Navarre",
+      "",
+      0
+     ],
+     "Biscay": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Álava": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Guipúzcoa": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Pontevedra": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "León": [
+      "León",
+      "",
+      "",
+      2
+     ],
+     "Palencia": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Burgos": [
+      "Navarre",
+      "",
+      "",
+      1
+     ],
+     "Pamplona": [
+      "Navarre",
+      "",
+      "",
+      2
+     ],
+     "Andorra": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Orense": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Rioja": [
+      "Castile",
+      "Navarre",
+      "",
+      0
+     ],
+     "Huesca": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Lleida": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Girona": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Braga": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Bragança": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Zamora": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Valladolid": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Soria": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Zaragoza": [
+      "Aragon",
+      "",
+      "",
+      3
+     ],
+     "Barcelona": [
+      "Aragon",
+      "",
+      "",
+      2
+     ],
+     "Porto": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Salamanca": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Segovia": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Guadalajara": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Tarragona": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Coimbra": [
+      "Portugal",
+      "",
+      "",
+      2
+     ],
+     "Viseu": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Ávila": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Madrid": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Teruel": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Castellón": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Castelo Branco": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Cáceres": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Toledo": [
+      "Castile",
+      "",
+      "",
+      3
+     ],
+     "Cuenca": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Lisbon": [
+      "Portugal",
+      "",
+      "",
+      2
+     ],
+     "Santarém": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Valencia": [
+      "Almohads",
+      "",
+      "",
+      2
+     ],
+     "Évora": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Badajoz": [
+      "León",
+      "",
+      "",
+      1
+     ],
+     "Calatrava": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Albacete": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Alicante": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Beja": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Huelva": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Córdoba": [
+      "Almohads",
+      "",
+      "",
+      3
+     ],
+     "Jaén": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Murcia": [
+      "Almohads",
+      "",
+      "",
+      1
+     ],
+     "Algarve": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Sevilla": [
+      "Almohads",
+      "",
+      "",
+      3
+     ],
+     "Granada": [
+      "Almohads",
+      "",
+      "",
+      1
+     ],
+     "Almería": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Cádiz": [
+      "Almohads",
+      "Marinid Sultanate",
+      "",
+      0
+     ],
+     "Málaga": [
+      "Almohads",
+      "",
+      "",
+      0
+     ]
+    },
+    "armies": [
+     [
+      "Host of Toledo",
+      "Castile",
+      "Badajoz",
+      850,
+      0
+     ],
+     [
+      "Host of Zaragoza",
+      "Aragon",
+      "Castellón",
+      2410,
+      0
+     ],
+     [
+      "Host of Coimbra",
+      "Portugal",
+      "Évora",
+      140,
+      0
+     ],
+     [
+      "Host of Pamplona",
+      "Navarre",
+      "Cantabria",
+      2460,
+      0
+     ],
+     [
+      "Host of León",
+      "León",
+      "Badajoz",
+      260,
+      0
+     ],
+     [
+      "Host of Barcelona",
+      "Aragon",
+      "Castellón",
+      2560,
+      0
+     ],
+     [
+      "Host of Valencia",
+      "Almohads",
+      "Valencia",
+      2650,
+      0
+     ],
+     [
+      "Host of Toledo",
+      "Castile",
+      "Badajoz",
+      960,
+      0
+     ],
+     [
+      "Host of Pamplona",
+      "Navarre",
+      "Rioja",
+      2690,
+      0
+     ],
+     [
+      "Second Host of Coimbra",
+      "Portugal",
+      "Évora",
+      320,
+      0
+     ],
+     [
+      "Host of Zaragoza",
+      "Aragon",
+      "Zaragoza",
+      1860,
+      0
+     ],
+     [
+      "Crusader Host of Portugal",
+      "Portugal",
+      "Évora",
+      400,
+      0
+     ],
+     [
+      "Jihad of Almohads",
+      "Almohads",
+      "Córdoba",
+      2340,
+      0
+     ],
+     [
+      "Host of Toledo",
+      "Castile",
+      "Toledo",
+      400,
+      0
+     ],
+     [
+      "Host of Cádiz",
+      "Marinid Sultanate",
+      "Cádiz",
+      2220,
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "t": 6,
+   "label": "Castile · Summer 1201 · turn 6",
+   "snap": {
+    "prov": {
+     "Santiago": [
+      "León",
+      "",
+      "",
+      1
+     ],
+     "Lugo": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Asturias": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Cantabria": [
+      "Castile",
+      "Navarre",
+      "",
+      0
+     ],
+     "Biscay": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Álava": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Guipúzcoa": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Pontevedra": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "León": [
+      "León",
+      "",
+      "",
+      2
+     ],
+     "Palencia": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Burgos": [
+      "Navarre",
+      "",
+      "",
+      1
+     ],
+     "Pamplona": [
+      "Navarre",
+      "",
+      "",
+      2
+     ],
+     "Andorra": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Orense": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Rioja": [
+      "Castile",
+      "Navarre",
+      "",
+      0
+     ],
+     "Huesca": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Lleida": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Girona": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Braga": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Bragança": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Zamora": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Valladolid": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Soria": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Zaragoza": [
+      "Aragon",
+      "",
+      "",
+      3
+     ],
+     "Barcelona": [
+      "Aragon",
+      "",
+      "",
+      2
+     ],
+     "Porto": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Salamanca": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Segovia": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Guadalajara": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Tarragona": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Coimbra": [
+      "Portugal",
+      "",
+      "",
+      2
+     ],
+     "Viseu": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Ávila": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Madrid": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Teruel": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Castellón": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Castelo Branco": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Cáceres": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Toledo": [
+      "Castile",
+      "",
+      "",
+      3
+     ],
+     "Cuenca": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Lisbon": [
+      "Portugal",
+      "",
+      "",
+      2
+     ],
+     "Santarém": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Valencia": [
+      "Almohads",
+      "",
+      "",
+      2
+     ],
+     "Évora": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Badajoz": [
+      "León",
+      "",
+      "",
+      1
+     ],
+     "Calatrava": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Albacete": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Alicante": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Beja": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Huelva": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Córdoba": [
+      "Almohads",
+      "",
+      "",
+      3
+     ],
+     "Jaén": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Murcia": [
+      "Almohads",
+      "",
+      "",
+      1
+     ],
+     "Algarve": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Sevilla": [
+      "Almohads",
+      "",
+      "",
+      3
+     ],
+     "Granada": [
+      "Almohads",
+      "",
+      "",
+      1
+     ],
+     "Almería": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Cádiz": [
+      "Almohads",
+      "Marinid Sultanate",
+      "",
+      0
+     ],
+     "Málaga": [
+      "Almohads",
+      "",
+      "",
+      0
+     ]
+    },
+    "armies": [
+     [
+      "Host of Toledo",
+      "Castile",
+      "Badajoz",
+      850,
+      0
+     ],
+     [
+      "Host of Zaragoza",
+      "Aragon",
+      "Castellón",
+      2410,
+      0
+     ],
+     [
+      "Host of Coimbra",
+      "Portugal",
+      "Évora",
+      140,
+      0
+     ],
+     [
+      "Host of Pamplona",
+      "Navarre",
+      "Cantabria",
+      2460,
+      0
+     ],
+     [
+      "Host of León",
+      "León",
+      "Badajoz",
+      260,
+      0
+     ],
+     [
+      "Host of Barcelona",
+      "Aragon",
+      "Castellón",
+      2560,
+      0
+     ],
+     [
+      "Host of Valencia",
+      "Almohads",
+      "Valencia",
+      2650,
+      0
+     ],
+     [
+      "Host of Toledo",
+      "Castile",
+      "Badajoz",
+      960,
+      0
+     ],
+     [
+      "Host of Pamplona",
+      "Navarre",
+      "Rioja",
+      2690,
+      0
+     ],
+     [
+      "Second Host of Coimbra",
+      "Portugal",
+      "Évora",
+      320,
+      0
+     ],
+     [
+      "Host of Zaragoza",
+      "Aragon",
+      "Zaragoza",
+      1860,
+      0
+     ],
+     [
+      "Crusader Host of Portugal",
+      "Portugal",
+      "Évora",
+      400,
+      0
+     ],
+     [
+      "Jihad of Almohads",
+      "Almohads",
+      "Córdoba",
+      2340,
+      0
+     ],
+     [
+      "Host of Toledo",
+      "Castile",
+      "Toledo",
+      400,
+      0
+     ],
+     [
+      "Host of Cádiz",
+      "Marinid Sultanate",
+      "Cádiz",
+      2220,
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "t": 6,
+   "label": "Aragon · Summer 1201 · turn 6",
+   "snap": {
+    "prov": {
+     "Santiago": [
+      "León",
+      "",
+      "",
+      1
+     ],
+     "Lugo": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Asturias": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Cantabria": [
+      "Castile",
+      "Navarre",
+      "",
+      0
+     ],
+     "Biscay": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Álava": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Guipúzcoa": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Pontevedra": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "León": [
+      "León",
+      "",
+      "",
+      2
+     ],
+     "Palencia": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Burgos": [
+      "Navarre",
+      "",
+      "",
+      1
+     ],
+     "Pamplona": [
+      "Navarre",
+      "",
+      "",
+      2
+     ],
+     "Andorra": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Orense": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Rioja": [
+      "Castile",
+      "Navarre",
+      "",
+      0
+     ],
+     "Huesca": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Lleida": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Girona": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Braga": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Bragança": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Zamora": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Valladolid": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Soria": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Zaragoza": [
+      "Aragon",
+      "",
+      "",
+      3
+     ],
+     "Barcelona": [
+      "Aragon",
+      "",
+      "",
+      2
+     ],
+     "Porto": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Salamanca": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Segovia": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Guadalajara": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Tarragona": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Coimbra": [
+      "Portugal",
+      "",
+      "",
+      2
+     ],
+     "Viseu": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Ávila": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Madrid": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Teruel": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Castellón": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Castelo Branco": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Cáceres": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Toledo": [
+      "Castile",
+      "",
+      "",
+      3
+     ],
+     "Cuenca": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Lisbon": [
+      "Portugal",
+      "",
+      "",
+      2
+     ],
+     "Santarém": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Valencia": [
+      "Almohads",
+      "",
+      "",
+      2
+     ],
+     "Évora": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Badajoz": [
+      "León",
+      "",
+      "",
+      1
+     ],
+     "Calatrava": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Albacete": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Alicante": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Beja": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Huelva": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Córdoba": [
+      "Almohads",
+      "",
+      "",
+      3
+     ],
+     "Jaén": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Murcia": [
+      "Almohads",
+      "",
+      "",
+      1
+     ],
+     "Algarve": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Sevilla": [
+      "Almohads",
+      "",
+      "",
+      3
+     ],
+     "Granada": [
+      "Almohads",
+      "",
+      "",
+      1
+     ],
+     "Almería": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Cádiz": [
+      "Almohads",
+      "Marinid Sultanate",
+      "",
+      0
+     ],
+     "Málaga": [
+      "Almohads",
+      "",
+      "",
+      0
+     ]
+    },
+    "armies": [
+     [
+      "Host of Toledo",
+      "Castile",
+      "Badajoz",
+      850,
+      0
+     ],
+     [
+      "Host of Zaragoza",
+      "Aragon",
+      "Castellón",
+      2410,
+      0
+     ],
+     [
+      "Host of Coimbra",
+      "Portugal",
+      "Évora",
+      140,
+      0
+     ],
+     [
+      "Host of Pamplona",
+      "Navarre",
+      "Cantabria",
+      2460,
+      0
+     ],
+     [
+      "Host of León",
+      "León",
+      "Badajoz",
+      260,
+      0
+     ],
+     [
+      "Host of Barcelona",
+      "Aragon",
+      "Castellón",
+      2560,
+      0
+     ],
+     [
+      "Host of Valencia",
+      "Almohads",
+      "Valencia",
+      2650,
+      0
+     ],
+     [
+      "Host of Toledo",
+      "Castile",
+      "Badajoz",
+      960,
+      0
+     ],
+     [
+      "Host of Pamplona",
+      "Navarre",
+      "Rioja",
+      2690,
+      0
+     ],
+     [
+      "Second Host of Coimbra",
+      "Portugal",
+      "Évora",
+      320,
+      0
+     ],
+     [
+      "Host of Zaragoza",
+      "Aragon",
+      "Zaragoza",
+      1860,
+      0
+     ],
+     [
+      "Crusader Host of Portugal",
+      "Portugal",
+      "Évora",
+      400,
+      0
+     ],
+     [
+      "Jihad of Almohads",
+      "Almohads",
+      "Córdoba",
+      2340,
+      0
+     ],
+     [
+      "Host of Toledo",
+      "Castile",
+      "Toledo",
+      400,
+      0
+     ],
+     [
+      "Host of Cádiz",
+      "Marinid Sultanate",
+      "Cádiz",
+      2220,
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "t": 6,
+   "label": "León · Summer 1201 · turn 6",
+   "snap": {
+    "prov": {
+     "Santiago": [
+      "León",
+      "",
+      "",
+      1
+     ],
+     "Lugo": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Asturias": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Cantabria": [
+      "Castile",
+      "Navarre",
+      "",
+      0
+     ],
+     "Biscay": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Álava": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Guipúzcoa": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Pontevedra": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "León": [
+      "León",
+      "",
+      "",
+      2
+     ],
+     "Palencia": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Burgos": [
+      "Navarre",
+      "",
+      "",
+      1
+     ],
+     "Pamplona": [
+      "Navarre",
+      "",
+      "",
+      2
+     ],
+     "Andorra": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Orense": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Rioja": [
+      "Castile",
+      "Navarre",
+      "",
+      0
+     ],
+     "Huesca": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Lleida": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Girona": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Braga": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Bragança": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Zamora": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Valladolid": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Soria": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Zaragoza": [
+      "Aragon",
+      "",
+      "",
+      3
+     ],
+     "Barcelona": [
+      "Aragon",
+      "",
+      "",
+      2
+     ],
+     "Porto": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Salamanca": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Segovia": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Guadalajara": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Tarragona": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Coimbra": [
+      "Portugal",
+      "",
+      "",
+      2
+     ],
+     "Viseu": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Ávila": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Madrid": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Teruel": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Castellón": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Castelo Branco": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Cáceres": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Toledo": [
+      "Castile",
+      "",
+      "",
+      3
+     ],
+     "Cuenca": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Lisbon": [
+      "Portugal",
+      "",
+      "",
+      2
+     ],
+     "Santarém": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Valencia": [
+      "Almohads",
+      "",
+      "",
+      2
+     ],
+     "Évora": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Badajoz": [
+      "León",
+      "",
+      "",
+      1
+     ],
+     "Calatrava": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Albacete": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Alicante": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Beja": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Huelva": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Córdoba": [
+      "Almohads",
+      "",
+      "",
+      3
+     ],
+     "Jaén": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Murcia": [
+      "Almohads",
+      "",
+      "",
+      1
+     ],
+     "Algarve": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Sevilla": [
+      "Almohads",
+      "",
+      "",
+      3
+     ],
+     "Granada": [
+      "Almohads",
+      "",
+      "",
+      1
+     ],
+     "Almería": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Cádiz": [
+      "Almohads",
+      "Marinid Sultanate",
+      "",
+      0
+     ],
+     "Málaga": [
+      "Almohads",
+      "",
+      "",
+      0
+     ]
+    },
+    "armies": [
+     [
+      "Host of Toledo",
+      "Castile",
+      "Badajoz",
+      850,
+      0
+     ],
+     [
+      "Host of Zaragoza",
+      "Aragon",
+      "Castellón",
+      2410,
+      0
+     ],
+     [
+      "Host of Coimbra",
+      "Portugal",
+      "Évora",
+      140,
+      0
+     ],
+     [
+      "Host of Pamplona",
+      "Navarre",
+      "Cantabria",
+      2460,
+      0
+     ],
+     [
+      "Host of León",
+      "León",
+      "Badajoz",
+      260,
+      0
+     ],
+     [
+      "Host of Barcelona",
+      "Aragon",
+      "Castellón",
+      2560,
+      0
+     ],
+     [
+      "Host of Valencia",
+      "Almohads",
+      "Valencia",
+      2650,
+      0
+     ],
+     [
+      "Host of Toledo",
+      "Castile",
+      "Badajoz",
+      960,
+      0
+     ],
+     [
+      "Host of Pamplona",
+      "Navarre",
+      "Rioja",
+      2690,
+      0
+     ],
+     [
+      "Second Host of Coimbra",
+      "Portugal",
+      "Évora",
+      320,
+      0
+     ],
+     [
+      "Host of Zaragoza",
+      "Aragon",
+      "Zaragoza",
+      1860,
+      0
+     ],
+     [
+      "Crusader Host of Portugal",
+      "Portugal",
+      "Évora",
+      400,
+      0
+     ],
+     [
+      "Jihad of Almohads",
+      "Almohads",
+      "Córdoba",
+      2340,
+      0
+     ],
+     [
+      "Host of Toledo",
+      "Castile",
+      "Toledo",
+      400,
+      0
+     ],
+     [
+      "Host of Cádiz",
+      "Marinid Sultanate",
+      "Cádiz",
+      2220,
+      0
+     ]
+    ]
+   }
+  },
+  {
+   "t": 6,
+   "label": "Marinid Sultanate · Summer 1201 · turn 6",
+   "snap": {
+    "prov": {
+     "Santiago": [
+      "León",
+      "",
+      "",
+      1
+     ],
+     "Lugo": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Asturias": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Cantabria": [
+      "Castile",
+      "Navarre",
+      "",
+      0
+     ],
+     "Biscay": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Álava": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Guipúzcoa": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Pontevedra": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "León": [
+      "León",
+      "",
+      "",
+      2
+     ],
+     "Palencia": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Burgos": [
+      "Navarre",
+      "",
+      "",
+      1
+     ],
+     "Pamplona": [
+      "Navarre",
+      "",
+      "",
+      2
+     ],
+     "Andorra": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Orense": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Rioja": [
+      "Castile",
+      "Navarre",
+      "",
+      0
+     ],
+     "Huesca": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Lleida": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Girona": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Braga": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Bragança": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Zamora": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Valladolid": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Soria": [
+      "Navarre",
+      "",
+      "",
+      0
+     ],
+     "Zaragoza": [
+      "Aragon",
+      "",
+      "",
+      3
+     ],
+     "Barcelona": [
+      "Aragon",
+      "",
+      "",
+      2
+     ],
+     "Porto": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Salamanca": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Segovia": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Guadalajara": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Tarragona": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Coimbra": [
+      "Portugal",
+      "",
+      "",
+      2
+     ],
+     "Viseu": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Ávila": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Madrid": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Teruel": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Castellón": [
+      "Aragon",
+      "",
+      "",
+      0
+     ],
+     "Castelo Branco": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Cáceres": [
+      "León",
+      "",
+      "",
+      0
+     ],
+     "Toledo": [
+      "Castile",
+      "",
+      "",
+      3
+     ],
+     "Cuenca": [
+      "Castile",
+      "",
+      "",
+      0
+     ],
+     "Lisbon": [
+      "Portugal",
+      "",
+      "",
+      2
+     ],
+     "Santarém": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Valencia": [
+      "Almohads",
+      "",
+      "",
+      2
+     ],
+     "Évora": [
+      "Portugal",
+      "",
+      "",
+      0
+     ],
+     "Badajoz": [
+      "León",
+      "",
+      "",
+      1
+     ],
+     "Calatrava": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Albacete": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Alicante": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Beja": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Huelva": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Córdoba": [
+      "Almohads",
+      "",
+      "",
+      3
+     ],
+     "Jaén": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Murcia": [
+      "Almohads",
+      "",
+      "",
+      1
+     ],
+     "Algarve": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Sevilla": [
+      "Almohads",
+      "",
+      "",
+      3
+     ],
+     "Granada": [
+      "Almohads",
+      "",
+      "",
+      1
+     ],
+     "Almería": [
+      "Almohads",
+      "",
+      "",
+      0
+     ],
+     "Cádiz": [
+      "Almohads",
+      "Marinid Sultanate",
+      "",
+      0
+     ],
+     "Málaga": [
+      "Almohads",
+      "",
+      "",
+      0
+     ]
+    },
+    "armies": [
+     [
+      "Host of Toledo",
+      "Castile",
+      "Badajoz",
+      850,
+      0
+     ],
+     [
+      "Host of Zaragoza",
+      "Aragon",
+      "Castellón",
+      2410,
+      0
+     ],
+     [
+      "Host of Coimbra",
+      "Portugal",
+      "Évora",
+      140,
+      0
+     ],
+     [
+      "Host of Pamplona",
+      "Navarre",
+      "Cantabria",
+      2460,
+      0
+     ],
+     [
+      "Host of León",
+      "León",
+      "Badajoz",
+      260,
+      0
+     ],
+     [
+      "Host of Barcelona",
+      "Aragon",
+      "Castellón",
+      2560,
+      0
+     ],
+     [
+      "Host of Valencia",
+      "Almohads",
+      "Valencia",
+      2650,
+      0
+     ],
+     [
+      "Host of Toledo",
+      "Castile",
+      "Badajoz",
+      960,
+      0
+     ],
+     [
+      "Host of Pamplona",
+      "Navarre",
+      "Rioja",
+      2690,
+      0
+     ],
+     [
+      "Second Host of Coimbra",
+      "Portugal",
+      "Évora",
+      320,
+      0
+     ],
+     [
+      "Host of Zaragoza",
+      "Aragon",
+      "Zaragoza",
+      1860,
+      0
+     ],
+     [
+      "Crusader Host of Portugal",
+      "Portugal",
+      "Évora",
+      400,
+      0
+     ],
+     [
+      "Jihad of Almohads",
+      "Almohads",
+      "Córdoba",
+      2340,
+      0
+     ],
+     [
+      "Host of Toledo",
+      "Castile",
+      "Toledo",
+      400,
+      0
+     ],
+     [
+      "Host of Cádiz",
+      "Marinid Sultanate",
+      "Cádiz",
+      2220,
+      0
+     ]
+    ]
+   }
   }
  ],
- "moved": [
-  "Navarre"
- ]
+ "moved": []
 }

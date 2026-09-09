@@ -198,7 +198,9 @@
    ],
    "siege": null,
    "elev": 1187,
-   "occ": null,
+   "occ": {
+    "by": "Aragon"
+   },
    "bld": [],
    "upg": null,
    "raid": null
@@ -559,7 +561,9 @@
    ],
    "siege": null,
    "elev": 1255,
-   "occ": null,
+   "occ": {
+    "by": "Aragon"
+   },
    "bld": [],
    "upg": null,
    "raid": null
@@ -2058,7 +2062,7 @@
    "name": "Host of Pamplona",
    "faction": "Navarre",
    "men": 2460,
-   "at": "Burgos",
+   "at": "Cantabria",
    "order": null,
    "units": [
     "mk_merc_fre_t1_routiers_guisarmiers",
@@ -2260,7 +2264,7 @@
    "name": "Host of Pamplona",
    "faction": "Navarre",
    "men": 2690,
-   "at": "Burgos",
+   "at": "Rioja",
    "order": null,
    "units": [
     "mk_merc_fre_t1_gascon_bideaux",
@@ -2458,6 +2462,34 @@
   }
  ],
  "log": [
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Aragon occupied Rioja (held by Castile)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Aragon occupied Cantabria (held by Castile)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Pamplona moved Burgos → Rioja",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of Pamplona moved Burgos → Cantabria",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 6,
    "d": "Summer 1201",

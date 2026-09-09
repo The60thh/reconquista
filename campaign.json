@@ -1481,7 +1481,7 @@
    "value": 600,
    "move": 1,
    "garrison": 2500,
-   "owner": "Almohads",
+   "owner": "León",
    "adj": [
     "Beja",
     "Calatrava",
@@ -2458,6 +2458,13 @@
   }
  ],
  "log": [
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "León annexed Badajoz from Almohads",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 6,
    "d": "Summer 1201",

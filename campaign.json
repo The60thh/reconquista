@@ -59,7 +59,7 @@
    "id": "Marinid Sultanate",
    "name": "Marinid Sultanate",
    "color": "#793c27",
-   "treasury": 341,
+   "treasury": 482919,
    "capital": null,
    "zeal": 0,
    "flag": "marinids"
@@ -2474,7 +2474,7 @@
   {
    "name": "Host of Cádiz",
    "faction": "Marinid Sultanate",
-   "men": 1420,
+   "men": 2220,
    "at": "Cádiz",
    "order": null,
    "units": [
@@ -2490,7 +2490,14 @@
     "mk_alm_t1_batana_al_rum",
     "mk_alm_t1_batana_al_rum",
     "mk_mus_t1_trebuchet",
-    "mk_alm_t1_dismounted_jund_al_nasara"
+    "mk_alm_t1_saqaliba_jund",
+    "mk_alm_t1_ghuzz_horse_archers",
+    "mk_alm_t1_ghuzz_horse_archers",
+    "mk_alm_t1_shaykh_dismounted_retainers",
+    "mk_alm_t1_shaykh_dismounted_retainers",
+    "mk_merc_ara_t1_catalan_crossbowmen",
+    "mk_merc_ara_t1_catalan_crossbowmen",
+    "mk_alm_t1_saqaliba_jund"
    ],
    "xp": [
     0,
@@ -2505,12 +2512,26 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 3642
+   "upkeep": 5120
   }
  ],
  "log": [
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Marinid Sultanate mustered a planned host at Cádiz (20 regiments · 17,081 florins)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 6,
    "d": "Summer 1201",

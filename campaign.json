@@ -199,7 +199,7 @@
    "siege": null,
    "elev": 1187,
    "occ": {
-    "by": "Aragon"
+    "by": "Navarre"
    },
    "bld": [],
    "upg": null,
@@ -562,7 +562,7 @@
    "siege": null,
    "elev": 1255,
    "occ": {
-    "by": "Aragon"
+    "by": "Navarre"
    },
    "bld": [],
    "upg": null,
@@ -2465,14 +2465,14 @@
   {
    "t": 6,
    "d": "Summer 1201",
-   "txt": "Aragon occupied Rioja (held by Castile)",
+   "txt": "Navarre occupied Cantabria (held by Castile)",
    "kind": "",
    "detail": null
   },
   {
    "t": 6,
    "d": "Summer 1201",
-   "txt": "Aragon occupied Cantabria (held by Castile)",
+   "txt": "Navarre occupied Rioja (held by Castile)",
    "kind": "",
    "detail": null
   },

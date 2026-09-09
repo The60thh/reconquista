@@ -59,7 +59,7 @@
    "id": "Marinid Sultanate",
    "name": "Marinid Sultanate",
    "color": "#793c27",
-   "treasury": 482919,
+   "treasury": 0,
    "capital": null,
    "zeal": 0,
    "flag": "marinids"
@@ -26465,5 +26465,6 @@
     ]
    }
   }
- ]
+ ],
+ "moved": []
 }

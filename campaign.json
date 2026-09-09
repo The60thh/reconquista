@@ -1963,52 +1963,28 @@
   {
    "name": "Host of Toledo",
    "faction": "Castile",
-   "men": 2410,
+   "men": 850,
    "at": "Badajoz",
    "order": null,
    "units": [
-    "mk_cas_t1_caballeros",
     "mk_cas_t1_king_bodyguard",
-    "mk_cas_t1_dismounted_caballeros",
-    "mk_cas_t1_dismounted_caballeros",
-    "mk_cas_t1_dismounted_caballeros",
     "mk_cas_t1_mounted_crossbowmen",
-    "mk_cas_t1_mounted_crossbowmen",
-    "mk_cas_t1_crossbowmen",
-    "mk_cas_t1_crossbowmen",
-    "mk_cas_t1_crossbowmen",
     "mk_cas_t1_hidalgos",
     "mk_eur_t1_catapult",
     "mk_cas_t1_peones_spearmen",
-    "mk_cas_t1_peones_spearmen",
-    "mk_cas_t1_peones_spearmen",
-    "mk_cas_t1_dismounted_caballeros",
-    "mk_cas_t1_dismounted_caballeros",
     "mk_cas_t1_dismounted_caballeros",
     "mk_cas_t1_dismounted_caballeros",
     "mk_cas_t1_dismounted_caballeros"
    ],
-   "upkeep": 4931,
+   "upkeep": 2149,
    "xp": [
-    2,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
     1,
     1,
     2,
     1,
-    2,
     1,
     1,
     1,
-    1,
-    1,
-    0,
     0
    ]
   },
@@ -2058,90 +2034,6 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0
-   ]
-  },
-  {
-   "name": "Host of Sevilla",
-   "faction": "Almohads",
-   "men": 1740,
-   "at": "Badajoz",
-   "order": null,
-   "units": [
-    "mk_alm_t1_shaykh_dismounted_retainers",
-    "mk_alm_t1_shaykh_dismounted_retainers",
-    "mk_merc_his_t1_farfanes",
-    "mk_alm_t1_abid_al_makhzan_abd_al_mu_min",
-    "mk_gran_t1_mozarab_jund",
-    "mk_gran_t1_mozarab_jund",
-    "mk_alm_t1_dismounted_jund_al_nasara",
-    "mk_alm_t1_dismounted_jund_al_nasara",
-    "mk_alm_t1_dismounted_jund_al_nasara",
-    "mk_alm_t1_dismounted_jund_al_nasara",
-    "mk_alm_t1_dismounted_jund_al_nasara",
-    "mk_gran_t1_heavy_andalusian_crossbowmen",
-    "mk_gran_t1_heavy_andalusian_crossbowmen",
-    "mk_gran_t1_heavy_andalusian_crossbowmen",
-    "mk_mus_t1_trebuchet"
-   ],
-   "upkeep": 3886,
-   "xp": [
-    1,
-    1,
-    2,
-    3,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1
-   ]
-  },
-  {
-   "name": "Host of Córdoba",
-   "faction": "Almohads",
-   "men": 1790,
-   "at": "Badajoz",
-   "order": null,
-   "units": [
-    "mk_gran_t1_mozarab_jund",
-    "mk_alm_t1_dismounted_jund_al_nasara",
-    "mk_gran_t1_heavy_andalusian_crossbowmen",
-    "mk_gran_t1_andalusian_mounted_crossbowmen",
-    "mk_mus_t1_catapult",
-    "mk_alm_t1_dismounted_jund_al_nasara",
-    "mk_alm_t1_qaid_bodyguards",
-    "mk_alm_t1_maghrebi_tribesmen",
-    "mk_alm_t1_maghrebi_tribesmen",
-    "mk_alm_t1_jund_swordsmen",
-    "mk_alm_t1_jund_swordsmen",
-    "mk_gran_t1_mozarab_jund",
-    "mk_gran_t1_andalusian_mounted_crossbowmen",
-    "mk_alm_t1_abid_al_makhzan",
-    "mk_alm_t1_dismounted_jund_al_nasara"
-   ],
-   "upkeep": 3301,
-   "xp": [
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
     0,
     0,
     0,
@@ -2217,51 +2109,15 @@
   {
    "name": "Host of León",
    "faction": "León",
-   "men": 2430,
+   "men": 260,
    "at": "Badajoz",
    "order": null,
    "units": [
-    "mk_cas_t1_general_bodyguard",
-    "mk_cas_t1_order_knights",
-    "mk_cas_t1_order_crossbows",
-    "mk_cas_t1_mounted_crossbowmen",
-    "mk_eur_t1_catapult",
-    "mk_cas_t1_crossbow_militia",
-    "mk_cas_t1_peones_spearmen",
-    "mk_cas_t1_peones_spearmen",
-    "mk_cas_t1_peones_de_elite",
-    "mk_cas_t1_peones_de_elite",
-    "mk_cas_t1_monteros_de_espinosa",
-    "mk_cas_t1_order_knights_dismounted",
-    "mk_cas_t1_order_knights_dismounted",
-    "mk_cas_t1_order_knights_dismounted",
-    "mk_cas_t1_peones",
-    "mk_cas_t1_peones",
     "mk_cas_t1_crossbowmen",
-    "mk_cas_t1_crossbowmen",
-    "mk_cas_t1_caballeros",
-    "mk_cas_t1_peones_spearmen"
+    "mk_cas_t1_crossbowmen"
    ],
-   "upkeep": 4562,
+   "upkeep": 424,
    "xp": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     0,
     0
    ]
@@ -2373,26 +2229,17 @@
   {
    "name": "Host of Toledo",
    "faction": "Castile",
-   "men": 2220,
+   "men": 960,
    "at": "Badajoz",
    "order": null,
    "units": [
     "mk_cas_t1_monteros_de_espinosa",
-    "mk_cas_t1_dismounted_caballeros",
-    "mk_cas_t1_dismounted_caballeros",
-    "mk_cas_t1_dismounted_caballeros",
-    "mk_cas_t1_dismounted_caballeros",
-    "mk_cas_t1_dismounted_caballeros",
-    "mk_cas_t1_general_bodyguard",
     "mk_merc_his_t1_farfanes",
     "mk_merc_his_t1_farfanes",
     "mk_cas_t1_mounted_crossbowmen",
     "mk_cas_t1_mounted_crossbowmen",
     "mk_cas_t1_crossbowmen",
     "mk_cas_t1_crossbowmen",
-    "mk_cas_t1_peones_spearmen",
-    "mk_cas_t1_peones_spearmen",
-    "mk_cas_t1_peones_spearmen",
     "mk_cas_t1_dismounted_caballeros",
     "mk_cas_t1_dismounted_caballeros"
    ],
@@ -2405,18 +2252,9 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     0
    ],
-   "upkeep": 4471
+   "upkeep": 2329
   },
   {
    "name": "Host of Pamplona",
@@ -2469,20 +2307,6 @@
     0
    ],
    "upkeep": 3223
-  },
-  {
-   "name": "Host of Badajoz",
-   "faction": "Almohads",
-   "men": 80,
-   "at": "Badajoz",
-   "order": null,
-   "units": [
-    "mk_alm_t1_qaid_bodyguards"
-   ],
-   "upkeep": 393,
-   "xp": [
-    0
-   ]
   },
   {
    "name": "Second Host of Coimbra",
@@ -2634,6 +2458,20 @@
   }
  ],
  "log": [
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Host of León moved Cáceres → Badajoz",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 6,
+   "d": "Summer 1201",
+   "txt": "Castile won the Battle of Badajoz",
+   "kind": "battle",
+   "detail": "Host of Toledo lost 12 regiments (Dismounted Caballeros (Early), Dismounted Caballeros (Early), Peones Spearmen (Early)…) · Host of Sevilla destroyed · Host of Córdoba destroyed · Host of León lost 18 regiments (Peones Spearmen (Early), Caballeros (Early), Peones (Early)…) · Host of Toledo lost 9 regiments (Peones Spearmen (Early), Peones Spearmen (Early), Peones Spearmen (Early)…) · Host of Badajoz destroyed · Host of León withdrew to Cáceres"
+  },
   {
    "t": 6,
    "d": "Summer 1201",
@@ -12223,26 +12061,10 @@
   "Aragon|Castile",
   "Almohads|Aragon"
  ],
- "battles": [
-  {
-   "at": "Badajoz",
-   "sides": [
-    "Castile",
-    "Almohads",
-    "León"
-   ],
-   "name": "Battle of Badajoz",
-   "date": "Summer 1201",
-   "turn": 6,
-   "men": {
-    "Castile": 4630,
-    "Almohads": 3610,
-    "León": 2390
-   }
-  }
- ],
+ "battles": [],
  "fought": {
-  "Toledo": 1
+  "Toledo": 1,
+  "Badajoz": 1
  },
  "turnlog": [
   {

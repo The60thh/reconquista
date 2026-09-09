@@ -345,6 +345,31 @@ input[type=file]{display:none}
 .fpick.used span:after{content:" · in use";color:var(--dimmer)}
 #facBox .act{display:flex;gap:8px;padding:12px 16px;border-top:1px solid var(--soft);
  background:rgba(0,0,0,.2)}
+
+#ordM{position:fixed;inset:0;z-index:60;background:rgba(6,10,14,.82);backdrop-filter:blur(4px);
+ display:none;align-items:center;justify-content:center}
+#ordM.open{display:flex}
+#ordBox{width:min(460px,92vw);background:var(--panel);border:1px solid var(--line);border-radius:5px;
+ box-shadow:0 24px 60px rgba(0,0,0,.7);overflow:hidden}
+#ordBox h3{margin:0;padding:13px 16px;border-bottom:1px solid var(--soft);
+ font:700 12px "Archivo Narrow",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+#ordList{padding:10px 12px;max-height:56vh;overflow:auto}
+.orow{display:flex;align-items:center;gap:9px;padding:7px 9px;margin-bottom:5px;border-radius:3px;
+ background:var(--panel2);border:1px solid var(--soft)}
+.orow.now{border-color:var(--brass);box-shadow:0 0 0 1px rgba(201,160,60,.35)}
+.orow.done{opacity:.5}
+.orow .pos{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--dimmer);width:16px}
+.orow img{width:22px;height:22px;border-radius:50%}
+.orow .sw{width:11px;height:11px;border-radius:2px;display:inline-block}
+.orow .nm{flex:1;font-size:13px}
+.orow .tag{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--dimmer)}
+.orow.now .tag{color:var(--brass)}
+.orow button{background:var(--ink);border:1px solid var(--line);color:var(--dim);width:24px;height:22px;
+ border-radius:2px;cursor:pointer;font-size:11px;line-height:1;padding:0}
+.orow button:hover:not(:disabled){border-color:var(--brass);color:var(--brass)}
+.orow button:disabled{opacity:.3;cursor:default}
+#ordBox .act{display:flex;gap:8px;padding:12px 16px;border-top:1px solid var(--soft);background:rgba(0,0,0,.2)}
+#ordBox .note{font-size:11px;color:var(--dimmer);padding:0 16px 12px}
 </style>
 </head>
 <body class="readonly">
@@ -360,7 +385,7 @@ input[type=file]{display:none}
   <div class="stat"><div class="k">Date</div><div class="v" id="sDate">Spring 1200</div></div>
   <div class="stat"><div class="k">Acting</div><div class="v" id="sAct" style="display:flex;align-items:center;gap:6px">—</div></div>
   <div class="acts">
-    <button class="btn primary gm" id="bTurn">Next realm ▸</button>
+    <button class="btn primary gm" id="bTurn">Next realm ▸</button><button class="btn gm" id="bOrder" title="Set the order realms move in">Order</button>
     <button class="btn primary gm" id="bPub" title="Push this turn to the players">⇧ Publish</button>
     <button class="btn gm" id="bUndo" disabled>Undo</button>
     <button class="btn gm" id="bSave">Save</button>
@@ -1138,7 +1163,7 @@ function snap(label){
       garrison:p.garrison,terrain:p.terrain,note:p.note,siege:p.siege?{...p.siege}:null,occ:p.occ?{...p.occ}:null,bld:[...(p.bld||[])],upg:p.upg?{...p.upg}:null,raid:p.raid?{...p.raid}:null})),
     armies:JSON.parse(JSON.stringify(S.armies)),
     fac:S.factions.map(f=>({...f})),
-    wars:[...S.wars], battles:JSON.parse(JSON.stringify(S.battles)), fought:{...S.fought}, truces:{...S.truces}, allies:[...S.allies], active:S.active,
+    wars:[...S.wars], battles:JSON.parse(JSON.stringify(S.battles)), fought:{...S.fought}, truces:{...S.truces}, allies:[...S.allies], order:[...S.order], moved:[...(S.moved||[])], active:S.active,
     turn:S.turn,year:S.year,season:S.season});
   if(undoStack.length>60)undoStack.shift();
   $("bUndo").disabled=false;
@@ -1149,7 +1174,7 @@ function undo(){
   S.armies=s.armies;
   S.factions.length=0;s.fac.forEach(f=>{S.factions.push(f);F[f.id]=f;});
   Object.keys(F).forEach(k=>{if(!S.factions.find(f=>f.id===k))delete F[k];});
-  S.turn=s.turn;S.year=s.year;S.season=s.season;S.wars=s.wars||[];S.battles=s.battles||[];S.fought=s.fought||{};S.truces=s.truces||{};S.allies=s.allies||[];S.active=s.active??0;
+  S.turn=s.turn;S.year=s.year;S.season=s.season;S.wars=s.wars||[];S.battles=s.battles||[];S.fought=s.fought||{};S.truces=s.truces||{};S.allies=s.allies||[];S.order=s.order||S.order;S.moved=s.moved||[];S.active=s.active??0;
   $("bUndo").disabled=!undoStack.length;
   buildSelects();paintMap();legend();stats();drawLedger();if(sel)openProv(P[sel]);
   toast("Undid: "+s.label);
@@ -2290,7 +2315,7 @@ $("fLoad").onchange=e=>{
   f.text().then(t=>{
     const d=JSON.parse(t);
     S.turn=d.turn;S.year=d.year;S.season=d.season;S.armies=d.armies||[];S.log=d.log||[];
-    S.wars=d.wars||[];S.battles=d.battles||[];S.allowance=d.allowance??3;S.fought=d.fought||{};S.truces=d.truces||{};S.allies=d.allies||[];S.order=d.order||S.factions.map(f=>f.id);S.active=d.active??0;S.armies.forEach(a=>a.order??=null);
+    S.wars=d.wars||[];S.battles=d.battles||[];S.allowance=d.allowance??3;S.fought=d.fought||{};S.truces=d.truces||{};S.allies=d.allies||[];S.order=d.order||S.factions.map(f=>f.id);S.moved=d.moved||[];S.active=d.active??0;S.armies.forEach(a=>a.order??=null);
     if(d.factions){S.factions.length=0;Object.keys(F).forEach(k=>delete F[k]);
       d.factions.forEach(nf=>{S.factions.push(nf);F[nf.id]=nf;});}
     (d.provinces||[]).forEach(np=>{if(P[np.id])Object.assign(P[np.id],{
@@ -3143,6 +3168,7 @@ drawLedger=function(){
       <input type="text" id="facName" placeholder="realm name" autocomplete="off">
       <input type="color" id="facCol" value="#8a6d2a">
     </div>
+    <div class="row2"><select id="facPos" style="flex:1;background:var(--ink);border:1px solid var(--line);border-radius:3px;padding:8px 10px;font-size:13px"></select></div>
     <span class="lbl" style="display:block;margin-bottom:7px">Banner</span>
     <div id="facGrid"></div>
     <div style="font-size:11px;color:var(--dimmer);margin-top:8px">
@@ -3183,6 +3209,9 @@ function openFacModal(){
   $("facName").value="Realm "+(S.factions.length+1);
   $("facCol").value="#"+Math.floor(Math.random()*0xffffff).toString(16).padStart(6,"0");
   paintGrid();
+  const sel2=$("facPos");
+  sel2.innerHTML='<option value="0">Turn order: first</option>'+
+    S.order.map((id,i)=>`<option value="${i+1}"${i===S.order.length-1?" selected":""}>Turn order: after ${(F[id]||{}).name||id}</option>`).join("");
   $("facM").classList.add("open");
   setTimeout(()=>$("facName").select(),40);
 }
@@ -3202,7 +3231,8 @@ $("facGo").onclick=()=>{
   const f={id:nm,name:nm,color:$("facCol").value,treasury:5000,capital:null,zeal:0};
   if(pickSlug){f.flag=pickSlug;EMBLEMS[nm]=LIB[pickSlug].uri;}
   S.factions.push(f);F[nm]=f;
-  if(S.order&&S.order.indexOf(nm)<0)S.order.push(nm);
+  window.insertRealmAt(nm,+$("facPos").value);
+  if(window.paintOrderIfOpen)window.paintOrderIfOpen();
   buildSelects();legend();stats();drawLedger();
   $("facM").classList.remove("open");
   toast(nm+" enters the game"+(pickSlug?" under the banner of "+LIB[pickSlug].realm:""));
@@ -3211,6 +3241,103 @@ $("bAddFac").onclick=openFacModal;
 addEventListener("keydown",e=>{
   if(e.key==="Escape"&&$("facM").classList.contains("open"))$("facM").classList.remove("open");
 });
+})();
+</script>
+<div id="ordM"><div id="ordBox">
+  <h3>Order of march</h3>
+  <div id="ordList"></div>
+  <div class="note">Next to move is always the first realm that has not yet moved this
+    round &mdash; shuffling never skips a turn nor grants a second one.</div>
+  <div class="act"><div style="flex:1"></div>
+    <button class="btn" id="ordClose">Done</button></div>
+</div></div>
+<script>
+/* ============ turn order ============ */
+(function(){
+"use strict";
+/* Who is next is derived from who has ACTUALLY moved this round, not from a bare
+   index. With an index alone, shuffling a realm above the current mover makes the
+   engine treat it as already gone and it silently loses its turn. S.moved records
+   the realms that have taken their turn; the next mover is the first realm in the
+   order that is not in it, so reordering can never skip a realm nor grant two turns. */
+S.moved??=[];
+const _bTurn=$("bTurn").onclick;
+$("bTurn").onclick=function(){
+  const mover=S.order[S.active];
+  if(mover&&S.moved.indexOf(mover)<0)S.moved.push(mover);
+  const remaining=S.order.filter(id=>S.moved.indexOf(id)<0);
+  if(remaining.length){
+    /* Advance to the next realm that has NOT moved. The engine's own S.active++
+       would walk back onto realms already played whenever the queue was reshuffled,
+       handing them a second turn. */
+    snap("next realm");
+    if(typeof turnSnapshot==="function")
+      turnSnapshot(`${(F[mover]||{}).name||mover} · ${S.season} ${S.year} · turn ${S.turn}`);
+    S.active=S.order.indexOf(remaining[0]);
+    stats();drawLedger();
+    toast(`${(F[S.order[S.active]]||{}).name||S.order[S.active]} to move`);
+    return;
+  }
+  /* every realm has played: hand over to the engine to resolve the round */
+  S.active=S.order.length-1;
+  const t0=S.turn;
+  const res=_bTurn.apply(this,arguments);
+  if(S.turn!==t0)S.moved=[];
+  return res;
+};
+function syncActive(){
+  const i=S.order.findIndex(id=>S.moved.indexOf(id)<0);
+  S.active=i>=0?i:Math.max(0,S.order.length-1);
+}
+function withMoverKept(mutate){ mutate(); syncActive(); }
+window.syncTurnActive=syncActive;
+function moveAt(i,d){
+  const j=i+d;
+  if(j<0||j>=S.order.length)return;
+  snap("turn order");
+  withMoverKept(()=>{const [x]=S.order.splice(i,1);S.order.splice(j,0,x);});
+  paintOrder();stats();drawLedger();
+}
+function toFirst(i){
+  if(i===0)return;
+  snap("turn order");
+  withMoverKept(()=>{const [x]=S.order.splice(i,1);S.order.unshift(x);});
+  paintOrder();stats();drawLedger();
+}
+function paintOrder(){
+  $("ordList").innerHTML=S.order.map((id,i)=>{
+    const f=F[id]||{name:id,color:"#777"};
+    const done=(S.moved||[]).indexOf(id)>=0;
+    const state=i===S.active?"now":(done?"done":"");
+    const tag=i===S.active?"moving":(done?"moved":"waiting");
+    return `<div class="orow ${state}">
+      <span class="pos">${i+1}</span>
+      ${EMBLEMS[id]?`<img src="${EMBLEMS[id]}" alt="">`:`<span class="sw" style="background:${f.color}"></span>`}
+      <span class="nm">${f.name||id}</span><span class="tag">${tag}</span>
+      <button data-omf="${i}" title="Move to the front" ${i===0?"disabled":""}>&#8593;&#8593;</button>
+      <button data-oup="${i}" title="Earlier" ${i===0?"disabled":""}>&#8593;</button>
+      <button data-odn="${i}" title="Later" ${i===S.order.length-1?"disabled":""}>&#8595;</button>
+    </div>`;}).join("")||'<div style="color:var(--dimmer);font-size:12px;padding:8px">No realms.</div>';
+}
+$("ordM").addEventListener("click",e=>{
+  if(e.target===$("ordM")){$("ordM").classList.remove("open");return;}
+  const up=e.target.closest("[data-oup]"),dn=e.target.closest("[data-odn]"),mf=e.target.closest("[data-omf]");
+  if(up)moveAt(+up.dataset.oup,-1); else if(dn)moveAt(+dn.dataset.odn,1); else if(mf)toFirst(+mf.dataset.omf);
+});
+$("ordClose").onclick=()=>$("ordM").classList.remove("open");
+$("bOrder").onclick=()=>{paintOrder();$("ordM").classList.add("open");};
+addEventListener("keydown",e=>{
+  if(e.key==="Escape"&&$("ordM").classList.contains("open"))$("ordM").classList.remove("open");
+});
+
+/* --- new realm: choose the slot, and keep the current mover --- */
+window.insertRealmAt=function(id,pos){
+  if(S.order.indexOf(id)>=0)return;
+  const k=Math.max(0,Math.min(pos==null?S.order.length:pos,S.order.length));
+  S.order.splice(k,0,id);
+  if(window.syncTurnActive)window.syncTurnActive();   /* new realm has not moved yet */
+};
+window.paintOrderIfOpen=function(){if($("ordM").classList.contains("open"))paintOrder();};
 })();
 </script></body>
 </html>

@@ -68,7 +68,7 @@
    "id": "County of Toulouse",
    "name": "County of Toulouse",
    "color": "#1400f5",
-   "treasury": 98610,
+   "treasury": 92480,
    "capital": null,
    "zeal": 10,
    "flag": "toulouse"
@@ -2662,9 +2662,71 @@
     0,
     0
    ]
+  },
+  {
+   "name": "Host of Santiago",
+   "faction": "County of Toulouse",
+   "men": 1300,
+   "at": "Santiago",
+   "order": null,
+   "units": [
+    "mk_tou_t1_general_bodyguard",
+    "mk_merc_eng_t1_reivers",
+    "mk_merc_eng_t1_reivers",
+    "mk_tou_t1_mounted_crossbowmen",
+    "mk_tou_t1_mounted_crossbowmen",
+    "mk_tou_t1_spear_levy",
+    "mk_tou_t1_ribauds",
+    "mk_tou_t1_ribauds",
+    "mk_tou_t1_spear_levy",
+    "mk_tou_t1_archers",
+    "mk_tou_t1_archers"
+   ],
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "upkeep": 1838
   }
  ],
  "log": [
+  {
+   "t": 7,
+   "d": "Autumn 1201",
+   "txt": "León annexed Santiago from County of Toulouse",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn 1201",
+   "txt": "County of Toulouse mustered a planned host at Santiago (11 regiments · 6,130 florins)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn 1201",
+   "txt": "County of Toulouse raised a host at Santiago",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn 1201",
+   "txt": "County of Toulouse annexed Santiago from León",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 7,
    "d": "Autumn 1201",

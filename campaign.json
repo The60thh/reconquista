@@ -43,7 +43,7 @@
    "id": "Navarre",
    "name": "Navarre",
    "color": "#C65C20",
-   "treasury": 8796,
+   "treasury": 41,
    "capital": "Pamplona",
    "zeal": 2
   },
@@ -2780,9 +2780,70 @@
     0
    ],
    "upkeep": 4810
+  },
+  {
+   "name": "Host of Burgos",
+   "faction": "Navarre",
+   "men": 1680,
+   "at": "Burgos",
+   "order": null,
+   "units": [
+    "mk_nav_t1_general_bodyguard",
+    "mk_merc_fre_t1_routiers_mounted",
+    "mk_merc_fre_t1_routiers_mounted",
+    "mk_nav_t1_vasque_skirmisher_cavalry",
+    "mk_nav_t1_vasque_skirmisher_cavalry",
+    "mk_nav_t1_slingers",
+    "mk_nav_t1_slingers",
+    "mk_nav_t1_militia_spearmen",
+    "mk_nav_t1_militia_spearmen",
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_cas_t1_order_knights_dismounted",
+    "mk_nav_t1_militia_crossbowmen",
+    "mk_nav_t1_militia_crossbowmen",
+    "mk_nav_t1_militia_spearmen"
+   ],
+   "upkeep": 2624,
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
   }
  ],
  "log": [
+  {
+   "t": 7,
+   "d": "Autumn 1201",
+   "txt": "Host of Cádiz moved Málaga → Cádiz",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn 1201",
+   "txt": "Host of Cádiz moved Cádiz → Málaga",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn 1201",
+   "txt": "Navarre raised a host at Burgos",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 7,
    "d": "Autumn 1201",

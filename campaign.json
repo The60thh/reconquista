@@ -35,7 +35,7 @@
    "id": "Aragon",
    "name": "Aragon",
    "color": "#D69E2C",
-   "treasury": 6410,
+   "treasury": 1758,
    "capital": "Zaragoza",
    "zeal": 8
   },
@@ -1153,7 +1153,7 @@
    "value": 300,
    "move": 1,
    "garrison": 0,
-   "owner": "Castile",
+   "owner": "Aragon",
    "adj": [
     "Cuenca",
     "Guadalajara",
@@ -2022,7 +2022,7 @@
    "name": "Host of Zaragoza",
    "faction": "Aragon",
    "men": 2410,
-   "at": "Castellón",
+   "at": "Madrid",
    "order": null,
    "units": [
     "mk_ara_t1_king_bodyguard",
@@ -2188,7 +2188,7 @@
    "name": "Host of Barcelona",
    "faction": "Aragon",
    "men": 2560,
-   "at": "Castellón",
+   "at": "Madrid",
    "order": null,
    "units": [
     "mk_ara_t1_dismounted_caballeros",
@@ -2343,7 +2343,7 @@
   {
    "name": "Host of Zaragoza",
    "faction": "Aragon",
-   "men": 1860,
+   "men": 2580,
    "at": "Zaragoza",
    "order": null,
    "units": [
@@ -2357,6 +2357,12 @@
     "mk_ara_t1_militia_spearmen",
     "mk_ara_t1_caballeros_villanos",
     "mk_ara_t1_caballeros_villanos",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_dismounted_caballeros",
+    "mk_ara_t1_mounted_crossbowmen",
+    "mk_ara_t1_mounted_crossbowmen",
     "mk_ara_t1_dismounted_caballeros",
     "mk_ara_t1_dismounted_caballeros",
     "mk_ara_t1_dismounted_caballeros",
@@ -2376,9 +2382,15 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0
    ],
-   "upkeep": 2826
+   "upkeep": 4220
   },
   {
    "name": "Crusader Host of Portugal",
@@ -2688,6 +2700,27 @@
   }
  ],
  "log": [
+  {
+   "t": 7,
+   "d": "Autumn 1201",
+   "txt": "Aragon annexed Madrid from Castile",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn 1201",
+   "txt": "Host of Barcelona moved Castellón → Madrid",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn 1201",
+   "txt": "Host of Zaragoza moved Castellón → Madrid",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 7,
    "d": "Autumn 1201",

@@ -2786,6 +2786,34 @@
   {
    "t": 7,
    "d": "Autumn 1201",
+   "txt": "Peace: Aragon and Portugal",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn 1201",
+   "txt": "War declared: Aragon against Portugal (GM's cause — no Zeal charged)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn 1201",
+   "txt": "Peace: Navarre and Portugal",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn 1201",
+   "txt": "War declared: Navarre against Portugal (GM's cause — no Zeal charged)",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 7,
+   "d": "Autumn 1201",
    "txt": "The occupation of Málaga was abandoned",
    "kind": "",
    "detail": null

@@ -51,7 +51,7 @@
    "id": "Almohads",
    "name": "Almohads",
    "color": "#2E683E",
-   "treasury": 9243,
+   "treasury": 50,
    "capital": "Sevilla",
    "zeal": 7
   },
@@ -1336,7 +1336,7 @@
    "value": 300,
    "move": 1,
    "garrison": 0,
-   "owner": "Castile",
+   "owner": "Almohads",
    "adj": [
     "Albacete",
     "Calatrava",
@@ -1850,7 +1850,8 @@
    "occ": null,
    "bld": [
     "church",
-    "muster"
+    "muster",
+    "slavemarket"
    ],
    "upg": null,
    "raid": null
@@ -2238,7 +2239,7 @@
    "name": "Host of Valencia",
    "faction": "Almohads",
    "men": 2650,
-   "at": "Valencia",
+   "at": "Cuenca",
    "order": null,
    "units": [
     "mk_alm_t1_qaid_bodyguards",
@@ -2413,7 +2414,7 @@
    "name": "Jihad of Almohads",
    "faction": "Almohads",
    "men": 2340,
-   "at": "Sevilla",
+   "at": "Málaga",
    "order": null,
    "holy": true,
    "units": [
@@ -2556,7 +2557,7 @@
    "name": "Host of Sevilla",
    "faction": "Almohads",
    "men": 1610,
-   "at": "Sevilla",
+   "at": "Málaga",
    "order": null,
    "units": [
     "mk_alm_t1_qaid_bodyguards",
@@ -2818,9 +2819,102 @@
     0,
     0
    ]
+  },
+  {
+   "name": "Host of Granada",
+   "faction": "Almohads",
+   "men": 2270,
+   "at": "Granada",
+   "order": null,
+   "units": [
+    "mk_alm_t1_mounted_abid_al_makhzan",
+    "mk_alm_t1_abid_al_makhzan",
+    "mk_alm_t1_abid_al_makhzan",
+    "mk_alm_t1_abid_al_makhzan",
+    "mk_alm_t1_abid_al_makhzan",
+    "mk_alm_t1_abid_al_makhzan",
+    "mk_alm_t1_abid_al_makhzan",
+    "mk_alm_t1_abid_al_makhzan",
+    "mk_alm_t1_abid_al_makhzan",
+    "mk_alm_t1_abid_al_makhzan",
+    "mk_alm_t1_abid_skirmishers",
+    "mk_alm_t1_abid_infantry",
+    "mk_alm_t1_abid_infantry",
+    "mk_alm_t1_abid_infantry",
+    "mk_alm_t1_abid_infantry",
+    "mk_alm_t1_abid_infantry"
+   ],
+   "upkeep": 2900,
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Almohads annexed Cuenca from Castile",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Valencia moved Valencia → Cuenca",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Almohads raised a host at Granada",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Almohads raises a Slave Market at Granada (4,500 florins)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Battle of Málaga staged — Almohads vs Marinid Sultanate",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Jihad of Almohads moved Sevilla → Málaga",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Sevilla moved Sevilla → Málaga",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter 1201",
@@ -13128,7 +13222,22 @@
   "Aragon|Castile",
   "Almohads|León"
  ],
- "battles": [],
+ "battles": [
+  {
+   "at": "Málaga",
+   "sides": [
+    "Almohads",
+    "Marinid Sultanate"
+   ],
+   "name": "Battle of Málaga",
+   "date": "Winter 1201",
+   "turn": 8,
+   "men": {
+    "Almohads": 3950,
+    "Marinid Sultanate": 2220
+   }
+  }
+ ],
  "fought": {
   "Toledo": 1,
   "Badajoz": 1

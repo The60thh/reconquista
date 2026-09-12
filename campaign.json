@@ -83,9 +83,9 @@
    "flag": "england"
   },
   {
-   "id": "Nikephorus Wabrand",
-   "name": "Nikephorus Wabrand",
-   "color": "#ff8ace",
+   "id": "Nikephoros Warband",
+   "name": "Nikephoros Warband",
+   "color": "#f906cc",
    "treasury": 5000,
    "capital": null,
    "zeal": 0
@@ -918,7 +918,7 @@
    "value": 600,
    "move": 1,
    "garrison": 0,
-   "owner": "Nikephorus Wabrand",
+   "owner": "Nikephoros Warband",
    "adj": [
     "Braga",
     "Bragança",
@@ -2912,14 +2912,14 @@
   {
    "t": 8,
    "d": "Winter 1201",
-   "txt": "Nikephorus Wabrand annexed Porto (from Portugal)",
+   "txt": "Nikephoros Warband annexed Porto (from Portugal)",
    "kind": "",
    "detail": null
   },
   {
    "t": 8,
    "d": "Winter 1201",
-   "txt": "Nikephorus Wabrand occupied Porto (held by Portugal)",
+   "txt": "Nikephoros Warband occupied Porto (held by Portugal)",
    "kind": "",
    "detail": null
   },
@@ -13431,7 +13431,7 @@
   "Marinid Sultanate",
   "County of Toulouse",
   "Kingdom of England",
-  "Nikephorus Wabrand"
+  "Nikephoros Warband"
  ],
  "active": 2,
  "wars": [

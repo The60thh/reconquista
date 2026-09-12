@@ -86,7 +86,7 @@
    "id": "Nikephoros Warband",
    "name": "Nikephoros Warband",
    "color": "#f906cc",
-   "treasury": 2068,
+   "treasury": 173,
    "capital": null,
    "zeal": 0
   }
@@ -918,7 +918,7 @@
    "value": 600,
    "move": 1,
    "garrison": 0,
-   "owner": "Nikephoros Warband",
+   "owner": "Portugal",
    "adj": [
     "Braga",
     "Bragança",
@@ -2939,6 +2939,34 @@
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Porto moved Badajoz → Porto",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Porto moved Salamanca → Badajoz",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Porto moved Porto → Salamanca",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Portugal annexed Porto from Nikephoros Warband",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter 1201",

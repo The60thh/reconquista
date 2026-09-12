@@ -81,6 +81,14 @@
    "capital": null,
    "zeal": 10,
    "flag": "england"
+  },
+  {
+   "id": "Nikephoros Warband",
+   "name": "Nikephoros Warband",
+   "color": "#f906cc",
+   "treasury": 5000,
+   "capital": null,
+   "zeal": 0
   }
  ],
  "provinces": [
@@ -13408,7 +13416,8 @@
   "Navarre",
   "Marinid Sultanate",
   "County of Toulouse",
-  "Kingdom of England"
+  "Kingdom of England",
+  "Nikephoros Warband"
  ],
  "active": 2,
  "wars": [

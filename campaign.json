@@ -918,7 +918,7 @@
    "value": 600,
    "move": 1,
    "garrison": 0,
-   "owner": "Portugal",
+   "owner": "Nikephorus Wabrand",
    "adj": [
     "Braga",
     "Bragança",
@@ -2909,6 +2909,20 @@
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Nikephorus Wabrand annexed Porto (from Portugal)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Nikephorus Wabrand occupied Porto (held by Portugal)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter 1201",

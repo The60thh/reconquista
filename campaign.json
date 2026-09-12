@@ -27,9 +27,9 @@
    "id": "Portugal",
    "name": "Portugal",
    "color": "#285C96",
-   "treasury": 6783,
+   "treasury": 207,
    "capital": "Coimbra",
-   "zeal": 7
+   "zeal": 5
   },
   {
    "id": "Aragon",
@@ -59,7 +59,7 @@
    "id": "Marinid Sultanate",
    "name": "Marinid Sultanate",
    "color": "#793c27",
-   "treasury": 1800,
+   "treasury": 2080,
    "capital": null,
    "zeal": 2,
    "flag": "marinids"
@@ -1661,7 +1661,7 @@
    "value": 600,
    "move": 1,
    "garrison": 0,
-   "owner": "Almohads",
+   "owner": "Portugal",
    "adj": [
     "Algarve",
     "Badajoz",
@@ -1785,9 +1785,7 @@
    ],
    "siege": null,
    "elev": 59,
-   "occ": {
-    "by": "Portugal"
-   },
+   "occ": null,
    "bld": [],
    "upg": null,
    "raid": null
@@ -1814,7 +1812,10 @@
     "Huelva",
     "Málaga"
    ],
-   "siege": null,
+   "siege": {
+    "by": "Portugal",
+    "turns": 4
+   },
    "elev": 484,
    "occ": null,
    "bld": [
@@ -2397,7 +2398,7 @@
    "name": "Crusader Host of Portugal",
    "faction": "Portugal",
    "men": 400,
-   "at": "Algarve",
+   "at": "Huelva",
    "order": null,
    "holy": true,
    "units": [
@@ -2506,7 +2507,7 @@
   {
    "name": "Host of Cádiz",
    "faction": "Marinid Sultanate",
-   "men": 2220,
+   "men": 2200,
    "at": "Málaga",
    "order": null,
    "units": [
@@ -2519,8 +2520,6 @@
     "mk_alm_t1_saqaliba_jund",
     "mk_alm_t1_dismounted_jund_al_nasara",
     "mk_alm_t1_dismounted_jund_al_nasara",
-    "mk_alm_t1_batana_al_rum",
-    "mk_alm_t1_batana_al_rum",
     "mk_mus_t1_trebuchet",
     "mk_alm_t1_saqaliba_jund",
     "mk_alm_t1_ghuzz_horse_archers",
@@ -2529,7 +2528,9 @@
     "mk_alm_t1_shaykh_dismounted_retainers",
     "mk_merc_ara_t1_catalan_crossbowmen",
     "mk_merc_ara_t1_catalan_crossbowmen",
-    "mk_alm_t1_saqaliba_jund"
+    "mk_alm_t1_saqaliba_jund",
+    "mk_merc_his_t1_farfanes",
+    "mk_merc_his_t1_farfanes"
    ],
    "xp": [
     0,
@@ -2553,7 +2554,7 @@
     0,
     0
    ],
-   "upkeep": 5120
+   "upkeep": 5036
   },
   {
    "name": "Host of Sevilla",
@@ -2865,9 +2866,160 @@
     0,
     0
    ]
+  },
+  {
+   "name": "Host of Lisbon",
+   "faction": "Portugal",
+   "men": 1150,
+   "at": "Lisbon",
+   "order": null,
+   "units": [
+    "mk_por_t1_general_bodyguards",
+    "mk_eur_t1_trebuchet",
+    "mk_por_t1_cavaleiros_vilaos",
+    "mk_por_t1_cavaleiros_vilaos",
+    "mk_por_t1_peoes_de_lanca",
+    "mk_por_t1_peoes_de_lanca",
+    "mk_por_t1_peoes_de_lanca",
+    "mk_por_t1_fundeiros",
+    "mk_por_t1_fundeiros",
+    "mk_por_t1_besteiros"
+   ],
+   "upkeep": 1974,
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Portugal annexed Huelva from Almohads",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Portugal raised a host at Lisbon",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Portugal laid siege to Sevilla",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Portugal occupied Huelva (held by Almohads)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "The occupation of Algarve was abandoned",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Crusader Host of Portugal moved Algarve → Huelva",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Crusader Host of Portugal moved Beja → Algarve",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Coimbra moved Lisbon → Sevilla",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Crusader Host of Portugal moved Algarve → Beja",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Crusader Host of Portugal moved Sevilla → Algarve",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Crusader Host of Portugal moved Algarve → Sevilla",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Porto moved Coimbra → Toledo",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Coimbra moved Castelo Branco → Lisbon",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Coimbra moved Lisbon → Castelo Branco",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Porto moved Sevilla → Coimbra",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Coimbra moved Sevilla → Lisbon",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Porto moved Toledo → Sevilla",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter 1201",

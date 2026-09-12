@@ -29,7 +29,7 @@
    "color": "#285C96",
    "treasury": 6783,
    "capital": "Coimbra",
-   "zeal": 8
+   "zeal": 7
   },
   {
    "id": "Aragon",
@@ -1785,7 +1785,9 @@
    ],
    "siege": null,
    "elev": 59,
-   "occ": null,
+   "occ": {
+    "by": "Portugal"
+   },
    "bld": [],
    "upg": null,
    "raid": null
@@ -2073,7 +2075,7 @@
    "name": "Host of Coimbra",
    "faction": "Portugal",
    "men": 2010,
-   "at": "Lisbon",
+   "at": "Sevilla",
    "order": null,
    "units": [
     "mk_cas_t1_order_knights_dismounted",
@@ -2395,7 +2397,7 @@
    "name": "Crusader Host of Portugal",
    "faction": "Portugal",
    "men": 400,
-   "at": "Beja",
+   "at": "Algarve",
    "order": null,
    "holy": true,
    "units": [
@@ -2633,7 +2635,7 @@
    "name": "Host of Porto",
    "faction": "Kingdom of England",
    "men": 1460,
-   "at": "Coimbra",
+   "at": "Toledo",
    "order": null,
    "units": [
     "mk_eng_t1_general_bodyguard",
@@ -2866,6 +2868,48 @@
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Porto moved Coimbra → Toledo",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Portugal occupied Algarve (held by Almohads)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Almohads annexed Algarve from Portugal",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Portugal annexed Algarve from Almohads",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Crusader Host of Portugal moved Beja → Algarve",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Coimbra moved Lisbon → Sevilla",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter 1201",

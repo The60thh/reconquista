@@ -86,7 +86,7 @@
    "id": "Nikephoros Warband",
    "name": "Nikephoros Warband",
    "color": "#f906cc",
-   "treasury": 5000,
+   "treasury": 2068,
    "capital": null,
    "zeal": 0
   }
@@ -2906,9 +2906,46 @@
     0,
     0
    ]
+  },
+  {
+   "name": "Host of Porto",
+   "faction": "Nikephoros Warband",
+   "men": 1080,
+   "at": "Porto",
+   "order": null,
+   "units": [
+    "mk_tre_t1_oiketai",
+    "mk_tre_t1_scoutatoi",
+    "mk_tre_t1_scoutatoi",
+    "mk_tre_t1_scoutatoi",
+    "mk_tre_t1_varangoi",
+    "mk_tre_t1_oikeioi",
+    "mk_tre_t1_oikeioi",
+    "mk_tre_t1_katapraktos_toxotes",
+    "mk_tre_t1_katapraktos_toxotes"
+   ],
+   "upkeep": 2643,
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Nikephoros Warband raised a host at Porto",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter 1201",

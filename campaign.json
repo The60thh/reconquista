@@ -35,7 +35,7 @@
    "id": "Aragon",
    "name": "Aragon",
    "color": "#D69E2C",
-   "treasury": 6314,
+   "treasury": 4314,
    "capital": "Zaragoza",
    "zeal": 8
   },
@@ -51,7 +51,7 @@
    "id": "Almohads",
    "name": "Almohads",
    "color": "#2E683E",
-   "treasury": 50,
+   "treasury": 2050,
    "capital": "Sevilla",
    "zeal": 7
   },
@@ -1319,7 +1319,10 @@
     "Madrid",
     "Ávila"
    ],
-   "siege": null,
+   "siege": {
+    "by": "Aragon",
+    "turns": 4
+   },
    "elev": 689,
    "occ": null,
    "bld": [
@@ -2046,7 +2049,7 @@
    "name": "Host of Zaragoza",
    "faction": "Aragon",
    "men": 2410,
-   "at": "Madrid",
+   "at": "Toledo",
    "order": null,
    "units": [
     "mk_ara_t1_king_bodyguard",
@@ -2212,7 +2215,7 @@
    "name": "Host of Barcelona",
    "faction": "Aragon",
    "men": 2560,
-   "at": "Madrid",
+   "at": "Toledo",
    "order": null,
    "units": [
     "mk_ara_t1_dismounted_caballeros",
@@ -2368,7 +2371,7 @@
    "name": "Host of Zaragoza",
    "faction": "Aragon",
    "men": 2580,
-   "at": "Zaragoza",
+   "at": "Barcelona",
    "order": null,
    "units": [
     "mk_ara_t1_dismounted_caballeros",
@@ -2973,6 +2976,34 @@
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Aragon laid siege to Toledo",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Barcelona moved Madrid → Toledo",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Zaragoza moved Madrid → Toledo",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Zaragoza moved Zaragoza → Barcelona",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter 1201",

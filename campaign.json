@@ -11,7 +11,7 @@
    "id": "Castile",
    "name": "Castile",
    "color": "#A82626",
-   "treasury": 4794,
+   "treasury": 142,
    "capital": "Toledo",
    "zeal": 7
   },
@@ -2003,7 +2003,7 @@
   {
    "name": "Host of Toledo",
    "faction": "Castile",
-   "men": 850,
+   "men": 1880,
    "at": "Toledo",
    "order": null,
    "units": [
@@ -2014,9 +2014,16 @@
     "mk_cas_t1_peones_spearmen",
     "mk_cas_t1_dismounted_caballeros",
     "mk_cas_t1_dismounted_caballeros",
-    "mk_cas_t1_dismounted_caballeros"
+    "mk_cas_t1_dismounted_caballeros",
+    "mk_cas_t1_hidalgos",
+    "mk_cas_t1_spear_militia",
+    "mk_cas_t1_spear_militia",
+    "mk_cas_t1_spear_militia",
+    "mk_cas_t1_spear_militia",
+    "mk_cas_t1_spear_militia",
+    "mk_cas_t1_spear_militia"
    ],
-   "upkeep": 2149,
+   "upkeep": 3145,
    "xp": [
     4,
     2,
@@ -2025,7 +2032,14 @@
     2,
     2,
     2,
-    1
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
    ]
   },
   {
@@ -2477,13 +2491,11 @@
   {
    "name": "Host of Toledo",
    "faction": "Castile",
-   "men": 1360,
+   "men": 1840,
    "at": "Toledo",
    "order": null,
    "units": [
     "mk_cas_t1_general_bodyguard",
-    "mk_cas_t1_almogavar_scouts",
-    "mk_cas_t1_almogavar_scouts",
     "mk_cas_t1_spear_militia",
     "mk_cas_t1_monteros_de_espinosa",
     "mk_merc_his_t1_farfanes",
@@ -2493,10 +2505,16 @@
     "mk_cas_t1_crossbowmen",
     "mk_cas_t1_crossbowmen",
     "mk_cas_t1_dismounted_caballeros",
-    "mk_cas_t1_dismounted_caballeros"
+    "mk_cas_t1_dismounted_caballeros",
+    "mk_cas_t1_spear_militia",
+    "mk_cas_t1_spear_militia",
+    "mk_cas_t1_spear_militia",
+    "mk_cas_t1_spear_militia"
    ],
-   "upkeep": 3247,
+   "upkeep": 3267,
    "xp": [
+    0,
+    0,
     0,
     0,
     0,
@@ -2610,7 +2628,7 @@
    "name": "Host of Asturias",
    "faction": "County of Toulouse",
    "men": 1300,
-   "at": "Asturias",
+   "at": "León",
    "order": null,
    "units": [
     "mk_tou_t1_general_bodyguard",
@@ -2936,9 +2954,39 @@
     0,
     0
    ]
+  },
+  {
+   "name": "Host of Toledo",
+   "faction": "Castile",
+   "men": 160,
+   "at": "Toledo",
+   "order": null,
+   "units": [
+    "mk_cas_t1_almogavar_scouts",
+    "mk_cas_t1_almogavar_scouts"
+   ],
+   "upkeep": 380,
+   "xp": [
+    0,
+    0
+   ]
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Asturias moved Asturias → León",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Castile raised a host at Toledo",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter 1201",

@@ -2631,7 +2631,7 @@
    "name": "Host of Asturias",
    "faction": "County of Toulouse",
    "men": 1300,
-   "at": "Zamora",
+   "at": "León",
    "order": null,
    "units": [
     "mk_tou_t1_general_bodyguard",
@@ -2976,6 +2976,13 @@
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Asturias moved Zamora → León",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter 1201",

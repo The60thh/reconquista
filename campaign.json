@@ -13,7 +13,7 @@
    "color": "#A82626",
    "treasury": 142,
    "capital": "Toledo",
-   "zeal": 7
+   "zeal": 6
   },
   {
    "id": "León",
@@ -2631,7 +2631,7 @@
    "name": "Host of Asturias",
    "faction": "County of Toulouse",
    "men": 1300,
-   "at": "León",
+   "at": "Zamora",
    "order": null,
    "units": [
     "mk_tou_t1_general_bodyguard",
@@ -2976,6 +2976,13 @@
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Asturias moved León → Zamora",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter 1201",

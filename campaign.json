@@ -19,7 +19,7 @@
    "id": "León",
    "name": "León",
    "color": "#683682",
-   "treasury": 5935,
+   "treasury": 49,
    "capital": "León",
    "zeal": 3
   },
@@ -2699,7 +2699,7 @@
    "name": "Host of Santiago",
    "faction": "County of Toulouse",
    "men": 1300,
-   "at": "Santiago",
+   "at": "Orense",
    "order": null,
    "units": [
     "mk_tou_t1_general_bodyguard",
@@ -2733,7 +2733,7 @@
    "name": "Host of Badajoz",
    "faction": "León",
    "men": 1050,
-   "at": "Badajoz",
+   "at": "Toledo",
    "order": null,
    "units": [
     "mk_cas_t1_general_bodyguard",
@@ -2973,9 +2973,62 @@
     0,
     0
    ]
+  },
+  {
+   "name": "Host of Badajoz",
+   "faction": "León",
+   "men": 1330,
+   "at": "Badajoz",
+   "order": null,
+   "units": [
+    "mk_cas_t1_general_bodyguard",
+    "mk_eur_t1_trebuchet",
+    "mk_cas_t1_peones_de_elite",
+    "mk_cas_t1_peones_de_elite",
+    "mk_cas_t1_crossbowmen",
+    "mk_cas_t1_spear_militia",
+    "mk_cas_t1_spear_militia",
+    "mk_cas_t1_spear_militia",
+    "mk_cas_t1_spear_militia",
+    "mk_cas_t1_peones_spearmen"
+   ],
+   "upkeep": 1767,
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "León raised a host at Badajoz",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Badajoz moved Badajoz → Toledo",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Host of Santiago moved Santiago → Orense",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter 1201",

@@ -89,6 +89,15 @@
    "treasury": 173,
    "capital": null,
    "zeal": 0
+  },
+  {
+   "id": "Aragonese Rebels",
+   "name": "Aragonese Rebels",
+   "color": "#7c6136",
+   "treasury": 991822,
+   "capital": null,
+   "zeal": 0,
+   "flag": "aragon"
   }
  ],
  "provinces": [
@@ -681,7 +690,9 @@
    ],
    "siege": null,
    "elev": 1134,
-   "occ": null,
+   "occ": {
+    "by": "Aragonese Rebels"
+   },
    "bld": [],
    "upg": null,
    "raid": null
@@ -3005,9 +3016,121 @@
     0,
     0
    ]
+  },
+  {
+   "name": "Crusade of Aragonese Rebels",
+   "faction": "Aragonese Rebels",
+   "men": 0,
+   "order": null,
+   "holy": true,
+   "units": [],
+   "xp": [],
+   "upkeep": 0
+  },
+  {
+   "name": "Host of Girona",
+   "faction": "Aragonese Rebels",
+   "men": 1080,
+   "at": "Girona",
+   "order": null,
+   "units": [
+    "mk_ara_t1_general_bodyguard",
+    "mk_ara_t1_almogavars",
+    "mk_ara_t1_almogavars",
+    "mk_ara_t1_almogavars",
+    "mk_ara_t1_almogavars",
+    "mk_ara_t1_almogavars",
+    "mk_ara_t1_caballeros",
+    "mk_ara_t1_caballeros",
+    "mk_ara_t1_jinetes",
+    "mk_ara_t1_jinetes"
+   ],
+   "upkeep": 2449,
+   "xp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
   }
  ],
  "log": [
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Aragonese Rebels occupied Girona (held by Aragon)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Aragon annexed Girona from Aragonese Rebels",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Aragon occupied Girona (held by Aragonese Rebels)",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Aragonese Rebels raised a host at Girona",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Aragonese Rebels annexed Girona from Aragon",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "CRUSADE — the faithful of Aragonese Rebels muster at undefined. No upkeep, above the cap; they go home at war's end.",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Aragonese Rebels spends 10✦ — Crusade called",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Aragonese Rebels declared war on Aragon",
+   "kind": "battle",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Aragonese Rebels spends 1✦ to declare war on Aragon",
+   "kind": "",
+   "detail": null
+  },
+  {
+   "t": 8,
+   "d": "Winter 1201",
+   "txt": "Aragonese Rebels occupied Girona (held by Aragon)",
+   "kind": "",
+   "detail": null
+  },
   {
    "t": 8,
    "d": "Winter 1201",
@@ -13642,7 +13765,8 @@
   "Marinid Sultanate",
   "County of Toulouse",
   "Kingdom of England",
-  "Nikephoros Warband"
+  "Nikephoros Warband",
+  "Aragonese Rebels"
  ],
  "active": 5,
  "wars": [
@@ -13650,7 +13774,8 @@
   "Castile|Navarre",
   "Almohads|Portugal",
   "Aragon|Castile",
-  "Almohads|León"
+  "Almohads|León",
+  "Aragon|Aragonese Rebels"
  ],
  "battles": [
   {
